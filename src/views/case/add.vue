@@ -5,7 +5,7 @@
 				<el-input v-model="Form.name" placeholder="请输入病员姓名" type="text"></el-input>
 			</el-form-item>
 			<el-form-item label="年龄" prop="age">
-				<el-input v-model="Form.age" placeholder="请输入病员姓名" type="num"></el-input>
+				<el-input v-model="Form.age" placeholder="请输入病员姓名" type="number"></el-input>
 			</el-form-item>
 			<el-form-item label="性别" prop="sex">
 				<el-radio-group v-model="Form.sex">
@@ -21,6 +21,15 @@
 			</el-form-item>
 			<el-form-item label="摘要" prop="abstract">
 				<el-input v-model="Form.abstract" placeholder="请输入摘要" :rows="2" type="textarea"></el-input>
+			</el-form-item>
+			<el-form-item label="临床诊断" prop="diagnosis">
+				<el-input v-model="Form.diagnosis" placeholder="请输入诊断" :rows="2" type="textarea"></el-input>
+			</el-form-item>
+			<el-form-item label="诊断结果" prop="diagnosis_result">
+				<el-input v-model="Form.diagnosis_result" placeholder="请输入诊断结果" :rows="2" type="textarea"></el-input>
+			</el-form-item>
+			<el-form-item label="大体所见" prop="general_seen">
+				<el-input v-model="Form.general_seen" placeholder="请输入大体所见" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="图片" prop="img">
 				<el-upload ref="uploadRef" :action="uploadImgServer" :data="{ basket: 'img' }" :limit="1"
@@ -119,6 +128,9 @@
 					age: '',
 					sex: '0',
 					abstract: '',
+					diagnosis: '',
+					diagnosis_result: '',
+					general_seen: '',
 					type: '',
 					part: '',
 					disabled: true,
@@ -189,6 +201,9 @@
 							age: res.data.age,
 							sex: String(res.data.sex),
 							abstract: res.data.abstract,
+							diagnosis: res.data.diagnosis,
+							diagnosis_result: res.data.diagnosis_result,
+							general_seen: res.data.general_seen,
 							type: res.data.type,
 							part: res.data.part,
 							fileList: [{url: res.data.img_url}],
@@ -215,6 +230,9 @@
 							age: state.Form.age,
 							sex: state.Form.sex,
 							abstract: state.Form.abstract,
+							diagnosis: state.Form.diagnosis,
+							diagnosis_result: state.Form.diagnosis_result,
+							general_seen: state.Form.general_seen,
 							type: state.Form.type,
 							part: state.Form.part,
 						}

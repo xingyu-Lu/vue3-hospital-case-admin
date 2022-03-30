@@ -19,6 +19,9 @@
 			<el-table-column prop="abstract" label="病史摘要" />
 			<el-table-column prop="type" label="病例类型" />
 			<el-table-column prop="part" label="病例部位" />
+			<el-table-column prop="diagnosis" label="临床诊断" />
+			<el-table-column prop="diagnosis_result" label="诊断结果" />
+			<el-table-column prop="general_seen" label="大体所见" />
 			<el-table-column label="图片">
 				<template #default="scope">
 					<el-image v-if="scope.row.img_url" :key="scope.row.id" :src="scope.row.img_url" :lazy="true" :initial-index="1">

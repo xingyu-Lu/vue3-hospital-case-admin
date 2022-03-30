@@ -10,6 +10,9 @@
 			<el-descriptions-item label="性别">{{ data.sex == 0 ? '男' : '女' }}</el-descriptions-item>
 			<el-descriptions-item label="部位">{{ data.part }}</el-descriptions-item>
 			<el-descriptions-item label="摘要">{{ data.abstract }}</el-descriptions-item>
+			<el-descriptions-item label="临床诊断">{{ data.diagnosis }}</el-descriptions-item>
+			<el-descriptions-item label="诊断结果">{{ data.diagnosis_result }}</el-descriptions-item>
+			<el-descriptions-item label="大体所见">{{ data.general_seen }}</el-descriptions-item>
 			<el-descriptions-item label="图片">
 				<el-image v-if="data.img_url" :src="data.img_url" :lazy="true" :initial-index="1">
 				</el-image>
@@ -65,6 +68,9 @@
 					abstract: '',
 					type: '',
 					part: '',
+					diagnosis: '',
+					diagnosis_result: '',
+					general_seen: '',
 					img_url: '',
 					video: [],
 					attachment: []
@@ -79,6 +85,9 @@
 							age: res.data.age,
 							sex: res.data.sex,
 							abstract: res.data.abstract,
+							diagnosis: res.data.diagnosis,
+							diagnosis_result: res.data.diagnosis_result,
+							general_seen: res.data.general_seen,
 							type: res.data.type,
 							part: res.data.part,
 							img_url: res.data.img_url,
