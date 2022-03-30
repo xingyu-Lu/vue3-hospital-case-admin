@@ -60,7 +60,24 @@ const router = createRouter({
 		path: '/update_log',
 		name: 'update_log',
 		component: () => import('../views/update_log.vue')
-	}
+	},
+	
+	// 病例管理
+	{
+		path: '/case-index',
+		name: 'case_index',
+		component: () => import('../views/case/index.vue')
+	},
+	{
+		path: '/case-add',
+		name: 'case_add',
+		component: () => import('../views/case/add.vue')
+	},
+	{
+		path: '/case-preview',
+		name: 'case_preview',
+		component: () => import('../views/case/preview.vue')
+	},
   ]
 })
 

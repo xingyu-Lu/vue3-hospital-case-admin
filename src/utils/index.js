@@ -44,4 +44,9 @@ export const pathMap = {
 	change_pwd: '修改密码',
 	role: '角色管理',
 	role_add: '角色管理',
+	
+	// 病例管理
+	case_index: '病例列表',
+	case_add: '病例新增',
+	case_preview: '病例预览',
 }
