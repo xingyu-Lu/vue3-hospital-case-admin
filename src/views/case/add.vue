@@ -13,8 +13,11 @@
 					<el-radio label=0>男</el-radio>
 				</el-radio-group>
 			</el-form-item>
-			<el-form-item label="病例类型" prop="type">
-				<el-input v-model="Form.type" placeholder="请输入病例类型" type="text"></el-input>
+			<el-form-item label="病例类型" prop="type_id">
+				<el-select v-model="Form.type_id" placeholder="请选择病例类型">
+					<el-option v-for="item in Form.list" :key="item.id" :label="item.name" :value="item.id">
+					</el-option>
+				</el-select>
 			</el-form-item>
 			<el-form-item label="病例部位" prop="part">
 				<el-input v-model="Form.part" placeholder="请输入病例部位" type="text"></el-input>
@@ -131,12 +134,13 @@
 					diagnosis: '',
 					diagnosis_result: '',
 					general_seen: '',
-					type: '',
+					type_id: '',
 					part: '',
 					disabled: true,
 					fileList: [],
 					attachmentFileList: [],
-					videoFileList: []
+					videoFileList: [],
+					list: []
 				},
 				rules: {
 					img: [{
@@ -174,7 +178,7 @@
 						message: '摘要必须',
 						trigger: ['change'],
 					}],
-					type: [{
+					type_id: [{
 						required: true,
 						message: '病例类型必须',
 						trigger: ['change'],
@@ -188,6 +192,8 @@
 			})
 
 			onMounted(() => {
+				get_case_type_list()
+				
 				if (id) {
 					axios.get(`/api/back/cases/${id}`).then(res => {
 						state.Form = {
@@ -204,7 +210,7 @@
 							diagnosis: res.data.diagnosis,
 							diagnosis_result: res.data.diagnosis_result,
 							general_seen: res.data.general_seen,
-							type: res.data.type,
+							type_id: res.data.type_id,
 							part: res.data.part,
 							fileList: [{url: res.data.img_url}],
 							disabled: true
@@ -212,6 +218,11 @@
 					})
 				}
 			})
+			
+			const get_case_type_list = async () => {
+				const case_type_list = await axios.get('/api/back/caseTypes')
+				state.Form.list = case_type_list.data
+			}
 
 			onBeforeUnmount(() => {
 
@@ -233,7 +244,7 @@
 							diagnosis: state.Form.diagnosis,
 							diagnosis_result: state.Form.diagnosis_result,
 							general_seen: state.Form.general_seen,
-							type: state.Form.type,
+							type_id: state.Form.type_id,
 							part: state.Form.part,
 						}
 

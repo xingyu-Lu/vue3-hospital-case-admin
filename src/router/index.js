@@ -78,6 +78,18 @@ const router = createRouter({
 		name: 'case_preview',
 		component: () => import('../views/case/preview.vue')
 	},
+	
+	// 病例类型
+	{
+		path: '/case-type-index',
+		name: 'case_type_index',
+		component: () => import('../views/case_type/index.vue')
+	},
+	{
+		path: '/case-type-add',
+		name: 'case_type_add',
+		component: () => import('../views/case_type/add.vue')
+	}
   ]
 })
 

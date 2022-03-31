@@ -4,7 +4,7 @@
 			<el-button type="primary" @click="handleBack">返回</el-button>
 		</template>
 
-		<el-descriptions class="margin-top" :title="data.type" :column="1" :border="true">
+		<el-descriptions class="margin-top" :title="data.type_name" :column="1" :border="true">
 			<el-descriptions-item label="姓名">{{ data.name }}</el-descriptions-item>
 			<el-descriptions-item label="年龄">{{ data.age }}</el-descriptions-item>
 			<el-descriptions-item label="性别">{{ data.sex == 0 ? '男' : '女' }}</el-descriptions-item>
@@ -66,7 +66,7 @@
 					age: '',
 					sex: '',
 					abstract: '',
-					type: '',
+					type_name: '',
 					part: '',
 					diagnosis: '',
 					diagnosis_result: '',
@@ -88,7 +88,7 @@
 							diagnosis: res.data.diagnosis,
 							diagnosis_result: res.data.diagnosis_result,
 							general_seen: res.data.general_seen,
-							type: res.data.type,
+							type_name: res.data.type_name,
 							part: res.data.part,
 							img_url: res.data.img_url,
 							video: res.data.video,

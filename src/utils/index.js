@@ -49,4 +49,8 @@ export const pathMap = {
 	case_index: '病例列表',
 	case_add: '病例新增',
 	case_preview: '病例预览',
+	
+	// 病例类型
+	case_type_index: '病例类型',
+	case_type_add: '病例类型',
 }
