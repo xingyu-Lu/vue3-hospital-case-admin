@@ -97,15 +97,17 @@ const router = createRouter({
 		name: 'stomachca_index',
 		component: () => import('../views/stomach_ca/index.vue')
 	},
+	
+	// 胃ca 随访
 	{
-		path: '/stomachca-add',
-		name: 'stomachca_add',
-		component: () => import('../views/stomach_ca/add.vue')
+		path: '/stomachca-follow-up-index',
+		name: 'stomachca_follow_up_index',
+		component: () => import('../views/stomach_ca_follow_up/index.vue')
 	},
 	{
-		path: '/stomachca-preview',
-		name: 'stomachca_preview',
-		component: () => import('../views/stomach_ca/preview.vue')
+		path: '/stomachca-follow-up-add',
+		name: 'stomachca_follow_up_add',
+		component: () => import('../views/stomach_ca_follow_up/add.vue')
 	},
   ]
 })

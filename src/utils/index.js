@@ -57,5 +57,8 @@ export const pathMap = {
 	// 胃ca
 	stomachca_index: '胃ca',
 	stomachca_add: '胃ca',
-	stomachca_preview: '胃ca',
+	
+	// 胃ca随访
+	stomachca_follow_up_index: '胃ca随访',
+	stomachca_follow_up_add: '胃ca随访',
 }
