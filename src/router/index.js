@@ -89,7 +89,24 @@ const router = createRouter({
 		path: '/case-type-add',
 		name: 'case_type_add',
 		component: () => import('../views/case_type/add.vue')
-	}
+	},
+	
+	// 胃ca
+	{
+		path: '/stomachca-index',
+		name: 'stomachca_index',
+		component: () => import('../views/stomach_ca/index.vue')
+	},
+	{
+		path: '/stomachca-add',
+		name: 'stomachca_add',
+		component: () => import('../views/stomach_ca/add.vue')
+	},
+	{
+		path: '/stomachca-preview',
+		name: 'stomachca_preview',
+		component: () => import('../views/stomach_ca/preview.vue')
+	},
   ]
 })
 

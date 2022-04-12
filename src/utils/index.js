@@ -53,4 +53,9 @@ export const pathMap = {
 	// 病例类型
 	case_type_index: '病例类型',
 	case_type_add: '病例类型',
+	
+	// 胃ca
+	stomachca_index: '胃ca',
+	stomachca_add: '胃ca',
+	stomachca_preview: '胃ca',
 }
