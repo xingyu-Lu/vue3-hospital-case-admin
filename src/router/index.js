@@ -97,6 +97,11 @@ const router = createRouter({
 		name: 'stomachca_index',
 		component: () => import('../views/stomach_ca/index.vue')
 	},
+	{
+		path: '/stomachca-add',
+		name: 'stomachca_add',
+		component: () => import('../views/stomach_ca/add.vue')
+	},
 	
 	// 胃ca 随访
 	{
