@@ -1,6 +1,6 @@
 <template>
 	<el-card style="min-height: 100%;">
-		<el-form :model="Form" :rules="rules" ref="Ref" size="default" label-suffix=":" inline=true>
+		<el-form :model="Form" :rules="rules" ref="Ref" size="default" label-suffix=":" :inline="true">
 			<el-form-item label="住院号" prop="hospital_number">
 				<el-input v-model="Form.hospital_number" placeholder="请输入住院号" type="text"></el-input>
 			</el-form-item>
@@ -188,38 +188,38 @@
 				<el-input v-model="Form.asa_grade" placeholder="请输入asa分级" :rows="2" type="text"></el-input>
 			</el-form-item>
 			<el-form-item label="主要症状" prop="main_symptoms">
-				<el-radio-group v-model="Form.main_symptoms">
-					<el-radio label=0>无</el-radio>
-					<el-radio label=1>腹痛</el-radio>
-					<el-radio label=2>饱胀</el-radio>
-					<el-radio label=3>呕吐</el-radio>
-					<el-radio label=4>呕血</el-radio>
-					<el-radio label=5>便血</el-radio>
-					<el-radio label=6>黑便</el-radio>
-					<el-radio label=7>吞咽困难</el-radio>
-					<el-radio label=8>烧心感</el-radio>
-					<el-radio label=9>厌食</el-radio>
-					<el-radio label=10>乏力</el-radio>
-					<el-radio label=11>体重下降</el-radio>
-					<el-radio label=12>返酸</el-radio>
-					<el-radio label=13>暖气</el-radio>
-					<el-radio label=14>呃逆</el-radio>
-					<el-radio label=15>其他</el-radio>
-				</el-radio-group>
+				<el-checkbox-group v-model="Form.main_symptoms">
+					<el-checkbox label=0 name="main_symptoms">无</el-checkbox>
+					<el-checkbox label=1 name="main_symptoms">腹痛</el-checkbox>
+					<el-checkbox label=2 name="main_symptoms">饱胀</el-checkbox>
+					<el-checkbox label=3 name="main_symptoms">呕吐</el-checkbox>
+					<el-checkbox label=4 name="main_symptoms">呕血</el-checkbox>
+					<el-checkbox label=5 name="main_symptoms">便血</el-checkbox>
+					<el-checkbox label=6 name="main_symptoms">黑便</el-checkbox>
+					<el-checkbox label=7 name="main_symptoms">吞咽困难</el-checkbox>
+					<el-checkbox label=8 name="main_symptoms">烧心感</el-checkbox>
+					<el-checkbox label=9 name="main_symptoms">厌食</el-checkbox>
+					<el-checkbox label=10 name="main_symptoms">乏力</el-checkbox>
+					<el-checkbox label=11 name="main_symptoms">体重下降</el-checkbox>
+					<el-checkbox label=12 name="main_symptoms">返酸</el-checkbox>
+					<el-checkbox label=13 name="main_symptoms">暖气</el-checkbox>
+					<el-checkbox label=14 name="main_symptoms">呃逆</el-checkbox>
+					<el-checkbox label=15 name="main_symptoms">其他</el-checkbox>
+				</el-checkbox-group>
 			</el-form-item>
 			<el-form-item label="主要体征" prop="main_signs">
-				<el-radio-group v-model="Form.main_signs">
-					<el-radio label=0>无</el-radio>
-					<el-radio label=1>腹部压痛</el-radio>
-					<el-radio label=2>腹部包块</el-radio>
-					<el-radio label=3>腹肌抵抗</el-radio>
-					<el-radio label=4>胃型</el-radio>
-					<el-radio label=5>肛检包块/结节</el-radio>
-					<el-radio label=6>振水音</el-radio>
-					<el-radio label=7>左锁骨上淋巴结肿大</el-radio>
-					<el-radio label=8>移动性浊音</el-radio>
-					<el-radio label=9>其他</el-radio>
-				</el-radio-group>
+				<el-checkbox-group v-model="Form.main_signs">
+					<el-checkbox label=0 name="main_signs">无</el-checkbox>
+					<el-checkbox label=1 name="main_signs">腹部压痛</el-checkbox>
+					<el-checkbox label=2 name="main_signs">腹部包块</el-checkbox>
+					<el-checkbox label=3 name="main_signs">腹肌抵抗</el-checkbox>
+					<el-checkbox label=4 name="main_signs">胃型</el-checkbox>
+					<el-checkbox label=5 name="main_signs">肛检包块/结节</el-checkbox>
+					<el-checkbox label=6 name="main_signs">振水音</el-checkbox>
+					<el-checkbox label=7 name="main_signs">左锁骨上淋巴结肿大</el-checkbox>
+					<el-checkbox label=8 name="main_signs">移动性浊音</el-checkbox>
+					<el-checkbox label=9 name="main_signs">其他</el-checkbox>
+				</el-checkbox-group>
 			</el-form-item>
 			<el-form-item label="腹腔手术史" prop="laparoscopic_operative_record">
 				<el-input v-model="Form.laparoscopic_operative_record" placeholder="请输入腹腔手术史" :rows="2" type="textarea"></el-input>
@@ -304,18 +304,19 @@
 				<el-input v-model="Form.preoperative_complications_check_exception" placeholder="术前合并症/术前检查异常" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术前合并症" prop="preoperative_complications">
-				<el-radio-group v-model="Form.preoperative_complications">
-					<el-radio label=1>呼吸系统（COPD，哮喘，肺心病）</el-radio>
-					<el-radio label=2>循环系统（高血压，心功能不全（NYHA Ⅲ或Ⅳ)，陈旧性心肌梗塞）</el-radio>
-					<el-radio label=3>消化系统（肝炎，肝硬化，门脉高压，消化道溃疡，炎性肠病）</el-radio>
-					<el-radio label=4>内分泌（甲亢，糖尿病）</el-radio>
-					<el-radio label=5>泌尿系统（慢性肾炎，肾功能不全）</el-radio>
-					<el-radio label=6>神经系统（陈旧性脑梗塞）</el-radio>
-					<el-radio label=7>患有其他恶性疾病</el-radio>
-					<el-radio label=8>免疫疾病后长期服用免疫抑制剂</el-radio>
-					<el-radio label=9>凝血机制异常或长期使用抗凝药物</el-radio>
-					<el-radio label=10>其他</el-radio>
-				</el-radio-group>
+				<el-checkbox-group v-model="Form.preoperative_complications">
+					<el-checkbox label=0 name="preoperative_complications">无</el-checkbox>
+					<el-checkbox label=1 name="preoperative_complications">呼吸系统（COPD，哮喘，肺心病）</el-checkbox>
+					<el-checkbox label=2 name="preoperative_complications">循环系统（高血压，心功能不全（NYHA Ⅲ或Ⅳ)，陈旧性心肌梗塞）</el-checkbox>
+					<el-checkbox label=3 name="preoperative_complications">消化系统（肝炎，肝硬化，门脉高压，消化道溃疡，炎性肠病）</el-checkbox>
+					<el-checkbox label=4 name="preoperative_complications">内分泌（甲亢，糖尿病）</el-checkbox>
+					<el-checkbox label=5 name="preoperative_complications">泌尿系统（慢性肾炎，肾功能不全）</el-checkbox>
+					<el-checkbox label=6 name="preoperative_complications">神经系统（陈旧性脑梗塞）</el-checkbox>
+					<el-checkbox label=7 name="preoperative_complications">患有其他恶性疾病</el-checkbox>
+					<el-checkbox label=8 name="preoperative_complications">免疫疾病后长期服用免疫抑制剂</el-checkbox>
+					<el-checkbox label=9 name="preoperative_complications">凝血机制异常或长期使用抗凝药物</el-checkbox>
+					<el-checkbox label=10 name="preoperative_complications">其他</el-checkbox>
+				</el-checkbox-group>
 			</el-form-item>
 			<el-form-item label="术前胸部CT" prop="preoperative_chest_ct">
 				<el-input v-model="Form.preoperative_chest_ct" placeholder="术前胸部CT" :rows="2" type="textarea"></el-input>
@@ -563,27 +564,27 @@
 				<el-input v-model="Form.splenic_hilar_lymph_node_clear_minutes" placeholder="脾门淋巴结清扫时间（分）" :rows="2" type="text"></el-input>
 			</el-form-item>
 			<el-form-item label="联合脏器切除" prop="simultaneous_organoectomy_resection">
-				<el-radio-group v-model="Form.simultaneous_organoectomy_resection">
-					<el-radio label=0>无</el-radio>
-					<el-radio label=1>脾脏</el-radio>
-					<el-radio label=2>左肝外叶</el-radio>
-					<el-radio label=3>胰头</el-radio>
-					<el-radio label=4>横结肠</el-radio>
-					<el-radio label=5>胆囊</el-radio>
-					<el-radio label=6>卵巢</el-radio>
-					<el-radio label=7>小肠</el-radio>
-				</el-radio-group>
+				<el-checkbox-group v-model="Form.simultaneous_organoectomy_resection">
+					<el-checkbox label=0 name="simultaneous_organoectomy_resection">无</el-checkbox>
+					<el-checkbox label=1 name="simultaneous_organoectomy_resection">脾脏</el-checkbox>
+					<el-checkbox label=2 name="simultaneous_organoectomy_resection">左肝外叶</el-checkbox>
+					<el-checkbox label=3 name="simultaneous_organoectomy_resection">胰头</el-checkbox>
+					<el-checkbox label=4 name="simultaneous_organoectomy_resection">横结肠</el-checkbox>
+					<el-checkbox label=5 name="simultaneous_organoectomy_resection">胆囊</el-checkbox>
+					<el-checkbox label=6 name="simultaneous_organoectomy_resection">卵巢</el-checkbox>
+					<el-checkbox label=7 name="simultaneous_organoectomy_resection">小肠</el-checkbox>
+				</el-checkbox-group>
 			</el-form-item>
 			<el-form-item label="术中并发器官损伤" prop="intraoperative_organ_injury_occurred">
-				<el-radio-group v-model="Form.intraoperative_organ_injury_occurred">
-					<el-radio label=0>无</el-radio>
-					<el-radio label=1>血管</el-radio>
-					<el-radio label=2>脾脏</el-radio>
-					<el-radio label=3>胰</el-radio>
-					<el-radio label=4>横结肠</el-radio>
-					<el-radio label=5>胆囊</el-radio>
-					<el-radio label=6>肝脏</el-radio>
-				</el-radio-group>
+				<el-checkbox-group v-model="Form.intraoperative_organ_injury_occurred">
+					<el-checkbox label=0 name="intraoperative_organ_injury_occurred">无</el-checkbox>
+					<el-checkbox label=1 name="intraoperative_organ_injury_occurred">血管</el-checkbox>
+					<el-checkbox label=2 name="intraoperative_organ_injury_occurred">脾脏</el-checkbox>
+					<el-checkbox label=3 name="intraoperative_organ_injury_occurred">胰</el-checkbox>
+					<el-checkbox label=4 name="intraoperative_organ_injury_occurred">横结肠</el-checkbox>
+					<el-checkbox label=5 name="intraoperative_organ_injury_occurred">胆囊</el-checkbox>
+					<el-checkbox label=6 name="intraoperative_organ_injury_occurred">肝脏</el-checkbox>
+				</el-checkbox-group>
 			</el-form-item>
 			<el-form-item label="术中并发症-出血处理" prop="intraoperative_organ_injury_occurred_handle">
 				<el-input v-model="Form.intraoperative_organ_injury_occurred_handle" placeholder="术中并发症-出血处理" :rows="2" type="textarea"></el-input>
@@ -648,10 +649,7 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="肝转移" prop="hepatic_metastases">
-				<el-radio-group v-model="Form.hepatic_metastases">
-					<el-radio label=0>无</el-radio>
-					<el-radio label=1>具体</el-radio>
-				</el-radio-group>
+				<el-input v-model="Form.hepatic_metastases" placeholder="肝转移" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="单个肝转移" prop="single_hepatic_metastases">
 				<el-radio-group v-model="Form.single_hepatic_metastases">
@@ -896,18 +894,18 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="邻近结构直接浸润" prop="adjacent_structures_are_infiltrated_directly">
-				<el-radio-group v-model="Form.adjacent_structures_are_infiltrated_directly">
-					<el-radio label=0>无</el-radio>
-					<el-radio label=1>脾脏</el-radio>
-					<el-radio label=2>肝脏</el-radio>
-					<el-radio label=3>胰腺</el-radio>
-					<el-radio label=4>横结肠</el-radio>
-					<el-radio label=5>胆囊</el-radio>
-					<el-radio label=6>胆道</el-radio>
-					<el-radio label=7>膈肌</el-radio>
-					<el-radio label=8>腹后壁</el-radio>
-					<el-radio label=9>腹前壁</el-radio>
-				</el-radio-group>
+				<el-checkbox-group v-model="Form.adjacent_structures_are_infiltrated_directly">
+					<el-checkbox label=0 name="adjacent_structures_are_infiltrated_directly">无</el-checkbox>
+					<el-checkbox label=1 name="adjacent_structures_are_infiltrated_directly">脾脏</el-checkbox>
+					<el-checkbox label=2 name="adjacent_structures_are_infiltrated_directly">肝脏</el-checkbox>
+					<el-checkbox label=3 name="adjacent_structures_are_infiltrated_directly">胰腺</el-checkbox>
+					<el-checkbox label=4 name="adjacent_structures_are_infiltrated_directly">横结肠</el-checkbox>
+					<el-checkbox label=5 name="adjacent_structures_are_infiltrated_directly">胆囊</el-checkbox>
+					<el-checkbox label=6 name="adjacent_structures_are_infiltrated_directly">胆道</el-checkbox>
+					<el-checkbox label=7 name="adjacent_structures_are_infiltrated_directly">膈肌</el-checkbox>
+					<el-checkbox label=8 name="adjacent_structures_are_infiltrated_directly">腹后壁</el-checkbox>
+					<el-checkbox label=9 name="adjacent_structures_are_infiltrated_directly">腹前壁</el-checkbox>
+				</el-checkbox-group>
 			</el-form-item>
 			<el-form-item label="fN-分期" prop="fn_aging">
 				<el-radio-group v-model="Form.fn_aging">
@@ -1382,25 +1380,25 @@
 				<el-input v-model="Form.postoperative_temperature_greater_than_38_days" placeholder="术后体温>38℃天数" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="围术期手术并发症" prop="perioperative_complications">
-				<el-radio-group v-model="Form.perioperative_complications">
-					<el-radio label=0>无</el-radio>
-					<el-radio label=1>十二指肠残端瘘</el-radio>
-					<el-radio label=2>吻合口瘘</el-radio>
-					<el-radio label=3>胰瘘/胰腺炎</el-radio>
-					<el-radio label=4>肠瘘</el-radio>
-					<el-radio label=5>胆瘘</el-radio>
-					<el-radio label=6>淋巴乳糜瘘</el-radio>
-					<el-radio label=7>腹腔内出血</el-radio>
-					<el-radio label=8>消化道出血</el-radio>
-					<el-radio label=9>麻痹性肠梗阻</el-radio>
-					<el-radio label=10>机械性梗阻</el-radio>
-					<el-radio label=11>胃无张力</el-radio>
-					<el-radio label=12>切口感染/切口裂开</el-radio>
-					<el-radio label=13>腹腔感染/腹腔脓肿/腹腔局限性积液</el-radio>
-					<el-radio label=14>血管损伤</el-radio>
-					<el-radio label=15>临近器官损伤</el-radio>
-					<el-radio label=16>腹腔镜相关并发症</el-radio>
-				</el-radio-group>
+				<el-checkbox-group v-model="Form.perioperative_complications">
+					<el-checkbox label=0 name="perioperative_complications">无</el-checkbox>
+					<el-checkbox label=1 name="perioperative_complications">十二指肠残端瘘</el-checkbox>
+					<el-checkbox label=2 name="perioperative_complications">吻合口瘘</el-checkbox>
+					<el-checkbox label=3 name="perioperative_complications">胰瘘/胰腺炎</el-checkbox>
+					<el-checkbox label=4 name="perioperative_complications">肠瘘</el-checkbox>
+					<el-checkbox label=5 name="perioperative_complications">胆瘘</el-checkbox>
+					<el-checkbox label=6 name="perioperative_complications">淋巴乳糜瘘</el-checkbox>
+					<el-checkbox label=7 name="perioperative_complications">腹腔内出血</el-checkbox>
+					<el-checkbox label=8 name="perioperative_complications">消化道出血</el-checkbox>
+					<el-checkbox label=9 name="perioperative_complications">麻痹性肠梗阻</el-checkbox>
+					<el-checkbox label=10 name="perioperative_complications">机械性梗阻</el-checkbox>
+					<el-checkbox label=11 name="perioperative_complications">胃无张力</el-checkbox>
+					<el-checkbox label=12 name="perioperative_complications">切口感染/切口裂开</el-checkbox>
+					<el-checkbox label=13 name="perioperative_complications">腹腔感染/腹腔脓肿/腹腔局限性积液</el-checkbox>
+					<el-checkbox label=14 name="perioperative_complications">血管损伤</el-checkbox>
+					<el-checkbox label=15 name="perioperative_complications">临近器官损伤</el-checkbox>
+					<el-checkbox label=16 name="perioperative_complications">腹腔镜相关并发症</el-checkbox>
+				</el-checkbox-group>
 			</el-form-item>
 			<el-form-item label="围术期手术并发症处理方式" prop="management_of_perioperative_complications">
 				<el-input v-model="Form.management_of_perioperative_complications" placeholder="围术期手术并发症处理方式" :rows="2" type="textarea"></el-input>
@@ -1563,8 +1561,8 @@
 					scheme: '0',
 					days: '',
 					asa_grade: '',
-					main_symptoms: '0',
-					main_signs: '0',
+					main_symptoms: ['0'],
+					main_signs: ['0'],
 					laparoscopic_operative_record: '',
 					family_record: '',
 					smoke: '0',
@@ -1584,7 +1582,7 @@
 					preoperative_ct_check_m_aging: '',
 					preoperative_aging: '',
 					preoperative_complications_check_exception: '',
-					preoperative_complications: '0',
+					preoperative_complications: ['0'],
 					preoperative_chest_ct: '0',
 					ultrasound_gastroscope_tnm: '',
 					ultrasound_imaging_tnm: '',
@@ -1650,8 +1648,8 @@
 					omental_sac_resection: '0',
 					omental_sac_resection_minutes: '',
 					splenic_hilar_lymph_node_clear_minutes: '',
-					simultaneous_organoectomy_resection: '0',
-					intraoperative_organ_injury_occurred: '0',
+					simultaneous_organoectomy_resection: ['0'],
+					intraoperative_organ_injury_occurred: ['0'],
 					intraoperative_organ_injury_occurred_handle: '',
 					intraoperative_complications_bleeding_site: '',
 					operation_minutes: '',
@@ -1666,7 +1664,7 @@
 					ascites: '0',
 					cancer_cell: '0',
 					peritoneal_metastasis: '0',
-					hepatic_metastases: '0',
+					hepatic_metastases: '',
 					single_hepatic_metastases: '0',
 					more_hepatic_metastases: '0',
 					lymph_nodes_were_enlarged_in_16: '',
@@ -1698,7 +1696,7 @@
 					greater_omentum_margin_was_examined: '0',
 					examination_of_lesser_omentum_margin: '0',
 					ft_aging: '0',
-					adjacent_structures_are_infiltrated_directly: '0',
+					adjacent_structures_are_infiltrated_directly: ['0'],
 					fn_aging: '0',
 					fm_aging: '0',
 					m1_aging: '0',
@@ -1824,7 +1822,7 @@
 					start_a_fluid_day_time: '',
 					highest_temperature: '',
 					postoperative_temperature_greater_than_38_days: '',
-					perioperative_complications: '0',
+					perioperative_complications: ['0'],
 					management_of_perioperative_complications: '',
 					nonoperative_complication: '',
 					perioperative_management_of_nonoperative_complications: '',
@@ -1924,8 +1922,8 @@
 							scheme: String(res.data.scheme),
 							days: res.data.days,
 							asa_grade: res.data.asa_grade,
-							main_symptoms: String(res.data.main_symptoms),
-							main_signs: String(res.data.main_signs),
+							main_symptoms: res.data.main_symptoms,
+							main_signs: res.data.main_signs,
 							laparoscopic_operative_record: res.data.laparoscopic_operative_record,
 							family_record: res.data.family_record,
 							smoke: String(res.data.smoke),
@@ -1945,7 +1943,7 @@
 							preoperative_ct_check_m_aging: res.data.preoperative_ct_check_m_aging,
 							preoperative_aging: res.data.preoperative_aging,
 							preoperative_complications_check_exception: res.data.preoperative_complications_check_exception,
-							preoperative_complications: String(res.data.preoperative_complications),
+							preoperative_complications: res.data.preoperative_complications,
 							preoperative_chest_ct: String(res.data.preoperative_chest_ct),
 							ultrasound_gastroscope_tnm: res.data.ultrasound_gastroscope_tnm,
 							ultrasound_imaging_tnm: res.data.ultrasound_imaging_tnm,
@@ -2011,8 +2009,8 @@
 							omental_sac_resection: String(res.data.omental_sac_resection),
 							omental_sac_resection_minutes: res.data.omental_sac_resection_minutes,
 							splenic_hilar_lymph_node_clear_minutes: res.data.splenic_hilar_lymph_node_clear_minutes,
-							simultaneous_organoectomy_resection: String(res.data.simultaneous_organoectomy_resection),
-							intraoperative_organ_injury_occurred: String(res.data.intraoperative_organ_injury_occurred),
+							simultaneous_organoectomy_resection: res.data.simultaneous_organoectomy_resection,
+							intraoperative_organ_injury_occurred: res.data.intraoperative_organ_injury_occurred,
 							intraoperative_organ_injury_occurred_handle: res.data.intraoperative_organ_injury_occurred_handle,
 							intraoperative_complications_bleeding_site: res.data.intraoperative_complications_bleeding_site,
 							operation_minutes: res.data.operation_minutes,
@@ -2027,7 +2025,7 @@
 							ascites: String(res.data.ascites),
 							cancer_cell: String(res.data.cancer_cell),
 							peritoneal_metastasis: String(res.data.peritoneal_metastasis),
-							hepatic_metastases: String(res.data.hepatic_metastases),
+							hepatic_metastases: res.data.hepatic_metastases,
 							single_hepatic_metastases: String(res.data.single_hepatic_metastases),
 							more_hepatic_metastases: String(res.data.more_hepatic_metastases),
 							lymph_nodes_were_enlarged_in_16: res.data.lymph_nodes_were_enlarged_in_16,
@@ -2059,7 +2057,7 @@
 							greater_omentum_margin_was_examined: String(res.data.greater_omentum_margin_was_examined),
 							examination_of_lesser_omentum_margin: String(res.data.examination_of_lesser_omentum_margin),
 							ft_aging: String(res.data.ft_aging),
-							adjacent_structures_are_infiltrated_directly: String(res.data.adjacent_structures_are_infiltrated_directly),
+							adjacent_structures_are_infiltrated_directly: res.data.adjacent_structures_are_infiltrated_directly,
 							fn_aging: String(res.data.fn_aging),
 							fm_aging: String(res.data.fm_aging),
 							m1_aging: String(res.data.m1_aging),
@@ -2185,7 +2183,7 @@
 							start_a_fluid_day_time: res.data.start_a_fluid_day_time == '1970-01-01 08:00:00' ? '' : res.data.start_a_fluid_day_time,
 							highest_temperature: res.data.highest_temperature,
 							postoperative_temperature_greater_than_38_days: res.data.postoperative_temperature_greater_than_38_days,
-							perioperative_complications: String(res.data.perioperative_complications),
+							perioperative_complications: res.data.perioperative_complications,
 							management_of_perioperative_complications: res.data.management_of_perioperative_complications,
 							nonoperative_complication: res.data.nonoperative_complication,
 							perioperative_management_of_nonoperative_complications: res.data.perioperative_management_of_nonoperative_complications,
@@ -2253,8 +2251,8 @@
 							scheme: String(state.Form.scheme),
 							days: state.Form.days,
 							asa_grade: state.Form.asa_grade,
-							main_symptoms: String(state.Form.main_symptoms),
-							main_signs: String(state.Form.main_signs),
+							main_symptoms: state.Form.main_symptoms,
+							main_signs: state.Form.main_signs,
 							laparoscopic_operative_record: state.Form.laparoscopic_operative_record,
 							family_record: state.Form.family_record,
 							smoke: String(state.Form.smoke),
@@ -2274,7 +2272,7 @@
 							preoperative_ct_check_m_aging: state.Form.preoperative_ct_check_m_aging,
 							preoperative_aging: state.Form.preoperative_aging,
 							preoperative_complications_check_exception: state.Form.preoperative_complications_check_exception,
-							preoperative_complications: String(state.Form.preoperative_complications),
+							preoperative_complications: state.Form.preoperative_complications,
 							preoperative_chest_ct: String(state.Form.preoperative_chest_ct),
 							ultrasound_gastroscope_tnm: state.Form.ultrasound_gastroscope_tnm,
 							ultrasound_imaging_tnm: state.Form.ultrasound_imaging_tnm,
@@ -2340,8 +2338,8 @@
 							omental_sac_resection: String(state.Form.omental_sac_resection),
 							omental_sac_resection_minutes: state.Form.omental_sac_resection_minutes,
 							splenic_hilar_lymph_node_clear_minutes: state.Form.splenic_hilar_lymph_node_clear_minutes,
-							simultaneous_organoectomy_resection: String(state.Form.simultaneous_organoectomy_resection),
-							intraoperative_organ_injury_occurred: String(state.Form.intraoperative_organ_injury_occurred),
+							simultaneous_organoectomy_resection: state.Form.simultaneous_organoectomy_resection,
+							intraoperative_organ_injury_occurred: state.Form.intraoperative_organ_injury_occurred,
 							intraoperative_organ_injury_occurred_handle: state.Form.intraoperative_organ_injury_occurred_handle,
 							intraoperative_complications_bleeding_site: state.Form.intraoperative_complications_bleeding_site,
 							operation_minutes: state.Form.operation_minutes,
@@ -2356,7 +2354,7 @@
 							ascites: String(state.Form.ascites),
 							cancer_cell: String(state.Form.cancer_cell),
 							peritoneal_metastasis: String(state.Form.peritoneal_metastasis),
-							hepatic_metastases: String(state.Form.hepatic_metastases),
+							hepatic_metastases: state.Form.hepatic_metastases,
 							single_hepatic_metastases: String(state.Form.single_hepatic_metastases),
 							more_hepatic_metastases: String(state.Form.more_hepatic_metastases),
 							lymph_nodes_were_enlarged_in_16: state.Form.lymph_nodes_were_enlarged_in_16,
@@ -2388,7 +2386,7 @@
 							greater_omentum_margin_was_examined: String(state.Form.greater_omentum_margin_was_examined),
 							examination_of_lesser_omentum_margin: String(state.Form.examination_of_lesser_omentum_margin),
 							ft_aging: String(state.Form.ft_aging),
-							adjacent_structures_are_infiltrated_directly: String(state.Form.adjacent_structures_are_infiltrated_directly),
+							adjacent_structures_are_infiltrated_directly: state.Form.adjacent_structures_are_infiltrated_directly,
 							fn_aging: String(state.Form.fn_aging),
 							fm_aging: String(state.Form.fm_aging),
 							m1_aging: String(state.Form.m1_aging),
@@ -2514,7 +2512,7 @@
 							start_a_fluid_day_time: state.Form.start_a_fluid_day_time,
 							start_a_fluid_day_time: state.Form.start_a_fluid_day_time,
 							postoperative_temperature_greater_than_38_days: state.Form.postoperative_temperature_greater_than_38_days,
-							perioperative_complications: String(state.Form.perioperative_complications),
+							perioperative_complications: state.Form.perioperative_complications,
 							management_of_perioperative_complications: state.Form.management_of_perioperative_complications,
 							nonoperative_complication: state.Form.nonoperative_complication,
 							perioperative_management_of_nonoperative_complications: state.Form.perioperative_management_of_nonoperative_complications,
