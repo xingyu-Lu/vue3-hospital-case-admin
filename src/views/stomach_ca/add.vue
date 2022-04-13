@@ -1,6 +1,6 @@
 <template>
 	<el-card style="min-height: 100%;">
-		<el-form :model="Form" :rules="rules" ref="Ref" size="default" label-suffix=":" :inline="true">
+		<el-form :model="Form" :rules="rules" ref="Ref" size="default" label-suffix=":" :inline="false">
 			<el-form-item label="住院号" prop="hospital_number">
 				<el-input v-model="Form.hospital_number" placeholder="请输入住院号" type="text"></el-input>
 			</el-form-item>

@@ -22,9 +22,24 @@
 			<el-table-column prop="mobile" label="患者联系电话" />
 			<el-table-column prop="total_money" label="住院总费用" />
 			<el-table-column prop="family_contact" label="家属联系方式" />
-			<el-table-column prop="admission_time" label="入院日期" />
-			<el-table-column prop="operative_time" label="手术日期" />
-			<el-table-column prop="discharge_time" label="出院日期" />
+			<el-table-column prop="admission_time" label="入院日期">
+				<template #default="scope">
+					<span v-if="scope.row.admission_time == '1970-01-01 08:00:00'"></span>
+					<span v-else>{{ scope.row.admission_time }}</span>
+				</template>
+			</el-table-column>
+			<el-table-column prop="operative_time" label="手术日期">
+				<template #default="scope">
+					<span v-if="scope.row.operative_time == '1970-01-01 08:00:00'"></span>
+					<span v-else>{{ scope.row.operative_time }}</span>
+				</template>
+			</el-table-column>
+			<el-table-column prop="discharge_time" label="出院日期">
+				<template #default="scope">
+					<span v-if="scope.row.discharge_time == '1970-01-01 08:00:00'"></span>
+					<span v-else>{{ scope.row.discharge_time }}</span>
+				</template>
+			</el-table-column>
 			<el-table-column prop="total_hospital_days" label="总住院天数" />
 			<el-table-column prop="postoperation_hospital_days" label="术后住院天数" />
 			<el-table-column prop="created_at" label="创建时间" />
