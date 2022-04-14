@@ -11,7 +11,7 @@
 			<li>菜单管理</li>
 			<li>角色管理</li>
 			<li>权限管理(rbac)</li>
-			<li>数据统计分析</li>
+			<li>病例管理</li>
 		</ul>
 		<h1>技术选型</h1>
 		<ul style="font-weight: bold; line-height: 32px;">
