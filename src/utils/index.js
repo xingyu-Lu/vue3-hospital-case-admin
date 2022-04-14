@@ -61,4 +61,12 @@ export const pathMap = {
 	// 胃ca随访
 	stomachca_follow_up_index: '胃ca随访',
 	stomachca_follow_up_add: '胃ca随访',
+	
+	// 间质瘤
+	stromal_tumor_index: '间质瘤',
+	stromal_tumor_add: '间质瘤',
+	
+	// 间质瘤随访
+	stromal_tumor_follow_up_index: '间质瘤随访',
+	stromal_tumor_follow_up_add: '间质瘤随访',
 }

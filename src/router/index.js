@@ -114,6 +114,30 @@ const router = createRouter({
 		name: 'stomachca_follow_up_add',
 		component: () => import('../views/stomach_ca_follow_up/add.vue')
 	},
+	
+	// 间质瘤
+	{
+		path: '/stromal-tumor-index',
+		name: 'stromal_tumor_index',
+		component: () => import('../views/stromal_tumor/index.vue')
+	},
+	{
+		path: '/stromal-tumor-add',
+		name: 'stromal_tumor_add',
+		component: () => import('../views/stromal_tumor/add.vue')
+	},
+	
+	// 间质瘤 随访
+	{
+		path: '/stromal-tumor-follow-up-index',
+		name: 'stromal_tumor_follow_up_index',
+		component: () => import('../views/stromal_tumor_follow_up/index.vue')
+	},
+	{
+		path: '/stromal-tumor-follow-up-add',
+		name: 'stromal_tumor_follow_up_add',
+		component: () => import('../views/stromal_tumor_follow_up/add.vue')
+	},
   ]
 })
 

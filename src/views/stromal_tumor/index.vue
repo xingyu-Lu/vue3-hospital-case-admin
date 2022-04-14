@@ -2,7 +2,6 @@
 	<el-card style="min-height: 100%;">
 		<template #header>
 			<el-button type="primary" :icon="Plus" @click="handleAdd">新增病例</el-button>
-			
 			<div>
 				<el-input style="width: 200px; margin-top: 20px; margin-right: 10px; margin-left: 10px;" placeholder="请输入病例名字" v-model="name" clearable />
 				<el-input style="width: 200px; margin-top: 20px; margin-right: 10px; margin-left: 10px;" placeholder="请输入病例住院号" v-model="hospital_number" clearable />
@@ -94,18 +93,18 @@
 				pageSize: 10 // 分页大小
 			})
 			onMounted(() => {
-				getStomachCaList()
+				getStromalTumorList()
 			})
 			// 获取admin列表
-			const getStomachCaList = () => {
+			const getStromalTumorList = () => {
 				state.loading = true
-				axios.get('/api/back/stomachCas', {
+				axios.get('/api/back/StromalTumors', {
 					params: {
 						page: state.currentPage,
 						page_size: state.pageSize,
 						name: state.name,
-						id_card: state.id_card,
 						hospital_number: state.hospital_number,
+						id_card: state.id_card,
 					}
 				}).then(res => {
 					state.tableData = res.data
@@ -118,18 +117,18 @@
 
 			const changePage = (val) => {
 				state.currentPage = val
-				getStomachCaList()
+				getStromalTumorList()
 			}
 
 			const handleAdd = () => {
 				router.push({
-					path: '/stomachca-add'
+					path: '/stromal-tumor-add'
 				})
 			}
 
 			const handleEdit = (id) => {
 				router.push({
-					path: '/stomachca-add',
+					path: '/stromal-tumor-add',
 					query: {
 						id
 					}
@@ -138,16 +137,16 @@
 			
 			const handleFollowUp = (id) => {
 				router.push({
-					path: '/stomachca-follow-up-index',
+					path: '/stromal-tumor-follow-up-index',
 					query: {
-						stomach_ca_id: id
+						stromal_tumor_id: id
 					}
 				})
 			}
 			
 			const handleOption = () => {
 				state.currentPage = 1
-				getStomachCaList()
+				getStromalTumorList()
 			}
 
 			return {
