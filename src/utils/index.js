@@ -69,4 +69,12 @@ export const pathMap = {
 	// 间质瘤随访
 	stromal_tumor_follow_up_index: '间质瘤随访',
 	stromal_tumor_follow_up_add: '间质瘤随访',
+	
+	// 直肠癌
+	colorectal_cancer_index: '直肠癌',
+	colorectal_cancer_add: '直肠癌',
+	
+	// 直肠癌随访
+	colorectal_cancer_follow_up_index: '直肠癌随访',
+	colorectal_cancer_follow_up_add: '直肠癌随访',
 }

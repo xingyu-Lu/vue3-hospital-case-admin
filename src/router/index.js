@@ -138,6 +138,30 @@ const router = createRouter({
 		name: 'stromal_tumor_follow_up_add',
 		component: () => import('../views/stromal_tumor_follow_up/add.vue')
 	},
+	
+	// 直肠癌
+	{
+		path: '/colorectal-cancer-index',
+		name: 'colorectal_cancer_index',
+		component: () => import('../views/colorectal_cancer/index.vue')
+	},
+	{
+		path: '/colorectal-cancer-add',
+		name: 'colorectal_cancer_add',
+		component: () => import('../views/colorectal_cancer/add.vue')
+	},
+	
+	// 直肠癌 随访
+	{
+		path: '/colorectal-cancer-follow-up-index',
+		name: 'colorectal_cancer_follow_up_index',
+		component: () => import('../views/colorectal_cancer_follow_up/index.vue')
+	},
+	{
+		path: '/colorectal-cancer-follow-up-add',
+		name: 'colorectal_cancer_follow_up_add',
+		component: () => import('../views/colorectal_cancer_follow_up/add.vue')
+	},
   ]
 })
 
