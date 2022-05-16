@@ -77,4 +77,12 @@ export const pathMap = {
 	// 直肠癌随访
 	colorectal_cancer_follow_up_index: '直肠癌随访',
 	colorectal_cancer_follow_up_add: '直肠癌随访',
+	
+	// 减重
+	weight_loss_index: '减重',
+	weight_loss_add: '减重',
+	
+	// 减重随访
+	weight_loss_follow_up_index: '减重随访',
+	weight_loss_follow_up_add: '减重随访',
 }

@@ -162,6 +162,30 @@ const router = createRouter({
 		name: 'colorectal_cancer_follow_up_add',
 		component: () => import('../views/colorectal_cancer_follow_up/add.vue')
 	},
+	
+	// 减重
+	{
+		path: '/weight-loss-index',
+		name: 'weight_loss_index',
+		component: () => import('../views/weight_loss/index.vue')
+	},
+	{
+		path: '/weight-loss-add',
+		name: 'weight_loss_add',
+		component: () => import('../views/weight_loss/add.vue')
+	},
+	
+	// 减重 随访
+	{
+		path: '/weight-loss-follow-up-index',
+		name: 'weight_loss_follow_up_index',
+		component: () => import('../views/weight_loss_follow_up/index.vue')
+	},
+	{
+		path: '/weight-loss-follow-up-add',
+		name: 'weight_loss_follow_up_add',
+		component: () => import('../views/weight_loss_follow_up/add.vue')
+	},
   ]
 })
 
