@@ -1147,7 +1147,7 @@
 
 			onMounted(() => {
 				if (id) {
-					axios.get(`/api/back/ColorectalCancers/${id}`).then(res => {
+					axios.get(`/api/back/WeightLosss/${id}`).then(res => {
 						state.Form = {
 							attachment: res.data.attachment_id,
 							attachmentFileList: res.data.attachment,
