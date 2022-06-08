@@ -3,7 +3,7 @@
 		<div class="login-container">
 			<div class="head">
 				<div class="name">
-					<div class="title">宜宾市第三人民医院</div>
+					<div class="title">宜宾市第二人民医院</div>
 					<div class="tips">Vue3.x 后台管理系统</div>
 				</div>
 			</div>
