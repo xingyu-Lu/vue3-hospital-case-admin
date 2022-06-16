@@ -1,6 +1,7 @@
 <template>
 	<el-card style="min-height: 100%;">
 		<template #header>
+			<h1 style="color: #F56C6C;">今日待随访人数{{follow_day_num}}人</h1>
 			<el-button type="primary" :icon="Plus" @click="handleAdd">新增病例</el-button>
 			<div>
 				<el-input style="width: 200px; margin-top: 20px; margin-right: 10px; margin-left: 10px;" placeholder="请输入病例名字" v-model="name" clearable />
@@ -46,6 +47,31 @@
 			</el-table-column>
 			<el-table-column prop="total_hospital_days" label="总住院天数" />
 			<el-table-column prop="postoperation_hospital_days" label="术后住院天数" />
+			<el-table-column prop="is_follow" label="是否随访">
+				<template #default="scope">
+					<span v-if="scope.row.is_follow == 0">否</span>
+					<span v-else="scope.row.is_follow == 1">是</span>
+				</template>
+			</el-table-column>
+			<el-table-column prop="follow_day_num" label="距离随访天数">
+				<template #default="scope">
+					<span style="color: #F56C6C;" v-if="scope.row.follow_day_num <= 3">{{scope.row.follow_day_num}}</span>
+					<span v-else>{{scope.row.follow_day_num}}</span>
+				</template>
+			</el-table-column>
+			<el-table-column prop="follow_time" label="随访时间">
+				<template #default="scope">
+					<span v-if="scope.row.follow_time == '1970-01-01 08:00:00'"></span>
+					<span v-else-if="scope.row.is_follow == 1">{{ scope.row.follow_time }}</span>
+					<span v-else></span>
+				</template>
+			</el-table-column>
+			<el-table-column prop="follow_content" label="随访内容">
+				<template #default="scope">
+					<span v-if="scope.row.is_follow == 1">{{ scope.row.follow_content }}</span>
+					<span v-else></span>
+				</template>
+			</el-table-column>
 			<el-table-column prop="created_at" label="创建时间" />
 			<el-table-column label="操作" width="100">
 				<template #default="scope">
@@ -68,7 +94,8 @@
 		onMounted,
 		reactive,
 		ref,
-		toRefs
+		toRefs,
+		h
 	} from 'vue'
 	import axios from '@/utils/axios'
 	import {
@@ -82,6 +109,7 @@
 			const value1 = ref(true)
 			const router = useRouter()
 			const state = reactive({
+				follow_day_num: 0,
 				name: '',
 				id_card: '',
 				hospital_number: '',
@@ -94,7 +122,21 @@
 			})
 			onMounted(() => {
 				getStromalTumorList()
+				getFollowDayNum()
 			})
+			// 获取今日待随访人数
+			const getFollowDayNum = () => {
+				axios.get('/api/back/WeightLosss/followDayNum').then(res => {
+					state.follow_day_num = res.data.follow_day_num
+					ElNotification({
+					    title: '减重',
+					    message: h('i', { style: 'color: #F56C6C' }, '今日待随访人数' + state.follow_day_num + '人'),
+					    type: 'warning',
+						// duration: 0,
+					})
+				})
+			}
+			
 			// 获取admin列表
 			const getStromalTumorList = () => {
 				state.loading = true

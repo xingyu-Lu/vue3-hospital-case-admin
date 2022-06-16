@@ -1,6 +1,6 @@
 <template>
 	<el-card style="min-height: 100%;">
-		<el-form :model="Form" :rules="rules" ref="Ref" size="default" label-suffix=":" :inline="true">
+		<el-form :model="Form" :rules="rules" ref="Ref" size="default" label-suffix=":" :inline="false">
 			<div><strong>基本信息</strong></div>
 			<el-divider />
 			<el-form-item label="住院号" prop="hospital_number">
@@ -1776,6 +1776,20 @@
 					<el-button type="primary">上传</el-button>
 				</el-upload>
 			</el-form-item>
+			<el-form-item label="是否随访" prop="is_follow">
+				<el-radio-group v-model="Form.is_follow">
+					<el-radio label=0>否</el-radio>
+					<el-radio label=1>是</el-radio>
+				</el-radio-group>
+			</el-form-item>
+			<el-form-item label="随访时间" prop="follow_time">
+				<el-date-picker v-model="Form.follow_time" type="date" :default-value="new Date()"
+					placeholder="随访时间">
+				</el-date-picker>
+			</el-form-item>
+			<el-form-item label="随访内容" prop="follow_content">
+				<el-input v-model="Form.follow_content" placeholder="随访内容" :rows="2" type="textarea"></el-input>
+			</el-form-item>
 			<!-- <el-form-item>
 				<el-button type="primary" @click="submitAdd()">{{ id ? '立即修改' : '立即创建' }}</el-button>
 			</el-form-item> -->
@@ -2116,6 +2130,10 @@
 					inputting_medical_records: '',
 					is_the_record_entry_complete: '',
 					medical_records_information_checker: '',
+					// 随访
+					is_follow: '0',
+					follow_time: '',
+					follow_content: '',
 
 					disabled: true,
 					fileList: [],
@@ -2450,6 +2468,10 @@
 							inputting_medical_records: res.data.inputting_medical_records,
 							is_the_record_entry_complete: res.data.is_the_record_entry_complete,
 							medical_records_information_checker: res.data.medical_records_information_checker,
+							// 随访
+							is_follow: String(res.data.is_follow),
+							follow_time: res.data.follow_time == '1970-01-01 08:00:00' ? '' : res.data.follow_time,
+							follow_content: res.data.follow_content,
 						}
 					})
 				}
@@ -2746,6 +2768,10 @@
 							inputting_medical_records: state.Form.inputting_medical_records,
 							is_the_record_entry_complete: state.Form.is_the_record_entry_complete,
 							medical_records_information_checker: state.Form.medical_records_information_checker,
+							// 随访
+							is_follow: state.Form.is_follow,
+							follow_time: state.Form.follow_time,
+							follow_content: state.Form.follow_content,
 						}
 
 						let url = '/api/back/ColorectalCancers'
