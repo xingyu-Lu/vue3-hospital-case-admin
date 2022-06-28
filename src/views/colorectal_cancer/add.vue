@@ -37,18 +37,15 @@
 				<el-input v-model="Form.family_contact" placeholder="请输入家属联系方式" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="入院日期" prop="admission_time">
-				<el-date-picker v-model="Form.admission_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入入院日期">
+				<el-date-picker v-model="Form.admission_time" type="datetime" placeholder="请输入入院日期">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="手术日期" prop="operative_time">
-				<el-date-picker v-model="Form.operative_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入手术日期">
+				<el-date-picker v-model="Form.operative_time" type="datetime" placeholder="请输入手术日期">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="出院日期" prop="discharge_time">
-				<el-date-picker v-model="Form.discharge_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入出院日期">
+				<el-date-picker v-model="Form.discharge_time" type="datetime" placeholder="请输入出院日期">
 				</el-date-picker>
 			</el-form-item>
 			<!-- <el-form-item label="总住院时间（天）" prop="total_hospital_days">
@@ -60,12 +57,14 @@
 			<div><strong>术前、术前合并症及简单描述、术前肠镜</strong></div>
 			<p style="color: #409eff;">1.距肛门A1</p>
 			<el-form-item label="1.距肛门A1(cm)" prop="preoperative_colonoscopy_from_the_anus_a1">
-				<el-input v-model="Form.preoperative_colonoscopy_from_the_anus_a1" placeholder="距肛门A1(cm)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_colonoscopy_from_the_anus_a1" placeholder="距肛门A1(cm)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">2.侵犯肠腔A2</p>
 			<el-form-item label="2.侵犯肠腔A2(周)" prop="preoperative_colonoscopy_infringement_of_lumen_a2">
-				<el-input v-model="Form.preoperative_colonoscopy_infringement_of_lumen_a2" placeholder="侵犯肠腔A2(周)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_colonoscopy_infringement_of_lumen_a2" placeholder="侵犯肠腔A2(周)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">3.内镜是否通过A3</p>
@@ -77,7 +76,8 @@
 			</el-form-item>
 			<p style="color: #409eff;">4.活检结果A4</p>
 			<el-form-item label="4.活检结果A4" prop="preoperative_colonoscopy_the_biopsy_results_a4">
-				<el-input v-model="Form.preoperative_colonoscopy_the_biopsy_results_a4" placeholder="活检结果A4" :rows="2" type="textarea">
+				<el-input v-model="Form.preoperative_colonoscopy_the_biopsy_results_a4" placeholder="活检结果A4" :rows="2"
+					type="textarea">
 				</el-input>
 			</el-form-item>
 			<div><strong>术前分期</strong></div>
@@ -88,7 +88,8 @@
 				</el-input>
 			</el-form-item>
 			<el-form-item label="侵出B1(mm)" prop="preoperative_staging_ct_mri_leaching_b1">
-				<el-input v-model="Form.preoperative_staging_ct_mri_leaching_b1" placeholder="侵出B1(mm)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_ct_mri_leaching_b1" placeholder="侵出B1(mm)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="最深处位于B2" prop="preoperative_staging_ct_mri_the_deepest_point_is_at_b2">
@@ -100,11 +101,13 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="肠壁距系膜外缘B3(mm)" prop="preoperative_staging_ct_mri_intestinal_separated_edge_mesangium">
-				<el-input v-model="Form.preoperative_staging_ct_mri_intestinal_separated_edge_mesangium" placeholder="肠壁距系膜外缘B3(mm)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_ct_mri_intestinal_separated_edge_mesangium"
+					placeholder="肠壁距系膜外缘B3(mm)" :rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="T距系膜外缘B4(mm)" prop="preoperative_staging_ct_mri_intestinal_separated_edge_mesangium">
-				<el-input v-model="Form.preoperative_staging_ct_mri_intestinal_separated_edge_mesangium" placeholder="T距系膜外缘B4(mm)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_ct_mri_intestinal_separated_edge_mesangium"
+					placeholder="T距系膜外缘B4(mm)" :rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="N" prop="preoperative_staging_ct_mri_n">
@@ -112,11 +115,13 @@
 				</el-input>
 			</el-form-item>
 			<el-form-item label="最大直径Dmax(mm)" prop="preoperative_staging_ct_mri_the_largest_diameter_dmax">
-				<el-input v-model="Form.preoperative_staging_ct_mri_the_largest_diameter_dmax" placeholder="最大直径Dmax(mm)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_ct_mri_the_largest_diameter_dmax"
+					placeholder="最大直径Dmax(mm)" :rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="淋巴结数目" prop="preoperative_staging_ct_mri_number_of_lymph_nodes_no">
-				<el-input v-model="Form.preoperative_staging_ct_mri_number_of_lymph_nodes_no" placeholder="淋巴结数目" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_ct_mri_number_of_lymph_nodes_no" placeholder="淋巴结数目"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="m" prop="preoperative_staging_ct_mri_m">
@@ -124,7 +129,8 @@
 				</el-input>
 			</el-form-item>
 			<el-form-item label="最大直径dmax2(cm)" prop="preoperative_staging_ct_mri_the_largest_diameter_dmax2">
-				<el-input v-model="Form.preoperative_staging_ct_mri_the_largest_diameter_dmax2" placeholder="最大直径dmax2(cm)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_ct_mri_the_largest_diameter_dmax2"
+					placeholder="最大直径dmax2(cm)" :rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="T3直肠系膜累及深度" prop="preoperative_staging_ct_mri_t3_mesenterin_and_deep">
@@ -140,7 +146,8 @@
 				</el-input>
 			</el-form-item>
 			<el-form-item label="侵出(mm)" prop="preoperative_staging_ultrasonic_leaching_ultramundane">
-				<el-input v-model="Form.preoperative_staging_ultrasonic_leaching_ultramundane" placeholder="侵出(mm)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_ultrasonic_leaching_ultramundane" placeholder="侵出(mm)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="N" prop="preoperative_staging_ultrasonic_n">
@@ -148,7 +155,8 @@
 				</el-input>
 			</el-form-item>
 			<el-form-item label="最大直径d1(mm)" prop="preoperative_staging_ultrasonic_the_largest_diameter_d1">
-				<el-input v-model="Form.preoperative_staging_ultrasonic_the_largest_diameter_d1" placeholder="最大直径d1(mm)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_ultrasonic_the_largest_diameter_d1"
+					placeholder="最大直径d1(mm)" :rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="M" prop="preoperative_staging_ultrasonic_m">
@@ -156,11 +164,13 @@
 				</el-input>
 			</el-form-item>
 			<el-form-item label="最大直径d2(mm)" prop="preoperative_staging_ultrasonic_the_largest_diameter_d2">
-				<el-input v-model="Form.preoperative_staging_ultrasonic_the_largest_diameter_d2" placeholder="最大直径d2(mm)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_ultrasonic_the_largest_diameter_d2"
+					placeholder="最大直径d2(mm)" :rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="PET-CT" prop="preoperative_staging_ultrasonic_pet_ct">
-				<el-input v-model="Form.preoperative_staging_ultrasonic_pet_ct" placeholder="PET-CT" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_ultrasonic_pet_ct" placeholder="PET-CT" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">3.临床分期</p>
@@ -193,11 +203,13 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="部位" prop="preoperative_staging_intestinal_tract_location">
-				<el-input v-model="Form.preoperative_staging_intestinal_tract_location" placeholder="部位" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_intestinal_tract_location" placeholder="部位" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="分期T" prop="preoperative_staging_intestinal_tract_staging_t">
-				<el-input v-model="Form.preoperative_staging_intestinal_tract_staging_t" placeholder="分期T" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_intestinal_tract_staging_t" placeholder="分期T" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="N" prop="preoperative_staging_intestinal_tract_n">
@@ -254,15 +266,18 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="肝转移灶数目(枚)" prop="preoperative_staging_number_of_liver_metastases">
-				<el-input v-model="Form.preoperative_staging_number_of_liver_metastases" placeholder="肝转移灶数目(枚)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_number_of_liver_metastases" placeholder="肝转移灶数目(枚)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="最大转移灶直径(cm)" prop="preoperative_staging_number_of_liver_metastases_dg1">
-				<el-input v-model="Form.preoperative_staging_number_of_liver_metastases_dg1" placeholder="最大转移灶直径(cm)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_number_of_liver_metastases_dg1" placeholder="最大转移灶直径(cm)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="平均转移灶直径(cm)" prop="preoperative_staging_number_of_liver_metastases_dg2">
-				<el-input v-model="Form.preoperative_staging_number_of_liver_metastases_dg2" placeholder="平均转移灶直径(cm)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_number_of_liver_metastases_dg2" placeholder="平均转移灶直径(cm)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="转移灶部位" prop="preoperative_staging_number_of_liver_metastases_location1">
@@ -272,15 +287,18 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="肺转移灶数目(枚)" prop="preoperative_staging_number_of_lung_metastases">
-				<el-input v-model="Form.preoperative_staging_number_of_lung_metastases" placeholder="肺转移灶数目(枚)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_number_of_lung_metastases" placeholder="肺转移灶数目(枚)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="最大转移灶直径" prop="preoperative_staging_number_of_lung_metastases_df1">
-				<el-input v-model="Form.preoperative_staging_number_of_lung_metastases_df1" placeholder="最大转移灶直径" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_number_of_lung_metastases_df1" placeholder="最大转移灶直径"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="平均转移灶直径" prop="preoperative_staging_number_of_lung_metastases_df2">
-				<el-input v-model="Form.preoperative_staging_number_of_lung_metastases_df2" placeholder="平均转移灶直径" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_staging_number_of_lung_metastases_df2" placeholder="平均转移灶直径"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="转移灶部位" prop="preoperative_staging_number_of_lung_metastases_location2">
@@ -330,70 +348,84 @@
 			</el-form-item>
 			<p style="color: #409eff">2.时间</p>
 			<el-form-item label="开始时间" prop="preoperative_neoadjuvant_chemotherapy_begin">
-				<el-date-picker v-model="Form.preoperative_neoadjuvant_chemotherapy_begin" type="datetime" :default-value="new Date()"
+				<el-date-picker v-model="Form.preoperative_neoadjuvant_chemotherapy_begin" type="datetime"
 					placeholder="请输入开始时间">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="结束时间" prop="preoperative_neoadjuvant_chemotherapy_end">
-				<el-date-picker v-model="Form.preoperative_neoadjuvant_chemotherapy_end" type="datetime" :default-value="new Date()"
+				<el-date-picker v-model="Form.preoperative_neoadjuvant_chemotherapy_end" type="datetime"
 					placeholder="请输入结束时间">
 				</el-date-picker>
 			</el-form-item>
 			<p style="color: #409eff;">3.不良反应</p>
 			<el-form-item label="Hb(g/L)" prop="preoperative_neoadjuvant_chemotherapy_adverse_response_hb">
-				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_adverse_response_hb" placeholder="Hb(g/L)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_adverse_response_hb" placeholder="Hb(g/L)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="WBC(*109/L)" prop="preoperative_neoadjuvant_chemotherapy_adverse_response_wbc">
-				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_adverse_response_wbc" placeholder="WBC(*109/L)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_adverse_response_wbc"
+					placeholder="WBC(*109/L)" :rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="粒细胞(*109/L)" prop="preoperative_neoadjuvant_chemotherapy_adverse_response_gra">
-				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_adverse_response_gra" placeholder="粒细胞(*109/L)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_adverse_response_gra"
+					placeholder="粒细胞(*109/L)" :rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="PLT" prop="preoperative_neoadjuvant_chemotherapy_adverse_response_plt">
-				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_adverse_response_plt" placeholder="PLT" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_adverse_response_plt" placeholder="PLT"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="肝功能" prop="preoperative_neoadjuvant_chemotherapy_liver_function">
-				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_liver_function" placeholder="肝功能" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_liver_function" placeholder="肝功能"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="肾功能" prop="preoperative_neoadjuvant_chemotherapy_kidney_function">
-				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_kidney_function" placeholder="肾功能" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_kidney_function" placeholder="肾功能"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="呕吐" prop="preoperative_neoadjuvant_chemotherapy_sickness">
-				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_sickness" placeholder="呕吐" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_sickness" placeholder="呕吐" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="腹泻" prop="preoperative_neoadjuvant_chemotherapy_diarrhoea">
-				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_diarrhoea" placeholder="腹泻" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_diarrhoea" placeholder="腹泻" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="便秘" prop="preoperative_neoadjuvant_chemotherapy_astriction">
-				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_astriction" placeholder="便秘" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_astriction" placeholder="便秘" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="心脏毒性" prop="preoperative_neoadjuvant_chemotherapy_heart">
-				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_heart" placeholder="心脏毒性" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_heart" placeholder="心脏毒性" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="过敏反应" prop="preoperative_neoadjuvant_chemotherapy_allergy">
-				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_allergy" placeholder="过敏反应" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_allergy" placeholder="过敏反应" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="手足皮肤反应" prop="preoperative_neoadjuvant_chemotherapy_skin">
-				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_skin" placeholder="手足皮肤反应" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_skin" placeholder="手足皮肤反应" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="感觉神经病" prop="preoperative_neoadjuvant_chemotherapy_nerve">
-				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_nerve" placeholder="感觉神经病" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_nerve" placeholder="感觉神经病" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="其他" prop="preoperative_neoadjuvant_chemotherapy_other">
-				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_other" placeholder="其他" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_neoadjuvant_chemotherapy_other" placeholder="其他" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">4.临床疗效评估</p>
@@ -435,7 +467,8 @@
 			</el-form-item>
 			<p style="color: #409eff;">3.剂量</p>
 			<el-form-item label="剂量(Gy)" prop="preoperative_neoadjuvant_radiotherapy_dose">
-				<el-input v-model="Form.preoperative_neoadjuvant_radiotherapy_dose" placeholder="剂量(Gy)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_neoadjuvant_radiotherapy_dose" placeholder="剂量(Gy)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">4.同步化疗方案</p>
@@ -451,12 +484,12 @@
 			</el-form-item>
 			<p style="color: #409eff">5.时间</p>
 			<el-form-item label="开始时间" prop="preoperative_neoadjuvant_radiotherapy_begin">
-				<el-date-picker v-model="Form.preoperative_neoadjuvant_radiotherapy_begin" type="datetime" :default-value="new Date()"
+				<el-date-picker v-model="Form.preoperative_neoadjuvant_radiotherapy_begin" type="datetime"
 					placeholder="请输入开始时间">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="结束时间" prop="preoperative_neoadjuvant_radiotherapy_end">
-				<el-date-picker v-model="Form.preoperative_neoadjuvant_radiotherapy_end" type="datetime" :default-value="new Date()"
+				<el-date-picker v-model="Form.preoperative_neoadjuvant_radiotherapy_end" type="datetime"
 					placeholder="请输入结束时间">
 				</el-date-picker>
 			</el-form-item>
@@ -594,7 +627,8 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="评分ASA" prop="preoperative_assessment_intestinal_stenosis_asa">
-				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_asa" placeholder="评分ASA" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_asa" placeholder="评分ASA" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">8.新辅助治疗</p>
@@ -618,52 +652,64 @@
 			</el-form-item>
 			<p style="color: #409eff;">10.出诊时最主要化验指标</p>
 			<el-form-item label="WBC(*109/L)" prop="preoperative_assessment_intestinal_stenosis_test_wbc">
-				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test_wbc" placeholder="WBC(*109/L)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test_wbc" placeholder="WBC(*109/L)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="Hb(g/L)" prop="preoperative_assessment_intestinal_stenosis_test_hb">
-				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test_hb" placeholder="Hb(g/L)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test_hb" placeholder="Hb(g/L)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="ALB(g/L)" prop="preoperative_assessment_intestinal_stenosis_test_alb">
-				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test_alb" placeholder="ALB(g/L)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test_alb" placeholder="ALB(g/L)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="CEA(umol/L)" prop="preoperative_assessment_intestinal_stenosis_test_cea">
-				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test_cea" placeholder="CEA(umol/L)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test_cea" placeholder="CEA(umol/L)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="ALT" prop="preoperative_assessment_intestinal_stenosis_test_alt">
-				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test_alt" placeholder="ALT" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test_alt" placeholder="ALT"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="TB" prop="preoperative_assessment_intestinal_stenosis_test_tb">
-				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test_tb" placeholder="TB" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test_tb" placeholder="TB" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">11.放化疗后主要化验指标</p>
 			<el-form-item label="WBC(*109/L)" prop="preoperative_assessment_intestinal_stenosis_test1_wbc">
-				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test1_wbc" placeholder="WBC(*109/L)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test1_wbc" placeholder="WBC(*109/L)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="Hb(g/L)" prop="preoperative_assessment_intestinal_stenosis_test1_hb">
-				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test1_hb" placeholder="Hb(g/L)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test1_hb" placeholder="Hb(g/L)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="ALB(g/L)" prop="preoperative_assessment_intestinal_stenosis_test1_alb">
-				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test1_alb" placeholder="ALB(g/L)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test1_alb" placeholder="ALB(g/L)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="CEA(umol/L)" prop="preoperative_assessment_intestinal_stenosis_test1_cea">
-				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test1_cea" placeholder="CEA(umol/L)" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test1_cea" placeholder="CEA(umol/L)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="ALT" prop="preoperative_assessment_intestinal_stenosis_test1_alt">
-				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test1_alt" placeholder="ALT" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test1_alt" placeholder="ALT"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="TB" prop="preoperative_assessment_intestinal_stenosis_test1_tb">
-				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test1_tb" placeholder="TB" :rows="2" type="text">
+				<el-input v-model="Form.preoperative_assessment_intestinal_stenosis_test1_tb" placeholder="TB" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">12.癌家族史</p>
@@ -721,11 +767,13 @@
 			</el-form-item>
 			<p style="color: #409eff;">3.原发病灶</p>
 			<el-form-item label="指检-距肛门(cm)" prop="intraoperative_primary_lesion_anus">
-				<el-input v-model="Form.intraoperative_primary_lesion_anus" placeholder="指检-距肛门(cm)" :rows="2" type="text">
+				<el-input v-model="Form.intraoperative_primary_lesion_anus" placeholder="指检-距肛门(cm)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="肠镜-距肛门(cm)" prop="intraoperative_primary_lesion_anus1">
-				<el-input v-model="Form.intraoperative_primary_lesion_anus1" placeholder="肠镜-距肛门(cm)" :rows="2" type="text">
+				<el-input v-model="Form.intraoperative_primary_lesion_anus1" placeholder="肠镜-距肛门(cm)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">4.位置</p>
@@ -795,7 +843,8 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="受侵组织器官情况" prop="intraoperative_invaded_tissues_and_organ_situation">
-				<el-input v-model="Form.intraoperative_invaded_tissues_and_organ_situation" placeholder="受侵组织器官情况" :rows="2" type="text">
+				<el-input v-model="Form.intraoperative_invaded_tissues_and_organ_situation" placeholder="受侵组织器官情况"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">12.远处转移</p>
@@ -906,7 +955,8 @@
 			</el-form-item>
 			<p style="color: #409eff;">24.吻合口距肛门(cm)</p>
 			<el-form-item label="吻合口距肛门(cm)" prop="intraoperative_anastomotic_distance">
-				<el-input v-model="Form.intraoperative_anastomotic_distance" placeholder="吻合口距肛门(cm)" :rows="2" type="text">
+				<el-input v-model="Form.intraoperative_anastomotic_distance" placeholder="吻合口距肛门(cm)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">25.放置肛管</p>
@@ -980,27 +1030,33 @@
 				</el-input>
 			</el-form-item>
 			<el-form-item label="离体前远切缘(cm)" prop="intraoperative_distal_incisor_margin_from_anterior">
-				<el-input v-model="Form.intraoperative_distal_incisor_margin_from_anterior" placeholder="离体前远切缘(cm)" :rows="2" type="text">
+				<el-input v-model="Form.intraoperative_distal_incisor_margin_from_anterior" placeholder="离体前远切缘(cm)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="离体前近切缘(cm)" prop="intraoperative_proximal_to_the_anterior_margin_of_the_body">
-				<el-input v-model="Form.intraoperative_proximal_to_the_anterior_margin_of_the_body" placeholder="离体前近切缘(cm)" :rows="2" type="text">
+				<el-input v-model="Form.intraoperative_proximal_to_the_anterior_margin_of_the_body"
+					placeholder="离体前近切缘(cm)" :rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="淋巴结清出总数(枚)" prop="intraoperative_lymph_node_clear_out_num">
-				<el-input v-model="Form.intraoperative_lymph_node_clear_out_num" placeholder="淋巴结清出总数(枚)" :rows="2" type="text">
+				<el-input v-model="Form.intraoperative_lymph_node_clear_out_num" placeholder="淋巴结清出总数(枚)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="距肿瘤10cm以内LN(枚)" prop="intraoperative_ln_within_10cm_of_the_tumor">
-				<el-input v-model="Form.intraoperative_ln_within_10cm_of_the_tumor" placeholder="距肿瘤10cm以内LN(枚)" :rows="2" type="text">
+				<el-input v-model="Form.intraoperative_ln_within_10cm_of_the_tumor" placeholder="距肿瘤10cm以内LN(枚)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="距肿瘤10-15cmLN(枚)" prop="intraoperative_ln_within_10_15cm_of_the_tumor">
-				<el-input v-model="Form.intraoperative_ln_within_10_15cm_of_the_tumor" placeholder="距肿瘤10-15cmLN(枚)" :rows="2" type="text">
+				<el-input v-model="Form.intraoperative_ln_within_10_15cm_of_the_tumor" placeholder="距肿瘤10-15cmLN(枚)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="15cm以上LN(枚)" prop="intraoperative_ln_within_above_15cm_of_the_tumor">
-				<el-input v-model="Form.intraoperative_ln_within_above_15cm_of_the_tumor" placeholder="15cm以上LN(枚)" :rows="2" type="text">
+				<el-input v-model="Form.intraoperative_ln_within_above_15cm_of_the_tumor" placeholder="15cm以上LN(枚)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="中央组LN(枚)" prop="intraoperative_central_group_ln">
@@ -1081,7 +1137,8 @@
 			</el-form-item>
 			<p style="color: #409eff;">37.切口长度min</p>
 			<el-form-item label="切口长度min" prop="intraoperative_length_of_the_incision">
-				<el-input v-model="Form.intraoperative_length_of_the_incision" placeholder="切口长度min" :rows="2" type="text">
+				<el-input v-model="Form.intraoperative_length_of_the_incision" placeholder="切口长度min" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">38.术中出血量ml</p>
@@ -1111,7 +1168,8 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="量(ml)" prop="intraoperative_blood_transfusion_volume">
-				<el-input v-model="Form.intraoperative_blood_transfusion_volume" placeholder="量(ml)" :rows="2" type="text">
+				<el-input v-model="Form.intraoperative_blood_transfusion_volume" placeholder="量(ml)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">40.术中腹腔化疗</p>
@@ -1122,11 +1180,13 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="药物名称" prop="intraoperative_intraperitoneal_chemotherapy_drug_name">
-				<el-input v-model="Form.intraoperative_intraperitoneal_chemotherapy_drug_name" placeholder="药物名称" :rows="2" type="text">
+				<el-input v-model="Form.intraoperative_intraperitoneal_chemotherapy_drug_name" placeholder="药物名称"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="用药剂量" prop="intraoperative_intraperitoneal_chemotherapy_dose">
-				<el-input v-model="Form.intraoperative_intraperitoneal_chemotherapy_dose" placeholder="用药剂量" :rows="2" type="text">
+				<el-input v-model="Form.intraoperative_intraperitoneal_chemotherapy_dose" placeholder="用药剂量" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">41.术中并发症</p>
@@ -1164,7 +1224,8 @@
 				</el-input>
 			</el-form-item>
 			<el-form-item label="距初手术(月)" prop="liver_surgery_diagnosis_from_first_surgery">
-				<el-input v-model="Form.liver_surgery_diagnosis_from_first_surgery" placeholder="距初手术(月)" :rows="2" type="text">
+				<el-input v-model="Form.liver_surgery_diagnosis_from_first_surgery" placeholder="距初手术(月)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="距辅助化疗(月)" prop="liver_surgery_diagnosis_from_neo">
@@ -1217,7 +1278,8 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="吲哚氰绿实验(%)" prop="liver_surgery_indole_cyanide_green_test">
-				<el-input v-model="Form.liver_surgery_indole_cyanide_green_test" placeholder="吲哚氰绿实验(%)" :rows="2" type="text">
+				<el-input v-model="Form.liver_surgery_indole_cyanide_green_test" placeholder="吲哚氰绿实验(%)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">9.肝脏背景</p>
@@ -1244,7 +1306,8 @@
 				</el-input>
 			</el-form-item>
 			<el-form-item label="最大直径和大于等于1cm者(mm)" prop="liver_surgery_metastaticl_max_and_1_cm">
-				<el-input v-model="Form.liver_surgery_metastaticl_max_and_1_cm" placeholder="最大直径和大于等于1cm者(mm)" :rows="2" type="text">
+				<el-input v-model="Form.liver_surgery_metastaticl_max_and_1_cm" placeholder="最大直径和大于等于1cm者(mm)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">11.病灶部位</p>
@@ -1299,11 +1362,13 @@
 				</el-input>
 			</el-form-item>
 			<el-form-item label="切除病灶最大直径no4(枚)" prop="liver_surgery_removal_lesion_max_diameter">
-				<el-input v-model="Form.liver_surgery_removal_lesion_max_diameter" placeholder="切除病灶最大直径no4(枚)" :rows="2" type="text">
+				<el-input v-model="Form.liver_surgery_removal_lesion_max_diameter" placeholder="切除病灶最大直径no4(枚)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="切除病灶直径和>=cmno5(枚)" prop="liver_surgery_removal_lesion_over_cmno5">
-				<el-input v-model="Form.liver_surgery_removal_lesion_over_cmno5" placeholder="切除病灶直径和>=cmno5(枚)" :rows="2" type="text">
+				<el-input v-model="Form.liver_surgery_removal_lesion_over_cmno5" placeholder="切除病灶直径和>=cmno5(枚)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="遗漏病灶(枚)" prop="liver_surgery_missing_lesion">
@@ -1371,7 +1436,8 @@
 			</el-form-item>
 			<p style="color: #409eff;">8.呼吸机支持时间</p>
 			<el-form-item label="呼吸机支持时间(h)" prop="postoperative_ventilator_support_time_hour">
-				<el-input v-model="Form.postoperative_ventilator_support_time_hour" placeholder="呼吸机支持时间(h)" :rows="2" type="text">
+				<el-input v-model="Form.postoperative_ventilator_support_time_hour" placeholder="呼吸机支持时间(h)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">9.吸氧时间</p>
@@ -1391,7 +1457,8 @@
 			</el-form-item>
 			<p style="color: #409eff;">12.并发症具体描述</p>
 			<el-form-item label="并发症具体描述" prop="postoperative_complication_describe">
-				<el-input v-model="Form.postoperative_complication_describe" placeholder="并发症具体描述" :rows="2" type="textarea">
+				<el-input v-model="Form.postoperative_complication_describe" placeholder="并发症具体描述" :rows="2"
+					type="textarea">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">13.术后并发症</p>
@@ -1447,7 +1514,8 @@
 			</el-form-item>
 			<p style="color: #409eff;">18.出院后发生的并发症</p>
 			<el-form-item label="出院后发生的并发症" prop="postoperative_out_hospital_complication">
-				<el-input v-model="Form.postoperative_out_hospital_complication" placeholder="出院后发生的并发症" :rows="2" type="textarea">
+				<el-input v-model="Form.postoperative_out_hospital_complication" placeholder="出院后发生的并发症" :rows="2"
+					type="textarea">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">19.是否再次手术</p>
@@ -1459,7 +1527,8 @@
 			</el-form-item>
 			<p style="color: #409eff;">20.再手术原因</p>
 			<el-form-item label="再手术原因" prop="postoperative_surgery_again_reason">
-				<el-input v-model="Form.postoperative_surgery_again_reason" placeholder="再手术原因" :rows="2" type="textarea">
+				<el-input v-model="Form.postoperative_surgery_again_reason" placeholder="再手术原因" :rows="2"
+					type="textarea">
 				</el-input>
 			</el-form-item>
 			<div><strong>病理报告</strong></div>
@@ -1484,7 +1553,8 @@
 			</el-form-item>
 			<p style="color: #409eff;">3.病理肿瘤大小</p>
 			<el-form-item label="病理肿瘤大小(x*x*x cm)" prop="pathological_report_tumor_size">
-				<el-input v-model="Form.pathological_report_tumor_size" placeholder="病理肿瘤大小(x*x*x cm)" :rows="2" type="text">
+				<el-input v-model="Form.pathological_report_tumor_size" placeholder="病理肿瘤大小(x*x*x cm)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">4.最大径</p>
@@ -1515,12 +1585,14 @@
 			</el-form-item>
 			<p style="color: #409eff;">7.pT3肿瘤侵出肌层距离</p>
 			<el-form-item label="pT3肿瘤侵出肌层距离(mm)" prop="pathological_report_pt3_distance">
-				<el-input v-model="Form.pathological_report_pt3_distance" placeholder="pT3肿瘤侵出肌层距离(mm)" :rows="2" type="text">
+				<el-input v-model="Form.pathological_report_pt3_distance" placeholder="pT3肿瘤侵出肌层距离(mm)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">8.距环周切缘</p>
 			<el-form-item label="距环周切缘(mm)" prop="pathological_report_circumferential_cut_edge_distance">
-				<el-input v-model="Form.pathological_report_circumferential_cut_edge_distance" placeholder="距环周切缘(mm)" :rows="2" type="text">
+				<el-input v-model="Form.pathological_report_circumferential_cut_edge_distance" placeholder="距环周切缘(mm)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">9.新辅助治疗的病理疗效</p>
@@ -1538,40 +1610,49 @@
 				</el-input>
 			</el-form-item>
 			<el-form-item label="距肿瘤小于10cm检测LN(枚)" prop="pathological_report_check_less_10_ln">
-				<el-input v-model="Form.pathological_report_check_less_10_ln" placeholder="距肿瘤小于10cm检测LN(枚)" :rows="2" type="text">
+				<el-input v-model="Form.pathological_report_check_less_10_ln" placeholder="距肿瘤小于10cm检测LN(枚)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="距肿瘤小于10-15cm检测LN(枚)" prop="pathological_report_check_less_10_15_ln">
-				<el-input v-model="Form.pathological_report_check_less_10_15_ln" placeholder="距肿瘤小于10-15cm检测LN(枚)" :rows="2" type="text">
+				<el-input v-model="Form.pathological_report_check_less_10_15_ln" placeholder="距肿瘤小于10-15cm检测LN(枚)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="大于15cm检测LN(枚)" prop="pathological_report_check_more_15_ln">
-				<el-input v-model="Form.pathological_report_check_more_15_ln" placeholder="大于15cm检测LN(枚)" :rows="2" type="text">
+				<el-input v-model="Form.pathological_report_check_more_15_ln" placeholder="大于15cm检测LN(枚)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="中央组检测LN(枚)" prop="pathological_report_central_group_test_check_ln">
-				<el-input v-model="Form.pathological_report_central_group_test_check_ln" placeholder="中央组检测LN(枚)" :rows="2" type="text">
+				<el-input v-model="Form.pathological_report_central_group_test_check_ln" placeholder="中央组检测LN(枚)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">11.病检阳性</p>
 			<el-form-item label="病检阳性LN(枚)" prop="pathological_report_check_positive_ln">
-				<el-input v-model="Form.pathological_report_check_positive_ln" placeholder="病检阳性LN(枚)" :rows="2" type="text">
+				<el-input v-model="Form.pathological_report_check_positive_ln" placeholder="病检阳性LN(枚)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="距肿瘤小于10cm阳性LN(枚)" prop="pathological_report_check_positive_less_10_ln">
-				<el-input v-model="Form.pathological_report_check_positive_less_10_ln" placeholder="距肿瘤小于10cm阳性LN(枚)" :rows="2" type="text">
+				<el-input v-model="Form.pathological_report_check_positive_less_10_ln" placeholder="距肿瘤小于10cm阳性LN(枚)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="距肿瘤小于10-15cm阳性LN(枚)" prop="pathological_report_check_positive_less_10_15_ln">
-				<el-input v-model="Form.pathological_report_check_positive_less_10_15_ln" placeholder="距肿瘤小于10-15cm阳性LN(枚)" :rows="2" type="text">
+				<el-input v-model="Form.pathological_report_check_positive_less_10_15_ln"
+					placeholder="距肿瘤小于10-15cm阳性LN(枚)" :rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="大于15cm阳性LN(枚)" prop="pathological_report_check_positive_more_15_ln">
-				<el-input v-model="Form.pathological_report_check_positive_more_15_ln" placeholder="大于15cm阳性LN(枚)" :rows="2" type="text">
+				<el-input v-model="Form.pathological_report_check_positive_more_15_ln" placeholder="大于15cm阳性LN(枚)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="中央组阳性LN(枚)" prop="pathological_report_central_group_test_check_positive_ln">
-				<el-input v-model="Form.pathological_report_central_group_test_check_positive_ln" placeholder="中央组阳性LN(枚)" :rows="2" type="text">
+				<el-input v-model="Form.pathological_report_central_group_test_check_positive_ln"
+					placeholder="中央组阳性LN(枚)" :rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">12.分期</p>
@@ -1692,12 +1773,14 @@
 			</el-form-item>
 			<p style="color: #409eff;">25.肿瘤侵出肌层</p>
 			<el-form-item label="肿瘤侵出肌层(mm)" prop="pathological_report_tumor_invade_muscular_layer">
-				<el-input v-model="Form.pathological_report_tumor_invade_muscular_layer" placeholder="肿瘤侵出肌层(mm)" :rows="2" type="text">
+				<el-input v-model="Form.pathological_report_tumor_invade_muscular_layer" placeholder="肿瘤侵出肌层(mm)"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">26.肿瘤距切缘最近</p>
 			<el-form-item label="肿瘤距切缘最近(mm)" prop="pathological_report_tumor_cut_edge_near">
-				<el-input v-model="Form.pathological_report_tumor_cut_edge_near" placeholder="肿瘤距切缘最近(mm)" :rows="2" type="text">
+				<el-input v-model="Form.pathological_report_tumor_cut_edge_near" placeholder="肿瘤距切缘最近(mm)" :rows="2"
+					type="text">
 				</el-input>
 			</el-form-item>
 			<p style="color: #409eff;">27.pT3肿瘤累及系膜深度</p>
@@ -1711,7 +1794,8 @@
 			</el-form-item>
 			<p style="color: #409eff;">28.术后肝脏病理评分</p>
 			<el-form-item label="术后肝脏病理评分Ishak" prop="pathological_report_liver_pathological_score">
-				<el-input v-model="Form.pathological_report_liver_pathological_score" placeholder="术后肝脏病理评分Ishak" :rows="2" type="text">
+				<el-input v-model="Form.pathological_report_liver_pathological_score" placeholder="术后肝脏病理评分Ishak"
+					:rows="2" type="text">
 				</el-input>
 			</el-form-item>
 			<el-form-item label="评分DILI-PSS" prop="pathological_report_dili_pss">
@@ -1783,8 +1867,7 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="随访时间" prop="follow_time">
-				<el-date-picker v-model="Form.follow_time" type="date" :default-value="new Date()"
-					placeholder="随访时间">
+				<el-date-picker v-model="Form.follow_time" type="date" placeholder="随访时间">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="随访内容" prop="follow_content">
@@ -2170,7 +2253,12 @@
 						required: true,
 						message: '联系电话必须',
 						trigger: ['change'],
-					}]
+					}],
+					admission_time: [{
+						required: true,
+						message: '入院时间必须',
+						trigger: ['change'],
+					}],
 				},
 			})
 
@@ -2204,205 +2292,363 @@
 							// postoperation_hospital_days: res.data.postoperation_hospital_days,
 							// 术前
 							// 术前肠镜
-							preoperative_colonoscopy_from_the_anus_a1: res.data.preoperative_colonoscopy_from_the_anus_a1,
-							preoperative_colonoscopy_infringement_of_lumen_a2: res.data.preoperative_colonoscopy_infringement_of_lumen_a2,
-							preoperative_colonoscopy_whether_the_endoscope_passes_a3: res.data.preoperative_colonoscopy_whether_the_endoscope_passes_a3,
-							preoperative_colonoscopy_the_biopsy_results_a4: res.data.preoperative_colonoscopy_the_biopsy_results_a4,
+							preoperative_colonoscopy_from_the_anus_a1: res.data
+								.preoperative_colonoscopy_from_the_anus_a1,
+							preoperative_colonoscopy_infringement_of_lumen_a2: res.data
+								.preoperative_colonoscopy_infringement_of_lumen_a2,
+							preoperative_colonoscopy_whether_the_endoscope_passes_a3: res.data
+								.preoperative_colonoscopy_whether_the_endoscope_passes_a3,
+							preoperative_colonoscopy_the_biopsy_results_a4: res.data
+								.preoperative_colonoscopy_the_biopsy_results_a4,
 							// 术前分期
 							preoperative_staging_ct_mri_t: res.data.preoperative_staging_ct_mri_t,
-							preoperative_staging_ct_mri_leaching_b1: res.data.preoperative_staging_ct_mri_leaching_b1,
-							preoperative_staging_ct_mri_the_deepest_point_is_at_b2: String(res.data.preoperative_staging_ct_mri_the_deepest_point_is_at_b2),
-							preoperative_staging_ct_mri_intestinal_separated_edge_mesangium: res.data.preoperative_staging_ct_mri_intestinal_separated_edge_mesangium,
-							preoperative_staging_ct_mri_t_from_outer_edge_mesangium_b4: res.data.preoperative_staging_ct_mri_t_from_outer_edge_mesangium_b4,
+							preoperative_staging_ct_mri_leaching_b1: res.data
+								.preoperative_staging_ct_mri_leaching_b1,
+							preoperative_staging_ct_mri_the_deepest_point_is_at_b2: String(res.data
+								.preoperative_staging_ct_mri_the_deepest_point_is_at_b2),
+							preoperative_staging_ct_mri_intestinal_separated_edge_mesangium: res.data
+								.preoperative_staging_ct_mri_intestinal_separated_edge_mesangium,
+							preoperative_staging_ct_mri_t_from_outer_edge_mesangium_b4: res.data
+								.preoperative_staging_ct_mri_t_from_outer_edge_mesangium_b4,
 							preoperative_staging_ct_mri_n: res.data.preoperative_staging_ct_mri_n,
-							preoperative_staging_ct_mri_the_largest_diameter_dmax: res.data.preoperative_staging_ct_mri_the_largest_diameter_dmax,
-							preoperative_staging_ct_mri_number_of_lymph_nodes_no: res.data.preoperative_staging_ct_mri_number_of_lymph_nodes_no,
+							preoperative_staging_ct_mri_the_largest_diameter_dmax: res.data
+								.preoperative_staging_ct_mri_the_largest_diameter_dmax,
+							preoperative_staging_ct_mri_number_of_lymph_nodes_no: res.data
+								.preoperative_staging_ct_mri_number_of_lymph_nodes_no,
 							preoperative_staging_ct_mri_m: res.data.preoperative_staging_ct_mri_m,
-							preoperative_staging_ct_mri_the_largest_diameter_dmax2: res.data.preoperative_staging_ct_mri_the_largest_diameter_dmax2,
-							preoperative_staging_ct_mri_t3_mesenterin_and_deep: String(res.data.preoperative_staging_ct_mri_t3_mesenterin_and_deep),
-							preoperative_staging_ultrasonic_t: res.data.preoperative_staging_ultrasonic_t,
-							preoperative_staging_ultrasonic_leaching_ultramundane: res.data.preoperative_staging_ultrasonic_leaching_ultramundane,
-							preoperative_staging_ultrasonic_n: res.data.preoperative_staging_ultrasonic_n,
-							preoperative_staging_ultrasonic_the_largest_diameter_d1: res.data.preoperative_staging_ultrasonic_the_largest_diameter_d1,
-							preoperative_staging_ultrasonic_m: res.data.preoperative_staging_ultrasonic_m,
-							preoperative_staging_ultrasonic_the_largest_diameter_d2: res.data.preoperative_staging_ultrasonic_the_largest_diameter_d2,
-							preoperative_staging_ultrasonic_pet_ct: res.data.preoperative_staging_ultrasonic_pet_ct,
+							preoperative_staging_ct_mri_the_largest_diameter_dmax2: res.data
+								.preoperative_staging_ct_mri_the_largest_diameter_dmax2,
+							preoperative_staging_ct_mri_t3_mesenterin_and_deep: String(res.data
+								.preoperative_staging_ct_mri_t3_mesenterin_and_deep),
+							preoperative_staging_ultrasonic_t: res.data
+								.preoperative_staging_ultrasonic_t,
+							preoperative_staging_ultrasonic_leaching_ultramundane: res.data
+								.preoperative_staging_ultrasonic_leaching_ultramundane,
+							preoperative_staging_ultrasonic_n: res.data
+								.preoperative_staging_ultrasonic_n,
+							preoperative_staging_ultrasonic_the_largest_diameter_d1: res.data
+								.preoperative_staging_ultrasonic_the_largest_diameter_d1,
+							preoperative_staging_ultrasonic_m: res.data
+								.preoperative_staging_ultrasonic_m,
+							preoperative_staging_ultrasonic_the_largest_diameter_d2: res.data
+								.preoperative_staging_ultrasonic_the_largest_diameter_d2,
+							preoperative_staging_ultrasonic_pet_ct: res.data
+								.preoperative_staging_ultrasonic_pet_ct,
 							preoperative_staging_clinical_t: res.data.preoperative_staging_clinical_t,
 							preoperative_staging_clinical_n: res.data.preoperative_staging_clinical_n,
-							preoperative_staging_clinical_m: String(res.data.preoperative_staging_clinical_m),
-							preoperative_staging_intestinal_tract_other: String(res.data.preoperative_staging_intestinal_tract_other),
-							preoperative_staging_intestinal_tract_location: String(res.data.preoperative_staging_intestinal_tract_location),
-							preoperative_staging_intestinal_tract_staging_t: String(res.data.preoperative_staging_intestinal_tract_staging_t),
-							preoperative_staging_intestinal_tract_n: res.data.preoperative_staging_intestinal_tract_n,
-							preoperative_staging_intestinal_tract_unite: String(res.data.preoperative_staging_intestinal_tract_unite),
-							preoperative_staging_imaging_circumferential_margin_situation: String(res.data.preoperative_staging_imaging_circumferential_margin_situation),
-							preoperative_staging_imaging_circumferential_margin_mdt_discuss: String(res.data.preoperative_staging_imaging_circumferential_margin_mdt_discuss),
-							preoperative_staging_resectable_primary_lesion: String(res.data.preoperative_staging_resectable_primary_lesion),
-							preoperative_staging_resectable_transition_lesion: String(res.data.preoperative_staging_resectable_transition_lesion),
-							preoperative_staging_transition_type: String(res.data.preoperative_staging_transition_type),
-							preoperative_staging_number_of_liver_metastases: res.data.preoperative_staging_number_of_liver_metastases,
-							preoperative_staging_number_of_liver_metastases_dg1: res.data.preoperative_staging_number_of_liver_metastases_dg1,
-							preoperative_staging_number_of_liver_metastases_dg2: res.data.preoperative_staging_number_of_liver_metastases_dg2,
-							preoperative_staging_number_of_liver_metastases_location1: String(res.data.preoperative_staging_number_of_liver_metastases_location1),
-							preoperative_staging_number_of_lung_metastases: res.data.preoperative_staging_number_of_lung_metastases,
-							preoperative_staging_number_of_lung_metastases_df1: res.data.preoperative_staging_number_of_lung_metastases_df1,
-							preoperative_staging_number_of_lung_metastases_df2: res.data.preoperative_staging_number_of_lung_metastases_df2,
-							preoperative_staging_number_of_lung_metastases_location2: String(res.data.preoperative_staging_number_of_lung_metastases_location2),
-							preoperative_staging_mdt_metastase_suggest1: String(res.data.preoperative_staging_mdt_metastase_suggest1),
-							preoperative_staging_mdt_primary_suggest2: String(res.data.preoperative_staging_mdt_primary_suggest2),
+							preoperative_staging_clinical_m: String(res.data
+								.preoperative_staging_clinical_m),
+							preoperative_staging_intestinal_tract_other: String(res.data
+								.preoperative_staging_intestinal_tract_other),
+							preoperative_staging_intestinal_tract_location: String(res.data
+								.preoperative_staging_intestinal_tract_location),
+							preoperative_staging_intestinal_tract_staging_t: String(res.data
+								.preoperative_staging_intestinal_tract_staging_t),
+							preoperative_staging_intestinal_tract_n: res.data
+								.preoperative_staging_intestinal_tract_n,
+							preoperative_staging_intestinal_tract_unite: String(res.data
+								.preoperative_staging_intestinal_tract_unite),
+							preoperative_staging_imaging_circumferential_margin_situation: String(res
+								.data.preoperative_staging_imaging_circumferential_margin_situation
+								),
+							preoperative_staging_imaging_circumferential_margin_mdt_discuss: String(res
+								.data
+								.preoperative_staging_imaging_circumferential_margin_mdt_discuss),
+							preoperative_staging_resectable_primary_lesion: String(res.data
+								.preoperative_staging_resectable_primary_lesion),
+							preoperative_staging_resectable_transition_lesion: String(res.data
+								.preoperative_staging_resectable_transition_lesion),
+							preoperative_staging_transition_type: String(res.data
+								.preoperative_staging_transition_type),
+							preoperative_staging_number_of_liver_metastases: res.data
+								.preoperative_staging_number_of_liver_metastases,
+							preoperative_staging_number_of_liver_metastases_dg1: res.data
+								.preoperative_staging_number_of_liver_metastases_dg1,
+							preoperative_staging_number_of_liver_metastases_dg2: res.data
+								.preoperative_staging_number_of_liver_metastases_dg2,
+							preoperative_staging_number_of_liver_metastases_location1: String(res.data
+								.preoperative_staging_number_of_liver_metastases_location1),
+							preoperative_staging_number_of_lung_metastases: res.data
+								.preoperative_staging_number_of_lung_metastases,
+							preoperative_staging_number_of_lung_metastases_df1: res.data
+								.preoperative_staging_number_of_lung_metastases_df1,
+							preoperative_staging_number_of_lung_metastases_df2: res.data
+								.preoperative_staging_number_of_lung_metastases_df2,
+							preoperative_staging_number_of_lung_metastases_location2: String(res.data
+								.preoperative_staging_number_of_lung_metastases_location2),
+							preoperative_staging_mdt_metastase_suggest1: String(res.data
+								.preoperative_staging_mdt_metastase_suggest1),
+							preoperative_staging_mdt_primary_suggest2: String(res.data
+								.preoperative_staging_mdt_primary_suggest2),
 							// 新辅助化疗
-							preoperative_neoadjuvant_chemotherapy_plan_project: String(res.data.preoperative_neoadjuvant_chemotherapy_plan_project),
-							preoperative_neoadjuvant_chemotherapy_begin: res.data.preoperative_neoadjuvant_chemotherapy_begin,
-							preoperative_neoadjuvant_chemotherapy_end: res.data.preoperative_neoadjuvant_chemotherapy_end,
-							preoperative_neoadjuvant_chemotherapy_adverse_response_hb: res.data.preoperative_neoadjuvant_chemotherapy_adverse_response_hb,
-							preoperative_neoadjuvant_chemotherapy_adverse_response_wbc: res.data.preoperative_neoadjuvant_chemotherapy_adverse_response_wbc,
-							preoperative_neoadjuvant_chemotherapy_adverse_response_gra: res.data.preoperative_neoadjuvant_chemotherapy_adverse_response_gra,
-							preoperative_neoadjuvant_chemotherapy_adverse_response_plt: res.data.preoperative_neoadjuvant_chemotherapy_adverse_response_plt,
-							preoperative_neoadjuvant_chemotherapy_liver_function: res.data.preoperative_neoadjuvant_chemotherapy_liver_function,
-							preoperative_neoadjuvant_chemotherapy_kidney_function: res.data.preoperative_neoadjuvant_chemotherapy_kidney_function,
-							preoperative_neoadjuvant_chemotherapy_sickness: res.data.preoperative_neoadjuvant_chemotherapy_sickness,
-							preoperative_neoadjuvant_chemotherapy_diarrhoea: res.data.preoperative_neoadjuvant_chemotherapy_diarrhoea,
-							preoperative_neoadjuvant_chemotherapy_astriction: res.data.preoperative_neoadjuvant_chemotherapy_astriction,
-							preoperative_neoadjuvant_chemotherapy_heart: res.data.preoperative_neoadjuvant_chemotherapy_heart,
-							preoperative_neoadjuvant_chemotherapy_allergy: res.data.preoperative_neoadjuvant_chemotherapy_allergy,
-							preoperative_neoadjuvant_chemotherapy_skin: res.data.preoperative_neoadjuvant_chemotherapy_skin,
-							preoperative_neoadjuvant_chemotherapy_nerve: res.data.preoperative_neoadjuvant_chemotherapy_nerve,
-							preoperative_neoadjuvant_chemotherapy_other: res.data.preoperative_neoadjuvant_chemotherapy_other,
-							preoperative_neoadjuvant_chemotherapy_eva_clinical_efficacy: String(res.data.preoperative_neoadjuvant_chemotherapy_eva_clinical_efficacy),
-							preoperative_neoadjuvant_chemotherapy_eva_pathological_efficacy: String(res.data.preoperative_neoadjuvant_chemotherapy_eva_pathological_efficacy),
+							preoperative_neoadjuvant_chemotherapy_plan_project: String(res.data
+								.preoperative_neoadjuvant_chemotherapy_plan_project),
+							preoperative_neoadjuvant_chemotherapy_begin: res.data
+								.preoperative_neoadjuvant_chemotherapy_begin,
+							preoperative_neoadjuvant_chemotherapy_end: res.data
+								.preoperative_neoadjuvant_chemotherapy_end,
+							preoperative_neoadjuvant_chemotherapy_adverse_response_hb: res.data
+								.preoperative_neoadjuvant_chemotherapy_adverse_response_hb,
+							preoperative_neoadjuvant_chemotherapy_adverse_response_wbc: res.data
+								.preoperative_neoadjuvant_chemotherapy_adverse_response_wbc,
+							preoperative_neoadjuvant_chemotherapy_adverse_response_gra: res.data
+								.preoperative_neoadjuvant_chemotherapy_adverse_response_gra,
+							preoperative_neoadjuvant_chemotherapy_adverse_response_plt: res.data
+								.preoperative_neoadjuvant_chemotherapy_adverse_response_plt,
+							preoperative_neoadjuvant_chemotherapy_liver_function: res.data
+								.preoperative_neoadjuvant_chemotherapy_liver_function,
+							preoperative_neoadjuvant_chemotherapy_kidney_function: res.data
+								.preoperative_neoadjuvant_chemotherapy_kidney_function,
+							preoperative_neoadjuvant_chemotherapy_sickness: res.data
+								.preoperative_neoadjuvant_chemotherapy_sickness,
+							preoperative_neoadjuvant_chemotherapy_diarrhoea: res.data
+								.preoperative_neoadjuvant_chemotherapy_diarrhoea,
+							preoperative_neoadjuvant_chemotherapy_astriction: res.data
+								.preoperative_neoadjuvant_chemotherapy_astriction,
+							preoperative_neoadjuvant_chemotherapy_heart: res.data
+								.preoperative_neoadjuvant_chemotherapy_heart,
+							preoperative_neoadjuvant_chemotherapy_allergy: res.data
+								.preoperative_neoadjuvant_chemotherapy_allergy,
+							preoperative_neoadjuvant_chemotherapy_skin: res.data
+								.preoperative_neoadjuvant_chemotherapy_skin,
+							preoperative_neoadjuvant_chemotherapy_nerve: res.data
+								.preoperative_neoadjuvant_chemotherapy_nerve,
+							preoperative_neoadjuvant_chemotherapy_other: res.data
+								.preoperative_neoadjuvant_chemotherapy_other,
+							preoperative_neoadjuvant_chemotherapy_eva_clinical_efficacy: String(res
+								.data.preoperative_neoadjuvant_chemotherapy_eva_clinical_efficacy),
+							preoperative_neoadjuvant_chemotherapy_eva_pathological_efficacy: String(res
+								.data
+								.preoperative_neoadjuvant_chemotherapy_eva_pathological_efficacy),
 							// 新辅助放疗
-							preoperative_neoadjuvant_radiotherapy_dismember: String(res.data.preoperative_neoadjuvant_radiotherapy_dismember),
-							preoperative_neoadjuvant_radiotherapy_technology: String(res.data.preoperative_neoadjuvant_radiotherapy_technology),
-							preoperative_neoadjuvant_radiotherapy_dose: res.data.preoperative_neoadjuvant_radiotherapy_dose,
-							preoperative_neoadjuvant_radiotherapy_synchro: String(res.data.preoperative_neoadjuvant_radiotherapy_synchro),
-							preoperative_neoadjuvant_radiotherapy_begin: res.data.preoperative_neoadjuvant_radiotherapy_begin,
-							preoperative_neoadjuvant_radiotherapy_end: res.data.preoperative_neoadjuvant_radiotherapy_end,
-							preoperative_neoadjuvant_radiotherapy_metastatic_therapy_effect: String(res.data.preoperative_neoadjuvant_radiotherapy_metastatic_therapy_effect),
-							preoperative_neoadjuvant_radiotherapy_curative_primary_les_ass: String(res.data.preoperative_neoadjuvant_radiotherapy_curative_primary_les_ass),
-							preoperative_neoadjuvant_radiotherapy_primary_pathology_ass: String(res.data.preoperative_neoadjuvant_radiotherapy_primary_pathology_ass),
+							preoperative_neoadjuvant_radiotherapy_dismember: String(res.data
+								.preoperative_neoadjuvant_radiotherapy_dismember),
+							preoperative_neoadjuvant_radiotherapy_technology: String(res.data
+								.preoperative_neoadjuvant_radiotherapy_technology),
+							preoperative_neoadjuvant_radiotherapy_dose: res.data
+								.preoperative_neoadjuvant_radiotherapy_dose,
+							preoperative_neoadjuvant_radiotherapy_synchro: String(res.data
+								.preoperative_neoadjuvant_radiotherapy_synchro),
+							preoperative_neoadjuvant_radiotherapy_begin: res.data
+								.preoperative_neoadjuvant_radiotherapy_begin,
+							preoperative_neoadjuvant_radiotherapy_end: res.data
+								.preoperative_neoadjuvant_radiotherapy_end,
+							preoperative_neoadjuvant_radiotherapy_metastatic_therapy_effect: String(res
+								.data
+								.preoperative_neoadjuvant_radiotherapy_metastatic_therapy_effect),
+							preoperative_neoadjuvant_radiotherapy_curative_primary_les_ass: String(res
+								.data
+								.preoperative_neoadjuvant_radiotherapy_curative_primary_les_ass),
+							preoperative_neoadjuvant_radiotherapy_primary_pathology_ass: String(res
+								.data.preoperative_neoadjuvant_radiotherapy_primary_pathology_ass),
 							// 肠道狭窄状况评估
-							preoperative_assessment_intestinal_stenosis_exhaust: String(res.data.preoperative_assessment_intestinal_stenosis_exhaust),
-							preoperative_assessment_intestinal_stenosis_defecate: String(res.data.preoperative_assessment_intestinal_stenosis_defecate),
-							preoperative_assessment_intestinal_stenosis_distension: String(res.data.preoperative_assessment_intestinal_stenosis_distension),
-							preoperative_assessment_intestinal_stenosis_enteroscope: String(res.data.preoperative_assessment_intestinal_stenosis_enteroscope),
-							preoperative_assessment_intestinal_stenosis_shape: String(res.data.preoperative_assessment_intestinal_stenosis_shape),
-							preoperative_assessment_intestinal_stenosis_ct_proximal_bowel: String(res.data.preoperative_assessment_intestinal_stenosis_ct_proximal_bowel),
-							preoperative_assessment_intestinal_stenosis_ct_maximum_left: String(res.data.preoperative_assessment_intestinal_stenosis_ct_maximum_left),
-							preoperative_assessment_intestinal_stenosis_ct_x_imaging: String(res.data.preoperative_assessment_intestinal_stenosis_ct_x_imaging),
-							preoperative_assessment_intestinal_stenosis_imaging_smallest: String(res.data.preoperative_assessment_intestinal_stenosis_imaging_smallest),
-							preoperative_assessment_intestinal_stenosis_drugs_relieve: String(res.data.preoperative_assessment_intestinal_stenosis_drugs_relieve),
-							preoperative_assessment_intestinal_stenosis_juice: String(res.data.preoperative_assessment_intestinal_stenosis_juice),
-							preoperative_assessment_intestinal_stenosis_group: String(res.data.preoperative_assessment_intestinal_stenosis_group),
-							preoperative_assessment_intestinal_stenosis_asa: res.data.preoperative_assessment_intestinal_stenosis_asa,
-							preoperative_assessment_intestinal_stenosis_new_neoadjuvant: String(res.data.preoperative_assessment_intestinal_stenosis_new_neoadjuvant),
-							preoperative_assessment_intestinal_stenosis_autar: String(res.data.preoperative_assessment_intestinal_stenosis_autar),
-							preoperative_assessment_intestinal_stenosis_test_wbc: res.data.preoperative_assessment_intestinal_stenosis_test_wbc,
-							preoperative_assessment_intestinal_stenosis_test_hb: res.data.preoperative_assessment_intestinal_stenosis_test_hb,
-							preoperative_assessment_intestinal_stenosis_test_alb: res.data.preoperative_assessment_intestinal_stenosis_test_alb,
-							preoperative_assessment_intestinal_stenosis_test_cea: res.data.preoperative_assessment_intestinal_stenosis_test_cea,
-							preoperative_assessment_intestinal_stenosis_test_alt: res.data.preoperative_assessment_intestinal_stenosis_test_alt,
-							preoperative_assessment_intestinal_stenosis_test_tb: res.data.preoperative_assessment_intestinal_stenosis_test_tb,
-							preoperative_assessment_intestinal_stenosis_test1_wbc: res.data.preoperative_assessment_intestinal_stenosis_test1_wbc,
-							preoperative_assessment_intestinal_stenosis_test1_hb: res.data.preoperative_assessment_intestinal_stenosis_test1_hb,
-							preoperative_assessment_intestinal_stenosis_test1_alb: res.data.preoperative_assessment_intestinal_stenosis_test1_alb,
-							preoperative_assessment_intestinal_stenosis_test1_cea: res.data.preoperative_assessment_intestinal_stenosis_test1_cea,
-							preoperative_assessment_intestinal_stenosis_test1_alt: res.data.preoperative_assessment_intestinal_stenosis_test1_alt,
-							preoperative_assessment_intestinal_stenosis_test1_tb: res.data.preoperative_assessment_intestinal_stenosis_test1_tb,
-							preoperative_assessment_intestinal_stenosis_cancer_family: String(res.data.preoperative_assessment_intestinal_stenosis_cancer_family),
-							preoperative_assessment_intestinal_stenosis_manometry: String(res.data.preoperative_assessment_intestinal_stenosis_manometry),
-							preoperative_assessment_intestinal_stenosis_mdt_compliance: String(res.data.preoperative_assessment_intestinal_stenosis_mdt_compliance),
-							preoperative_assessment_intestinal_stenosis_uncompl_reason: String(res.data.preoperative_assessment_intestinal_stenosis_uncompl_reason),
+							preoperative_assessment_intestinal_stenosis_exhaust: String(res.data
+								.preoperative_assessment_intestinal_stenosis_exhaust),
+							preoperative_assessment_intestinal_stenosis_defecate: String(res.data
+								.preoperative_assessment_intestinal_stenosis_defecate),
+							preoperative_assessment_intestinal_stenosis_distension: String(res.data
+								.preoperative_assessment_intestinal_stenosis_distension),
+							preoperative_assessment_intestinal_stenosis_enteroscope: String(res.data
+								.preoperative_assessment_intestinal_stenosis_enteroscope),
+							preoperative_assessment_intestinal_stenosis_shape: String(res.data
+								.preoperative_assessment_intestinal_stenosis_shape),
+							preoperative_assessment_intestinal_stenosis_ct_proximal_bowel: String(res
+								.data.preoperative_assessment_intestinal_stenosis_ct_proximal_bowel
+								),
+							preoperative_assessment_intestinal_stenosis_ct_maximum_left: String(res
+								.data.preoperative_assessment_intestinal_stenosis_ct_maximum_left),
+							preoperative_assessment_intestinal_stenosis_ct_x_imaging: String(res.data
+								.preoperative_assessment_intestinal_stenosis_ct_x_imaging),
+							preoperative_assessment_intestinal_stenosis_imaging_smallest: String(res
+									.data.preoperative_assessment_intestinal_stenosis_imaging_smallest
+									),
+							preoperative_assessment_intestinal_stenosis_drugs_relieve: String(res.data
+								.preoperative_assessment_intestinal_stenosis_drugs_relieve),
+							preoperative_assessment_intestinal_stenosis_juice: String(res.data
+								.preoperative_assessment_intestinal_stenosis_juice),
+							preoperative_assessment_intestinal_stenosis_group: String(res.data
+								.preoperative_assessment_intestinal_stenosis_group),
+							preoperative_assessment_intestinal_stenosis_asa: res.data
+								.preoperative_assessment_intestinal_stenosis_asa,
+							preoperative_assessment_intestinal_stenosis_new_neoadjuvant: String(res
+								.data.preoperative_assessment_intestinal_stenosis_new_neoadjuvant),
+							preoperative_assessment_intestinal_stenosis_autar: String(res.data
+								.preoperative_assessment_intestinal_stenosis_autar),
+							preoperative_assessment_intestinal_stenosis_test_wbc: res.data
+								.preoperative_assessment_intestinal_stenosis_test_wbc,
+							preoperative_assessment_intestinal_stenosis_test_hb: res.data
+								.preoperative_assessment_intestinal_stenosis_test_hb,
+							preoperative_assessment_intestinal_stenosis_test_alb: res.data
+								.preoperative_assessment_intestinal_stenosis_test_alb,
+							preoperative_assessment_intestinal_stenosis_test_cea: res.data
+								.preoperative_assessment_intestinal_stenosis_test_cea,
+							preoperative_assessment_intestinal_stenosis_test_alt: res.data
+								.preoperative_assessment_intestinal_stenosis_test_alt,
+							preoperative_assessment_intestinal_stenosis_test_tb: res.data
+								.preoperative_assessment_intestinal_stenosis_test_tb,
+							preoperative_assessment_intestinal_stenosis_test1_wbc: res.data
+								.preoperative_assessment_intestinal_stenosis_test1_wbc,
+							preoperative_assessment_intestinal_stenosis_test1_hb: res.data
+								.preoperative_assessment_intestinal_stenosis_test1_hb,
+							preoperative_assessment_intestinal_stenosis_test1_alb: res.data
+								.preoperative_assessment_intestinal_stenosis_test1_alb,
+							preoperative_assessment_intestinal_stenosis_test1_cea: res.data
+								.preoperative_assessment_intestinal_stenosis_test1_cea,
+							preoperative_assessment_intestinal_stenosis_test1_alt: res.data
+								.preoperative_assessment_intestinal_stenosis_test1_alt,
+							preoperative_assessment_intestinal_stenosis_test1_tb: res.data
+								.preoperative_assessment_intestinal_stenosis_test1_tb,
+							preoperative_assessment_intestinal_stenosis_cancer_family: String(res.data
+								.preoperative_assessment_intestinal_stenosis_cancer_family),
+							preoperative_assessment_intestinal_stenosis_manometry: String(res.data
+								.preoperative_assessment_intestinal_stenosis_manometry),
+							preoperative_assessment_intestinal_stenosis_mdt_compliance: String(res.data
+								.preoperative_assessment_intestinal_stenosis_mdt_compliance),
+							preoperative_assessment_intestinal_stenosis_uncompl_reason: String(res.data
+								.preoperative_assessment_intestinal_stenosis_uncompl_reason),
 							// 术中
-							intraoperative_operation_type: String(res.data.intraoperative_operation_type),
-							intraoperative_colorectal_cancer_situation: String(res.data.intraoperative_colorectal_cancer_situation),
-							intraoperative_primary_lesion_anus: res.data.intraoperative_primary_lesion_anus,
-							intraoperative_primary_lesion_anus1: res.data.intraoperative_primary_lesion_anus1,
+							intraoperative_operation_type: String(res.data
+								.intraoperative_operation_type),
+							intraoperative_colorectal_cancer_situation: String(res.data
+								.intraoperative_colorectal_cancer_situation),
+							intraoperative_primary_lesion_anus: res.data
+								.intraoperative_primary_lesion_anus,
+							intraoperative_primary_lesion_anus1: res.data
+								.intraoperative_primary_lesion_anus1,
 							intraoperative_location: String(res.data.intraoperative_location),
-							intraoperative_tumor_infringe_loop: String(res.data.intraoperative_tumor_infringe_loop),
+							intraoperative_tumor_infringe_loop: String(res.data
+								.intraoperative_tumor_infringe_loop),
 							intraoperative_tumor_size: res.data.intraoperative_tumor_size,
 							intraoperative_antetheca: String(res.data.intraoperative_antetheca),
-							intraoperative_tumor_deepest: String(res.data.intraoperative_tumor_deepest),
-							intraoperative_classification: String(res.data.intraoperative_classification),
+							intraoperative_tumor_deepest: String(res.data
+								.intraoperative_tumor_deepest),
+							intraoperative_classification: String(res.data
+								.intraoperative_classification),
 							intraoperative_perforate: String(res.data.intraoperative_perforate),
-							intraoperative_circumference: String(res.data.intraoperative_circumference),
-							intraoperative_invaded_tissues_and_organ_situation: res.data.intraoperative_invaded_tissues_and_organ_situation,
-							intraoperative_distance_metastasis: String(res.data.intraoperative_distance_metastasis),
-							intraoperative_metastasis_part: String(res.data.intraoperative_metastasis_part),
+							intraoperative_circumference: String(res.data
+								.intraoperative_circumference),
+							intraoperative_invaded_tissues_and_organ_situation: res.data
+								.intraoperative_invaded_tissues_and_organ_situation,
+							intraoperative_distance_metastasis: String(res.data
+								.intraoperative_distance_metastasis),
+							intraoperative_metastasis_part: String(res.data
+								.intraoperative_metastasis_part),
 							intraoperative_degree_cure: String(res.data.intraoperative_degree_cure),
 							intraoperative_opera_way: String(res.data.intraoperative_opera_way),
 							intraoperative_opera_way_reason: res.data.intraoperative_opera_way_reason,
 							intraoperative_remove_way: String(res.data.intraoperative_remove_way),
-							intraoperative_lymph_node_clean: String(res.data.intraoperative_lymph_node_clean),
+							intraoperative_lymph_node_clean: String(res.data
+								.intraoperative_lymph_node_clean),
 							intraoperative_side_clean: String(res.data.intraoperative_side_clean),
 							intraoperative_fit_way: String(res.data.intraoperative_fit_way),
-							intraoperative_pre_fistulation: String(res.data.intraoperative_pre_fistulation),
+							intraoperative_pre_fistulation: String(res.data
+								.intraoperative_pre_fistulation),
 							intraoperative_rebuilt_way: String(res.data.intraoperative_rebuilt_way),
 							intraoperative_anal_fit_way: String(res.data.intraoperative_anal_fit_way),
-							intraoperative_stapling_size: String(res.data.intraoperative_stapling_size),
-							intraoperative_anastomotic_distance: res.data.intraoperative_anastomotic_distance,
+							intraoperative_stapling_size: String(res.data
+								.intraoperative_stapling_size),
+							intraoperative_anastomotic_distance: res.data
+								.intraoperative_anastomotic_distance,
 							intraoperative_anal_canal: String(res.data.intraoperative_anal_canal),
 							intraoperative_spleen: String(res.data.intraoperative_spleen),
 							intraoperative_predict_crm: String(res.data.intraoperative_predict_crm),
-							intraoperative_self_evaluation_mesangial_integrity_anus: String(res.data.intraoperative_self_evaluation_mesangial_integrity_anus),
-							intraoperative_self_evaluation_mesangial_integrity_operate: String(res.data.intraoperative_self_evaluation_mesangial_integrity_operate),
-							intraoperative_part_degree_cure: String(res.data.intraoperative_part_degree_cure),
-							intraoperative_cancer_residual_part: res.data.intraoperative_cancer_residual_part,
-							intraoperative_unit_viscera_remove: String(res.data.intraoperative_unit_viscera_remove),
+							intraoperative_self_evaluation_mesangial_integrity_anus: String(res.data
+								.intraoperative_self_evaluation_mesangial_integrity_anus),
+							intraoperative_self_evaluation_mesangial_integrity_operate: String(res.data
+								.intraoperative_self_evaluation_mesangial_integrity_operate),
+							intraoperative_part_degree_cure: String(res.data
+								.intraoperative_part_degree_cure),
+							intraoperative_cancer_residual_part: res.data
+								.intraoperative_cancer_residual_part,
+							intraoperative_unit_viscera_remove: String(res.data
+								.intraoperative_unit_viscera_remove),
 							intraoperative_remove_organ: res.data.intraoperative_remove_organ,
 							intraoperative_remove_reason: res.data.intraoperative_remove_reason,
-							intraoperative_distal_incisor_margin_from_anterior: res.data.intraoperative_distal_incisor_margin_from_anterior,
-							intraoperative_proximal_to_the_anterior_margin_of_the_body: res.data.intraoperative_proximal_to_the_anterior_margin_of_the_body,
-							intraoperative_lymph_node_clear_out_num: res.data.intraoperative_lymph_node_clear_out_num,
-							intraoperative_ln_within_10cm_of_the_tumor: res.data.intraoperative_ln_within_10cm_of_the_tumor,
-							intraoperative_ln_within_10_15cm_of_the_tumor: res.data.intraoperative_ln_within_10_15cm_of_the_tumor,
-							intraoperative_ln_within_above_15cm_of_the_tumor: res.data.intraoperative_ln_within_above_15cm_of_the_tumor,
+							intraoperative_distal_incisor_margin_from_anterior: res.data
+								.intraoperative_distal_incisor_margin_from_anterior,
+							intraoperative_proximal_to_the_anterior_margin_of_the_body: res.data
+								.intraoperative_proximal_to_the_anterior_margin_of_the_body,
+							intraoperative_lymph_node_clear_out_num: res.data
+								.intraoperative_lymph_node_clear_out_num,
+							intraoperative_ln_within_10cm_of_the_tumor: res.data
+								.intraoperative_ln_within_10cm_of_the_tumor,
+							intraoperative_ln_within_10_15cm_of_the_tumor: res.data
+								.intraoperative_ln_within_10_15cm_of_the_tumor,
+							intraoperative_ln_within_above_15cm_of_the_tumor: res.data
+								.intraoperative_ln_within_above_15cm_of_the_tumor,
 							intraoperative_central_group_ln: res.data.intraoperative_central_group_ln,
 							intraoperative_lymph_node_left: res.data.intraoperative_lymph_node_left,
 							intraoperative_lymph_node_right: res.data.intraoperative_lymph_node_right,
-							intraoperative_completely_tme_residual_basin_wall_tissue: String(res.data.intraoperative_completely_tme_residual_basin_wall_tissue),
-							intraoperative_completely_tme_residual_basin_wall_tissue_spec: String(res.data.intraoperative_completely_tme_residual_basin_wall_tissue_spec),
-							intraoperative_completely_tme_residual_basin_wall_tissue_loca: String(res.data.intraoperative_completely_tme_residual_basin_wall_tissue_loca),
-							intraoperative_pelvic_area_of_obvious_bleeding: String(res.data.intraoperative_pelvic_area_of_obvious_bleeding),
-							intraoperative_pelvic_nerve_damage: String(res.data.intraoperative_pelvic_nerve_damage),
-							intraoperative_hemostatic_method: String(res.data.intraoperative_hemostatic_method),
-							intraoperative_operation_time_min: res.data.intraoperative_operation_time_min,
-							intraoperative_length_of_the_incision: res.data.intraoperative_length_of_the_incision,
+							intraoperative_completely_tme_residual_basin_wall_tissue: String(res.data
+								.intraoperative_completely_tme_residual_basin_wall_tissue),
+							intraoperative_completely_tme_residual_basin_wall_tissue_spec: String(res
+								.data.intraoperative_completely_tme_residual_basin_wall_tissue_spec
+								),
+							intraoperative_completely_tme_residual_basin_wall_tissue_loca: String(res
+								.data.intraoperative_completely_tme_residual_basin_wall_tissue_loca
+								),
+							intraoperative_pelvic_area_of_obvious_bleeding: String(res.data
+								.intraoperative_pelvic_area_of_obvious_bleeding),
+							intraoperative_pelvic_nerve_damage: String(res.data
+								.intraoperative_pelvic_nerve_damage),
+							intraoperative_hemostatic_method: String(res.data
+								.intraoperative_hemostatic_method),
+							intraoperative_operation_time_min: res.data
+								.intraoperative_operation_time_min,
+							intraoperative_length_of_the_incision: res.data
+								.intraoperative_length_of_the_incision,
 							intraoperative_bleeding: res.data.intraoperative_bleeding,
-							intraoperative_blood_transfusion: String(res.data.intraoperative_blood_transfusion),
-							intraoperative_blood_transfusion_reason: String(res.data.intraoperative_blood_transfusion_reason),
-							intraoperative_composition_blood_transfusion: String(res.data.intraoperative_composition_blood_transfusion),
-							intraoperative_blood_transfusion_volume: res.data.intraoperative_blood_transfusion_volume,
-							intraoperative_intraperitoneal_chemotherapy: String(res.data.intraoperative_intraperitoneal_chemotherapy),
-							intraoperative_intraperitoneal_chemotherapy_drug_name: res.data.intraoperative_intraperitoneal_chemotherapy_drug_name,
-							intraoperative_intraperitoneal_chemotherapy_dose: res.data.intraoperative_intraperitoneal_chemotherapy_dose,
+							intraoperative_blood_transfusion: String(res.data
+								.intraoperative_blood_transfusion),
+							intraoperative_blood_transfusion_reason: String(res.data
+								.intraoperative_blood_transfusion_reason),
+							intraoperative_composition_blood_transfusion: String(res.data
+								.intraoperative_composition_blood_transfusion),
+							intraoperative_blood_transfusion_volume: res.data
+								.intraoperative_blood_transfusion_volume,
+							intraoperative_intraperitoneal_chemotherapy: String(res.data
+								.intraoperative_intraperitoneal_chemotherapy),
+							intraoperative_intraperitoneal_chemotherapy_drug_name: res.data
+								.intraoperative_intraperitoneal_chemotherapy_drug_name,
+							intraoperative_intraperitoneal_chemotherapy_dose: res.data
+								.intraoperative_intraperitoneal_chemotherapy_dose,
 							intraoperative_complication: String(res.data.intraoperative_complication),
-							intraoperative_complication_describe: res.data.intraoperative_complication_describe,
+							intraoperative_complication_describe: res.data
+								.intraoperative_complication_describe,
 							// 肝脏手术情况
 							liver_surgery_time_choose: String(res.data.liver_surgery_time_choose),
 							liver_surgery_tran: String(res.data.liver_surgery_tran),
-							liver_surgery_diagnosis_from_first: res.data.liver_surgery_diagnosis_from_first,
-							liver_surgery_diagnosis_from_first_surgery: res.data.liver_surgery_diagnosis_from_first_surgery,
-							liver_surgery_diagnosis_from_neo: res.data.liver_surgery_diagnosis_from_neo,
+							liver_surgery_diagnosis_from_first: res.data
+								.liver_surgery_diagnosis_from_first,
+							liver_surgery_diagnosis_from_first_surgery: res.data
+								.liver_surgery_diagnosis_from_first_surgery,
+							liver_surgery_diagnosis_from_neo: res.data
+								.liver_surgery_diagnosis_from_neo,
 							liver_surgery_treat: String(res.data.liver_surgery_treat),
 							liver_surgery_gw: String(res.data.liver_surgery_gw),
 							liver_surgery_possible: String(res.data.liver_surgery_possible),
 							liver_surgery_pet: String(res.data.liver_surgery_pet),
 							liver_surgery_child: String(res.data.liver_surgery_child),
-							liver_surgery_indole_cyanide_green_test: res.data.liver_surgery_indole_cyanide_green_test,
+							liver_surgery_indole_cyanide_green_test: res.data
+								.liver_surgery_indole_cyanide_green_test,
 							liver_surgery_background: String(res.data.liver_surgery_background),
 							liver_surgery_metastaticl: res.data.liver_surgery_metastaticl,
 							liver_surgery_metastaticl_max: res.data.liver_surgery_metastaticl_max,
-							liver_surgery_metastaticl_max_and_1_cm: res.data.liver_surgery_metastaticl_max_and_1_cm,
+							liver_surgery_metastaticl_max_and_1_cm: res.data
+								.liver_surgery_metastaticl_max_and_1_cm,
 							liver_surgery_lesion: String(res.data.liver_surgery_lesion),
 							liver_surgery_resection: String(res.data.liver_surgery_resection),
 							liver_surgery_operate_type: String(res.data.liver_surgery_operate_type),
 							liver_surgery_num_of_lesion: res.data.liver_surgery_num_of_lesion,
 							liver_surgery_removal_lesion: res.data.liver_surgery_removal_lesion,
 							liver_surgery_ablation_lesion: res.data.liver_surgery_ablation_lesion,
-							liver_surgery_removal_lesion_max_diameter: res.data.liver_surgery_removal_lesion_max_diameter,
-							liver_surgery_removal_lesion_over_cmno5: res.data.liver_surgery_removal_lesion_over_cmno5,
+							liver_surgery_removal_lesion_max_diameter: res.data
+								.liver_surgery_removal_lesion_max_diameter,
+							liver_surgery_removal_lesion_over_cmno5: res.data
+								.liver_surgery_removal_lesion_over_cmno5,
 							liver_surgery_missing_lesion: res.data.liver_surgery_missing_lesion,
-							liver_surgery_missing_lesion_location: String(res.data.liver_surgery_missing_lesion_location),
+							liver_surgery_missing_lesion_location: String(res.data
+								.liver_surgery_missing_lesion_location),
 							liver_surgery_name: res.data.liver_surgery_name,
 							// 术后情况
 							postoperative_anus_exhaust: res.data.postoperative_anus_exhaust,
@@ -2411,66 +2657,100 @@
 							postoperative_sicu_observation: res.data.postoperative_sicu_observation,
 							postoperative_eating_liquid: res.data.postoperative_eating_liquid,
 							postoperative_eating_pap: res.data.postoperative_eating_pap,
-							postoperative_ventilator_support: String(res.data.postoperative_ventilator_support),
-							postoperative_ventilator_support_time_hour: res.data.postoperative_ventilator_support_time_hour,
+							postoperative_ventilator_support: String(res.data
+								.postoperative_ventilator_support),
+							postoperative_ventilator_support_time_hour: res.data
+								.postoperative_ventilator_support_time_hour,
 							postoperative_oxygen_time_hour: res.data.postoperative_oxygen_time_hour,
 							postoperative_total_length_stay: res.data.postoperative_total_length_stay,
 							postoperative_length_stay: res.data.postoperative_length_stay,
-							postoperative_complication_describe: res.data.postoperative_complication_describe,
+							postoperative_complication_describe: res.data
+								.postoperative_complication_describe,
 							postoperative_complication: String(res.data.postoperative_complication),
-							postoperative_complication_specific: res.data.postoperative_complication_specific,
-							postoperative_discharge_thrombosis_score: String(res.data.postoperative_discharge_thrombosis_score),
-							postoperative_perioperative_death: String(res.data.postoperative_perioperative_death),
+							postoperative_complication_specific: res.data
+								.postoperative_complication_specific,
+							postoperative_discharge_thrombosis_score: String(res.data
+								.postoperative_discharge_thrombosis_score),
+							postoperative_perioperative_death: String(res.data
+								.postoperative_perioperative_death),
 							postoperative_death_reason: res.data.postoperative_death_reason,
-							postoperative_out_hospital_complication: res.data.postoperative_out_hospital_complication,
+							postoperative_out_hospital_complication: res.data
+								.postoperative_out_hospital_complication,
 							postoperative_surgery_again: String(res.data.postoperative_surgery_again),
-							postoperative_surgery_again_reason: res.data.postoperative_surgery_again_reason,
+							postoperative_surgery_again_reason: res.data
+								.postoperative_surgery_again_reason,
 							// 病理报告
 							pathological_report_type: String(res.data.pathological_report_type),
 							pathological_report_type_1: String(res.data.pathological_report_type_1),
 							pathological_report_tumor_size: res.data.pathological_report_tumor_size,
-							pathological_report_max_diameter: res.data.pathological_report_max_diameter,
-							pathological_report_tumor_deep: String(res.data.pathological_report_tumor_deep),
+							pathological_report_max_diameter: res.data
+								.pathological_report_max_diameter,
+							pathological_report_tumor_deep: String(res.data
+								.pathological_report_tumor_deep),
 							pathological_report_rank: String(res.data.pathological_report_rank),
-							pathological_report_pt3_distance: res.data.pathological_report_pt3_distance,
-							pathological_report_circumferential_cut_edge_distance: res.data.pathological_report_circumferential_cut_edge_distance,
-							pathological_report_new_pathology: String(res.data.pathological_report_new_pathology),
+							pathological_report_pt3_distance: res.data
+								.pathological_report_pt3_distance,
+							pathological_report_circumferential_cut_edge_distance: res.data
+								.pathological_report_circumferential_cut_edge_distance,
+							pathological_report_new_pathology: String(res.data
+								.pathological_report_new_pathology),
 							pathological_report_check_ln: res.data.pathological_report_check_ln,
-							pathological_report_check_less_10_ln: res.data.pathological_report_check_less_10_ln,
-							pathological_report_check_less_10_15_ln: res.data.pathological_report_check_less_10_15_ln,
-							pathological_report_check_more_15_ln: res.data.pathological_report_check_more_15_ln,
-							pathological_report_central_group_test_check_ln: res.data.pathological_report_central_group_test_check_ln,
-							pathological_report_check_positive_ln: res.data.pathological_report_check_positive_ln,
-							pathological_report_check_positive_less_10_ln: res.data.pathological_report_check_positive_less_10_ln,
-							pathological_report_check_positive_less_10_15_ln: res.data.pathological_report_check_positive_less_10_15_ln,
-							pathological_report_check_positive_more_15_ln: res.data.pathological_report_check_positive_more_15_ln,
-							pathological_report_central_group_test_check_positive_ln: res.data.pathological_report_central_group_test_check_positive_ln,
+							pathological_report_check_less_10_ln: res.data
+								.pathological_report_check_less_10_ln,
+							pathological_report_check_less_10_15_ln: res.data
+								.pathological_report_check_less_10_15_ln,
+							pathological_report_check_more_15_ln: res.data
+								.pathological_report_check_more_15_ln,
+							pathological_report_central_group_test_check_ln: res.data
+								.pathological_report_central_group_test_check_ln,
+							pathological_report_check_positive_ln: res.data
+								.pathological_report_check_positive_ln,
+							pathological_report_check_positive_less_10_ln: res.data
+								.pathological_report_check_positive_less_10_ln,
+							pathological_report_check_positive_less_10_15_ln: res.data
+								.pathological_report_check_positive_less_10_15_ln,
+							pathological_report_check_positive_more_15_ln: res.data
+								.pathological_report_check_positive_more_15_ln,
+							pathological_report_central_group_test_check_positive_ln: res.data
+								.pathological_report_central_group_test_check_positive_ln,
 							pathological_report_aging_n: String(res.data.pathological_report_aging_n),
-							pathological_report_metastatic: String(res.data.pathological_report_metastatic),
+							pathological_report_metastatic: String(res.data
+								.pathological_report_metastatic),
 							pathological_report_location: res.data.pathological_report_location,
 							pathological_report_near: String(res.data.pathological_report_near),
 							pathological_report_far: String(res.data.pathological_report_far),
-							pathological_report_invasion_lymphatics: String(res.data.pathological_report_invasion_lymphatics),
-							pathological_report_invasion_vein: String(res.data.pathological_report_invasion_vein),
-							pathological_report_invasion_neural: String(res.data.pathological_report_invasion_neural),
-							pathological_report_paracancer_mucosal_lesion: String(res.data.pathological_report_paracancer_mucosal_lesion),
-							pathological_report_paracancer_mesangial_integrity: String(res.data.pathological_report_paracancer_mesangial_integrity),
+							pathological_report_invasion_lymphatics: String(res.data
+								.pathological_report_invasion_lymphatics),
+							pathological_report_invasion_vein: String(res.data
+								.pathological_report_invasion_vein),
+							pathological_report_invasion_neural: String(res.data
+								.pathological_report_invasion_neural),
+							pathological_report_paracancer_mucosal_lesion: String(res.data
+								.pathological_report_paracancer_mucosal_lesion),
+							pathological_report_paracancer_mesangial_integrity: String(res.data
+								.pathological_report_paracancer_mesangial_integrity),
 							pathological_report_miles: String(res.data.pathological_report_miles),
 							pathological_report_ptnm: String(res.data.pathological_report_ptnm),
 							pathological_report_crm: String(res.data.pathological_report_crm),
-							pathological_report_tumor_invade_muscular_layer: res.data.pathological_report_tumor_invade_muscular_layer,
-							pathological_report_tumor_cut_edge_near: res.data.pathological_report_tumor_cut_edge_near,
-							pathological_report_pt3_tumor_involves_mesangium_deep: String(res.data.pathological_report_pt3_tumor_involves_mesangium_deep),
-							pathological_report_liver_pathological_score: res.data.pathological_report_liver_pathological_score,
+							pathological_report_tumor_invade_muscular_layer: res.data
+								.pathological_report_tumor_invade_muscular_layer,
+							pathological_report_tumor_cut_edge_near: res.data
+								.pathological_report_tumor_cut_edge_near,
+							pathological_report_pt3_tumor_involves_mesangium_deep: String(res.data
+								.pathological_report_pt3_tumor_involves_mesangium_deep),
+							pathological_report_liver_pathological_score: res.data
+								.pathological_report_liver_pathological_score,
 							pathological_report_dili_pss: res.data.pathological_report_dili_pss,
 							pathological_report_describe: res.data.pathological_report_describe,
 							// 病理录入者
 							inputting_medical_records: res.data.inputting_medical_records,
 							is_the_record_entry_complete: res.data.is_the_record_entry_complete,
-							medical_records_information_checker: res.data.medical_records_information_checker,
+							medical_records_information_checker: res.data
+								.medical_records_information_checker,
 							// 随访
 							is_follow: String(res.data.is_follow),
-							follow_time: res.data.follow_time == '1970-01-01 08:00:00' ? '' : res.data.follow_time,
+							follow_time: res.data.follow_time == '1970-01-01 08:00:00' ? '' : res.data
+								.follow_time,
 							follow_content: res.data.follow_content,
 						}
 					})
@@ -2507,204 +2787,348 @@
 							postoperation_hospital_days: state.Form.postoperation_hospital_days,
 							// 术前
 							// 术前肠镜
-							preoperative_colonoscopy_from_the_anus_a1: state.Form.preoperative_colonoscopy_from_the_anus_a1,
-							preoperative_colonoscopy_infringement_of_lumen_a2: state.Form.preoperative_colonoscopy_infringement_of_lumen_a2,
-							preoperative_colonoscopy_whether_the_endoscope_passes_a3: state.Form.preoperative_colonoscopy_whether_the_endoscope_passes_a3,
-							preoperative_colonoscopy_the_biopsy_results_a4: state.Form.preoperative_colonoscopy_the_biopsy_results_a4,
+							preoperative_colonoscopy_from_the_anus_a1: state.Form
+								.preoperative_colonoscopy_from_the_anus_a1,
+							preoperative_colonoscopy_infringement_of_lumen_a2: state.Form
+								.preoperative_colonoscopy_infringement_of_lumen_a2,
+							preoperative_colonoscopy_whether_the_endoscope_passes_a3: state.Form
+								.preoperative_colonoscopy_whether_the_endoscope_passes_a3,
+							preoperative_colonoscopy_the_biopsy_results_a4: state.Form
+								.preoperative_colonoscopy_the_biopsy_results_a4,
 							// 术前分期
 							preoperative_staging_ct_mri_t: state.Form.preoperative_staging_ct_mri_t,
-							preoperative_staging_ct_mri_leaching_b1: state.Form.preoperative_staging_ct_mri_leaching_b1,
-							preoperative_staging_ct_mri_the_deepest_point_is_at_b2: String(state.Form.preoperative_staging_ct_mri_the_deepest_point_is_at_b2),
-							preoperative_staging_ct_mri_intestinal_separated_edge_mesangium: state.Form.preoperative_staging_ct_mri_intestinal_separated_edge_mesangium,
-							preoperative_staging_ct_mri_t_from_outer_edge_mesangium_b4: state.Form.preoperative_staging_ct_mri_t_from_outer_edge_mesangium_b4,
+							preoperative_staging_ct_mri_leaching_b1: state.Form
+								.preoperative_staging_ct_mri_leaching_b1,
+							preoperative_staging_ct_mri_the_deepest_point_is_at_b2: String(state.Form
+								.preoperative_staging_ct_mri_the_deepest_point_is_at_b2),
+							preoperative_staging_ct_mri_intestinal_separated_edge_mesangium: state.Form
+								.preoperative_staging_ct_mri_intestinal_separated_edge_mesangium,
+							preoperative_staging_ct_mri_t_from_outer_edge_mesangium_b4: state.Form
+								.preoperative_staging_ct_mri_t_from_outer_edge_mesangium_b4,
 							preoperative_staging_ct_mri_n: state.Form.preoperative_staging_ct_mri_n,
-							preoperative_staging_ct_mri_the_largest_diameter_dmax: state.Form.preoperative_staging_ct_mri_the_largest_diameter_dmax,
-							preoperative_staging_ct_mri_number_of_lymph_nodes_no: state.Form.preoperative_staging_ct_mri_number_of_lymph_nodes_no,
+							preoperative_staging_ct_mri_the_largest_diameter_dmax: state.Form
+								.preoperative_staging_ct_mri_the_largest_diameter_dmax,
+							preoperative_staging_ct_mri_number_of_lymph_nodes_no: state.Form
+								.preoperative_staging_ct_mri_number_of_lymph_nodes_no,
 							preoperative_staging_ct_mri_m: state.Form.preoperative_staging_ct_mri_m,
-							preoperative_staging_ct_mri_the_largest_diameter_dmax2: state.Form.preoperative_staging_ct_mri_the_largest_diameter_dmax2,
-							preoperative_staging_ct_mri_t3_mesenterin_and_deep: String(state.Form.preoperative_staging_ct_mri_t3_mesenterin_and_deep),
-							preoperative_staging_ultrasonic_t: state.Form.preoperative_staging_ultrasonic_t,
-							preoperative_staging_ultrasonic_leaching_ultramundane: state.Form.preoperative_staging_ultrasonic_leaching_ultramundane,
-							preoperative_staging_ultrasonic_n: state.Form.preoperative_staging_ultrasonic_n,
-							preoperative_staging_ultrasonic_the_largest_diameter_d1: state.Form.preoperative_staging_ultrasonic_the_largest_diameter_d1,
-							preoperative_staging_ultrasonic_m: state.Form.preoperative_staging_ultrasonic_m,
-							preoperative_staging_ultrasonic_the_largest_diameter_d2: state.Form.preoperative_staging_ultrasonic_the_largest_diameter_d2,
-							preoperative_staging_ultrasonic_pet_ct: state.Form.preoperative_staging_ultrasonic_pet_ct,
+							preoperative_staging_ct_mri_the_largest_diameter_dmax2: state.Form
+								.preoperative_staging_ct_mri_the_largest_diameter_dmax2,
+							preoperative_staging_ct_mri_t3_mesenterin_and_deep: String(state.Form
+								.preoperative_staging_ct_mri_t3_mesenterin_and_deep),
+							preoperative_staging_ultrasonic_t: state.Form
+								.preoperative_staging_ultrasonic_t,
+							preoperative_staging_ultrasonic_leaching_ultramundane: state.Form
+								.preoperative_staging_ultrasonic_leaching_ultramundane,
+							preoperative_staging_ultrasonic_n: state.Form
+								.preoperative_staging_ultrasonic_n,
+							preoperative_staging_ultrasonic_the_largest_diameter_d1: state.Form
+								.preoperative_staging_ultrasonic_the_largest_diameter_d1,
+							preoperative_staging_ultrasonic_m: state.Form
+								.preoperative_staging_ultrasonic_m,
+							preoperative_staging_ultrasonic_the_largest_diameter_d2: state.Form
+								.preoperative_staging_ultrasonic_the_largest_diameter_d2,
+							preoperative_staging_ultrasonic_pet_ct: state.Form
+								.preoperative_staging_ultrasonic_pet_ct,
 							preoperative_staging_clinical_t: state.Form.preoperative_staging_clinical_t,
 							preoperative_staging_clinical_n: state.Form.preoperative_staging_clinical_n,
-							preoperative_staging_clinical_m: String(state.Form.preoperative_staging_clinical_m),
-							preoperative_staging_intestinal_tract_other: String(state.Form.preoperative_staging_intestinal_tract_other),
-							preoperative_staging_intestinal_tract_location: String(state.Form.preoperative_staging_intestinal_tract_location),
-							preoperative_staging_intestinal_tract_staging_t: String(state.Form.preoperative_staging_intestinal_tract_staging_t),
-							preoperative_staging_intestinal_tract_n: state.Form.preoperative_staging_intestinal_tract_n,
-							preoperative_staging_intestinal_tract_unite: String(state.Form.preoperative_staging_intestinal_tract_unite),
-							preoperative_staging_imaging_circumferential_margin_situation: String(state.Form.preoperative_staging_imaging_circumferential_margin_situation),
-							preoperative_staging_imaging_circumferential_margin_mdt_discuss: String(state.Form.preoperative_staging_imaging_circumferential_margin_mdt_discuss),
-							preoperative_staging_resectable_primary_lesion: String(state.Form.preoperative_staging_resectable_primary_lesion),
-							preoperative_staging_resectable_transition_lesion: String(state.Form.preoperative_staging_resectable_transition_lesion),
-							preoperative_staging_transition_type: String(state.Form.preoperative_staging_transition_type),
-							preoperative_staging_number_of_liver_metastases: state.Form.preoperative_staging_number_of_liver_metastases,
-							preoperative_staging_number_of_liver_metastases_dg1: state.Form.preoperative_staging_number_of_liver_metastases_dg1,
-							preoperative_staging_number_of_liver_metastases_dg2: state.Form.preoperative_staging_number_of_liver_metastases_dg2,
-							preoperative_staging_number_of_liver_metastases_location1: String(state.Form.preoperative_staging_number_of_liver_metastases_location1),
-							preoperative_staging_number_of_lung_metastases: state.Form.preoperative_staging_number_of_lung_metastases,
-							preoperative_staging_number_of_lung_metastases_df1: state.Form.preoperative_staging_number_of_lung_metastases_df1,
-							preoperative_staging_number_of_lung_metastases_df2: state.Form.preoperative_staging_number_of_lung_metastases_df2,
-							preoperative_staging_number_of_lung_metastases_location2: String(state.Form.preoperative_staging_number_of_lung_metastases_location2),
-							preoperative_staging_mdt_metastase_suggest1: String(state.Form.preoperative_staging_mdt_metastase_suggest1),
-							preoperative_staging_mdt_primary_suggest2: String(state.Form.preoperative_staging_mdt_primary_suggest2),
+							preoperative_staging_clinical_m: String(state.Form
+								.preoperative_staging_clinical_m),
+							preoperative_staging_intestinal_tract_other: String(state.Form
+								.preoperative_staging_intestinal_tract_other),
+							preoperative_staging_intestinal_tract_location: String(state.Form
+								.preoperative_staging_intestinal_tract_location),
+							preoperative_staging_intestinal_tract_staging_t: String(state.Form
+								.preoperative_staging_intestinal_tract_staging_t),
+							preoperative_staging_intestinal_tract_n: state.Form
+								.preoperative_staging_intestinal_tract_n,
+							preoperative_staging_intestinal_tract_unite: String(state.Form
+								.preoperative_staging_intestinal_tract_unite),
+							preoperative_staging_imaging_circumferential_margin_situation: String(state
+								.Form.preoperative_staging_imaging_circumferential_margin_situation),
+							preoperative_staging_imaging_circumferential_margin_mdt_discuss: String(state
+								.Form.preoperative_staging_imaging_circumferential_margin_mdt_discuss),
+							preoperative_staging_resectable_primary_lesion: String(state.Form
+								.preoperative_staging_resectable_primary_lesion),
+							preoperative_staging_resectable_transition_lesion: String(state.Form
+								.preoperative_staging_resectable_transition_lesion),
+							preoperative_staging_transition_type: String(state.Form
+								.preoperative_staging_transition_type),
+							preoperative_staging_number_of_liver_metastases: state.Form
+								.preoperative_staging_number_of_liver_metastases,
+							preoperative_staging_number_of_liver_metastases_dg1: state.Form
+								.preoperative_staging_number_of_liver_metastases_dg1,
+							preoperative_staging_number_of_liver_metastases_dg2: state.Form
+								.preoperative_staging_number_of_liver_metastases_dg2,
+							preoperative_staging_number_of_liver_metastases_location1: String(state.Form
+								.preoperative_staging_number_of_liver_metastases_location1),
+							preoperative_staging_number_of_lung_metastases: state.Form
+								.preoperative_staging_number_of_lung_metastases,
+							preoperative_staging_number_of_lung_metastases_df1: state.Form
+								.preoperative_staging_number_of_lung_metastases_df1,
+							preoperative_staging_number_of_lung_metastases_df2: state.Form
+								.preoperative_staging_number_of_lung_metastases_df2,
+							preoperative_staging_number_of_lung_metastases_location2: String(state.Form
+								.preoperative_staging_number_of_lung_metastases_location2),
+							preoperative_staging_mdt_metastase_suggest1: String(state.Form
+								.preoperative_staging_mdt_metastase_suggest1),
+							preoperative_staging_mdt_primary_suggest2: String(state.Form
+								.preoperative_staging_mdt_primary_suggest2),
 							// 新辅助化疗
-							preoperative_neoadjuvant_chemotherapy_plan_project: String(state.Form.preoperative_neoadjuvant_chemotherapy_plan_project),
-							preoperative_neoadjuvant_chemotherapy_begin: state.Form.preoperative_neoadjuvant_chemotherapy_begin,
-							preoperative_neoadjuvant_chemotherapy_end: state.Form.preoperative_neoadjuvant_chemotherapy_end,
-							preoperative_neoadjuvant_chemotherapy_adverse_response_hb: state.Form.preoperative_neoadjuvant_chemotherapy_adverse_response_hb,
-							preoperative_neoadjuvant_chemotherapy_adverse_response_wbc: state.Form.preoperative_neoadjuvant_chemotherapy_adverse_response_wbc,
-							preoperative_neoadjuvant_chemotherapy_adverse_response_gra: state.Form.preoperative_neoadjuvant_chemotherapy_adverse_response_gra,
-							preoperative_neoadjuvant_chemotherapy_adverse_response_plt: state.Form.preoperative_neoadjuvant_chemotherapy_adverse_response_plt,
-							preoperative_neoadjuvant_chemotherapy_liver_function: state.Form.preoperative_neoadjuvant_chemotherapy_liver_function,
-							preoperative_neoadjuvant_chemotherapy_kidney_function: state.Form.preoperative_neoadjuvant_chemotherapy_kidney_function,
-							preoperative_neoadjuvant_chemotherapy_sickness: state.Form.preoperative_neoadjuvant_chemotherapy_sickness,
-							preoperative_neoadjuvant_chemotherapy_diarrhoea: state.Form.preoperative_neoadjuvant_chemotherapy_diarrhoea,
-							preoperative_neoadjuvant_chemotherapy_astriction: state.Form.preoperative_neoadjuvant_chemotherapy_astriction,
-							preoperative_neoadjuvant_chemotherapy_heart: state.Form.preoperative_neoadjuvant_chemotherapy_heart,
-							preoperative_neoadjuvant_chemotherapy_allergy: state.Form.preoperative_neoadjuvant_chemotherapy_allergy,
-							preoperative_neoadjuvant_chemotherapy_skin: state.Form.preoperative_neoadjuvant_chemotherapy_skin,
-							preoperative_neoadjuvant_chemotherapy_nerve: state.Form.preoperative_neoadjuvant_chemotherapy_nerve,
-							preoperative_neoadjuvant_chemotherapy_other: state.Form.preoperative_neoadjuvant_chemotherapy_other,
-							preoperative_neoadjuvant_chemotherapy_eva_clinical_efficacy: String(state.Form.preoperative_neoadjuvant_chemotherapy_eva_clinical_efficacy),
-							preoperative_neoadjuvant_chemotherapy_eva_pathological_efficacy: String(state.Form.preoperative_neoadjuvant_chemotherapy_eva_pathological_efficacy),
+							preoperative_neoadjuvant_chemotherapy_plan_project: String(state.Form
+								.preoperative_neoadjuvant_chemotherapy_plan_project),
+							preoperative_neoadjuvant_chemotherapy_begin: state.Form
+								.preoperative_neoadjuvant_chemotherapy_begin,
+							preoperative_neoadjuvant_chemotherapy_end: state.Form
+								.preoperative_neoadjuvant_chemotherapy_end,
+							preoperative_neoadjuvant_chemotherapy_adverse_response_hb: state.Form
+								.preoperative_neoadjuvant_chemotherapy_adverse_response_hb,
+							preoperative_neoadjuvant_chemotherapy_adverse_response_wbc: state.Form
+								.preoperative_neoadjuvant_chemotherapy_adverse_response_wbc,
+							preoperative_neoadjuvant_chemotherapy_adverse_response_gra: state.Form
+								.preoperative_neoadjuvant_chemotherapy_adverse_response_gra,
+							preoperative_neoadjuvant_chemotherapy_adverse_response_plt: state.Form
+								.preoperative_neoadjuvant_chemotherapy_adverse_response_plt,
+							preoperative_neoadjuvant_chemotherapy_liver_function: state.Form
+								.preoperative_neoadjuvant_chemotherapy_liver_function,
+							preoperative_neoadjuvant_chemotherapy_kidney_function: state.Form
+								.preoperative_neoadjuvant_chemotherapy_kidney_function,
+							preoperative_neoadjuvant_chemotherapy_sickness: state.Form
+								.preoperative_neoadjuvant_chemotherapy_sickness,
+							preoperative_neoadjuvant_chemotherapy_diarrhoea: state.Form
+								.preoperative_neoadjuvant_chemotherapy_diarrhoea,
+							preoperative_neoadjuvant_chemotherapy_astriction: state.Form
+								.preoperative_neoadjuvant_chemotherapy_astriction,
+							preoperative_neoadjuvant_chemotherapy_heart: state.Form
+								.preoperative_neoadjuvant_chemotherapy_heart,
+							preoperative_neoadjuvant_chemotherapy_allergy: state.Form
+								.preoperative_neoadjuvant_chemotherapy_allergy,
+							preoperative_neoadjuvant_chemotherapy_skin: state.Form
+								.preoperative_neoadjuvant_chemotherapy_skin,
+							preoperative_neoadjuvant_chemotherapy_nerve: state.Form
+								.preoperative_neoadjuvant_chemotherapy_nerve,
+							preoperative_neoadjuvant_chemotherapy_other: state.Form
+								.preoperative_neoadjuvant_chemotherapy_other,
+							preoperative_neoadjuvant_chemotherapy_eva_clinical_efficacy: String(state.Form
+								.preoperative_neoadjuvant_chemotherapy_eva_clinical_efficacy),
+							preoperative_neoadjuvant_chemotherapy_eva_pathological_efficacy: String(state
+								.Form.preoperative_neoadjuvant_chemotherapy_eva_pathological_efficacy),
 							// 新辅助放疗
-							preoperative_neoadjuvant_radiotherapy_dismember: String(state.Form.preoperative_neoadjuvant_radiotherapy_dismember),
-							preoperative_neoadjuvant_radiotherapy_technology: String(state.Form.preoperative_neoadjuvant_radiotherapy_technology),
-							preoperative_neoadjuvant_radiotherapy_dose: state.Form.preoperative_neoadjuvant_radiotherapy_dose,
-							preoperative_neoadjuvant_radiotherapy_synchro: String(state.Form.preoperative_neoadjuvant_radiotherapy_synchro),
-							preoperative_neoadjuvant_radiotherapy_begin: state.Form.preoperative_neoadjuvant_radiotherapy_begin,
-							preoperative_neoadjuvant_radiotherapy_end: state.Form.preoperative_neoadjuvant_radiotherapy_end,
-							preoperative_neoadjuvant_radiotherapy_metastatic_therapy_effect: String(state.Form.preoperative_neoadjuvant_radiotherapy_metastatic_therapy_effect),
-							preoperative_neoadjuvant_radiotherapy_curative_primary_les_ass: String(state.Form.preoperative_neoadjuvant_radiotherapy_curative_primary_les_ass),
-							preoperative_neoadjuvant_radiotherapy_primary_pathology_ass: String(state.Form.preoperative_neoadjuvant_radiotherapy_primary_pathology_ass),
+							preoperative_neoadjuvant_radiotherapy_dismember: String(state.Form
+								.preoperative_neoadjuvant_radiotherapy_dismember),
+							preoperative_neoadjuvant_radiotherapy_technology: String(state.Form
+								.preoperative_neoadjuvant_radiotherapy_technology),
+							preoperative_neoadjuvant_radiotherapy_dose: state.Form
+								.preoperative_neoadjuvant_radiotherapy_dose,
+							preoperative_neoadjuvant_radiotherapy_synchro: String(state.Form
+								.preoperative_neoadjuvant_radiotherapy_synchro),
+							preoperative_neoadjuvant_radiotherapy_begin: state.Form
+								.preoperative_neoadjuvant_radiotherapy_begin,
+							preoperative_neoadjuvant_radiotherapy_end: state.Form
+								.preoperative_neoadjuvant_radiotherapy_end,
+							preoperative_neoadjuvant_radiotherapy_metastatic_therapy_effect: String(state
+								.Form.preoperative_neoadjuvant_radiotherapy_metastatic_therapy_effect),
+							preoperative_neoadjuvant_radiotherapy_curative_primary_les_ass: String(state
+								.Form.preoperative_neoadjuvant_radiotherapy_curative_primary_les_ass),
+							preoperative_neoadjuvant_radiotherapy_primary_pathology_ass: String(state.Form
+								.preoperative_neoadjuvant_radiotherapy_primary_pathology_ass),
 							// 肠道狭窄状况评估
-							preoperative_assessment_intestinal_stenosis_exhaust: String(state.Form.preoperative_assessment_intestinal_stenosis_exhaust),
-							preoperative_assessment_intestinal_stenosis_defecate: String(state.Form.preoperative_assessment_intestinal_stenosis_defecate),
-							preoperative_assessment_intestinal_stenosis_distension: String(state.Form.preoperative_assessment_intestinal_stenosis_distension),
-							preoperative_assessment_intestinal_stenosis_enteroscope: String(state.Form.preoperative_assessment_intestinal_stenosis_enteroscope),
-							preoperative_assessment_intestinal_stenosis_shape: String(state.Form.preoperative_assessment_intestinal_stenosis_shape),
-							preoperative_assessment_intestinal_stenosis_ct_proximal_bowel: String(state.Form.preoperative_assessment_intestinal_stenosis_ct_proximal_bowel),
-							preoperative_assessment_intestinal_stenosis_ct_maximum_left: String(state.Form.preoperative_assessment_intestinal_stenosis_ct_maximum_left),
-							preoperative_assessment_intestinal_stenosis_ct_x_imaging: String(state.Form.preoperative_assessment_intestinal_stenosis_ct_x_imaging),
-							preoperative_assessment_intestinal_stenosis_imaging_smallest: String(state.Form.preoperative_assessment_intestinal_stenosis_imaging_smallest),
-							preoperative_assessment_intestinal_stenosis_drugs_relieve: String(state.Form.preoperative_assessment_intestinal_stenosis_drugs_relieve),
-							preoperative_assessment_intestinal_stenosis_juice: String(state.Form.preoperative_assessment_intestinal_stenosis_juice),
-							preoperative_assessment_intestinal_stenosis_group: String(state.Form.preoperative_assessment_intestinal_stenosis_group),
-							preoperative_assessment_intestinal_stenosis_asa: state.Form.preoperative_assessment_intestinal_stenosis_asa,
-							preoperative_assessment_intestinal_stenosis_new_neoadjuvant: String(state.Form.preoperative_assessment_intestinal_stenosis_new_neoadjuvant),
-							preoperative_assessment_intestinal_stenosis_autar: String(state.Form.preoperative_assessment_intestinal_stenosis_autar),
-							preoperative_assessment_intestinal_stenosis_test_wbc: state.Form.preoperative_assessment_intestinal_stenosis_test_wbc,
-							preoperative_assessment_intestinal_stenosis_test_hb: state.Form.preoperative_assessment_intestinal_stenosis_test_hb,
-							preoperative_assessment_intestinal_stenosis_test_alb: state.Form.preoperative_assessment_intestinal_stenosis_test_alb,
-							preoperative_assessment_intestinal_stenosis_test_cea: state.Form.preoperative_assessment_intestinal_stenosis_test_cea,
-							preoperative_assessment_intestinal_stenosis_test_alt: state.Form.preoperative_assessment_intestinal_stenosis_test_alt,
-							preoperative_assessment_intestinal_stenosis_test_tb: state.Form.preoperative_assessment_intestinal_stenosis_test_tb,
-							preoperative_assessment_intestinal_stenosis_test1_wbc: state.Form.preoperative_assessment_intestinal_stenosis_test1_wbc,
-							preoperative_assessment_intestinal_stenosis_test1_hb: state.Form.preoperative_assessment_intestinal_stenosis_test1_hb,
-							preoperative_assessment_intestinal_stenosis_test1_alb: state.Form.preoperative_assessment_intestinal_stenosis_test1_alb,
-							preoperative_assessment_intestinal_stenosis_test1_cea: state.Form.preoperative_assessment_intestinal_stenosis_test1_cea,
-							preoperative_assessment_intestinal_stenosis_test1_alt: state.Form.preoperative_assessment_intestinal_stenosis_test1_alt,
-							preoperative_assessment_intestinal_stenosis_test1_tb: state.Form.preoperative_assessment_intestinal_stenosis_test1_tb,
-							preoperative_assessment_intestinal_stenosis_cancer_family: String(state.Form.preoperative_assessment_intestinal_stenosis_cancer_family),
-							preoperative_assessment_intestinal_stenosis_manometry: String(state.Form.preoperative_assessment_intestinal_stenosis_manometry),
-							preoperative_assessment_intestinal_stenosis_mdt_compliance: String(state.Form.preoperative_assessment_intestinal_stenosis_mdt_compliance),
-							preoperative_assessment_intestinal_stenosis_uncompl_reason: String(state.Form.preoperative_assessment_intestinal_stenosis_uncompl_reason),
+							preoperative_assessment_intestinal_stenosis_exhaust: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_exhaust),
+							preoperative_assessment_intestinal_stenosis_defecate: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_defecate),
+							preoperative_assessment_intestinal_stenosis_distension: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_distension),
+							preoperative_assessment_intestinal_stenosis_enteroscope: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_enteroscope),
+							preoperative_assessment_intestinal_stenosis_shape: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_shape),
+							preoperative_assessment_intestinal_stenosis_ct_proximal_bowel: String(state
+								.Form.preoperative_assessment_intestinal_stenosis_ct_proximal_bowel),
+							preoperative_assessment_intestinal_stenosis_ct_maximum_left: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_ct_maximum_left),
+							preoperative_assessment_intestinal_stenosis_ct_x_imaging: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_ct_x_imaging),
+							preoperative_assessment_intestinal_stenosis_imaging_smallest: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_imaging_smallest),
+							preoperative_assessment_intestinal_stenosis_drugs_relieve: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_drugs_relieve),
+							preoperative_assessment_intestinal_stenosis_juice: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_juice),
+							preoperative_assessment_intestinal_stenosis_group: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_group),
+							preoperative_assessment_intestinal_stenosis_asa: state.Form
+								.preoperative_assessment_intestinal_stenosis_asa,
+							preoperative_assessment_intestinal_stenosis_new_neoadjuvant: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_new_neoadjuvant),
+							preoperative_assessment_intestinal_stenosis_autar: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_autar),
+							preoperative_assessment_intestinal_stenosis_test_wbc: state.Form
+								.preoperative_assessment_intestinal_stenosis_test_wbc,
+							preoperative_assessment_intestinal_stenosis_test_hb: state.Form
+								.preoperative_assessment_intestinal_stenosis_test_hb,
+							preoperative_assessment_intestinal_stenosis_test_alb: state.Form
+								.preoperative_assessment_intestinal_stenosis_test_alb,
+							preoperative_assessment_intestinal_stenosis_test_cea: state.Form
+								.preoperative_assessment_intestinal_stenosis_test_cea,
+							preoperative_assessment_intestinal_stenosis_test_alt: state.Form
+								.preoperative_assessment_intestinal_stenosis_test_alt,
+							preoperative_assessment_intestinal_stenosis_test_tb: state.Form
+								.preoperative_assessment_intestinal_stenosis_test_tb,
+							preoperative_assessment_intestinal_stenosis_test1_wbc: state.Form
+								.preoperative_assessment_intestinal_stenosis_test1_wbc,
+							preoperative_assessment_intestinal_stenosis_test1_hb: state.Form
+								.preoperative_assessment_intestinal_stenosis_test1_hb,
+							preoperative_assessment_intestinal_stenosis_test1_alb: state.Form
+								.preoperative_assessment_intestinal_stenosis_test1_alb,
+							preoperative_assessment_intestinal_stenosis_test1_cea: state.Form
+								.preoperative_assessment_intestinal_stenosis_test1_cea,
+							preoperative_assessment_intestinal_stenosis_test1_alt: state.Form
+								.preoperative_assessment_intestinal_stenosis_test1_alt,
+							preoperative_assessment_intestinal_stenosis_test1_tb: state.Form
+								.preoperative_assessment_intestinal_stenosis_test1_tb,
+							preoperative_assessment_intestinal_stenosis_cancer_family: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_cancer_family),
+							preoperative_assessment_intestinal_stenosis_manometry: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_manometry),
+							preoperative_assessment_intestinal_stenosis_mdt_compliance: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_mdt_compliance),
+							preoperative_assessment_intestinal_stenosis_uncompl_reason: String(state.Form
+								.preoperative_assessment_intestinal_stenosis_uncompl_reason),
 							// 术中
-							intraoperative_operation_type: String(state.Form.intraoperative_operation_type),
-							intraoperative_colorectal_cancer_situation: String(state.Form.intraoperative_colorectal_cancer_situation),
-							intraoperative_primary_lesion_anus: state.Form.intraoperative_primary_lesion_anus,
-							intraoperative_primary_lesion_anus1: state.Form.intraoperative_primary_lesion_anus1,
+							intraoperative_operation_type: String(state.Form
+								.intraoperative_operation_type),
+							intraoperative_colorectal_cancer_situation: String(state.Form
+								.intraoperative_colorectal_cancer_situation),
+							intraoperative_primary_lesion_anus: state.Form
+								.intraoperative_primary_lesion_anus,
+							intraoperative_primary_lesion_anus1: state.Form
+								.intraoperative_primary_lesion_anus1,
 							intraoperative_location: String(state.Form.intraoperative_location),
-							intraoperative_tumor_infringe_loop: String(state.Form.intraoperative_tumor_infringe_loop),
+							intraoperative_tumor_infringe_loop: String(state.Form
+								.intraoperative_tumor_infringe_loop),
 							intraoperative_tumor_size: state.Form.intraoperative_tumor_size,
 							intraoperative_antetheca: String(state.Form.intraoperative_antetheca),
 							intraoperative_tumor_deepest: String(state.Form.intraoperative_tumor_deepest),
-							intraoperative_classification: String(state.Form.intraoperative_classification),
+							intraoperative_classification: String(state.Form
+								.intraoperative_classification),
 							intraoperative_perforate: String(state.Form.intraoperative_perforate),
 							intraoperative_circumference: String(state.Form.intraoperative_circumference),
-							intraoperative_invaded_tissues_and_organ_situation: state.Form.intraoperative_invaded_tissues_and_organ_situation,
-							intraoperative_distance_metastasis: String(state.Form.intraoperative_distance_metastasis),
-							intraoperative_metastasis_part: String(state.Form.intraoperative_metastasis_part),
+							intraoperative_invaded_tissues_and_organ_situation: state.Form
+								.intraoperative_invaded_tissues_and_organ_situation,
+							intraoperative_distance_metastasis: String(state.Form
+								.intraoperative_distance_metastasis),
+							intraoperative_metastasis_part: String(state.Form
+								.intraoperative_metastasis_part),
 							intraoperative_degree_cure: String(state.Form.intraoperative_degree_cure),
 							intraoperative_opera_way: String(state.Form.intraoperative_opera_way),
 							intraoperative_opera_way_reason: state.Form.intraoperative_opera_way_reason,
 							intraoperative_remove_way: String(state.Form.intraoperative_remove_way),
-							intraoperative_lymph_node_clean: String(state.Form.intraoperative_lymph_node_clean),
+							intraoperative_lymph_node_clean: String(state.Form
+								.intraoperative_lymph_node_clean),
 							intraoperative_side_clean: String(state.Form.intraoperative_side_clean),
 							intraoperative_fit_way: String(state.Form.intraoperative_fit_way),
-							intraoperative_pre_fistulation: String(state.Form.intraoperative_pre_fistulation),
+							intraoperative_pre_fistulation: String(state.Form
+								.intraoperative_pre_fistulation),
 							intraoperative_rebuilt_way: String(state.Form.intraoperative_rebuilt_way),
 							intraoperative_anal_fit_way: String(state.Form.intraoperative_anal_fit_way),
 							intraoperative_stapling_size: String(state.Form.intraoperative_stapling_size),
-							intraoperative_anastomotic_distance: state.Form.intraoperative_anastomotic_distance,
+							intraoperative_anastomotic_distance: state.Form
+								.intraoperative_anastomotic_distance,
 							intraoperative_anal_canal: String(state.Form.intraoperative_anal_canal),
 							intraoperative_spleen: String(state.Form.intraoperative_spleen),
 							intraoperative_predict_crm: String(state.Form.intraoperative_predict_crm),
-							intraoperative_self_evaluation_mesangial_integrity_anus: String(state.Form.intraoperative_self_evaluation_mesangial_integrity_anus),
-							intraoperative_self_evaluation_mesangial_integrity_operate: String(state.Form.intraoperative_self_evaluation_mesangial_integrity_operate),
-							intraoperative_part_degree_cure: String(state.Form.intraoperative_part_degree_cure),
-							intraoperative_cancer_residual_part: state.Form.intraoperative_cancer_residual_part,
-							intraoperative_unit_viscera_remove: String(state.Form.intraoperative_unit_viscera_remove),
+							intraoperative_self_evaluation_mesangial_integrity_anus: String(state.Form
+								.intraoperative_self_evaluation_mesangial_integrity_anus),
+							intraoperative_self_evaluation_mesangial_integrity_operate: String(state.Form
+								.intraoperative_self_evaluation_mesangial_integrity_operate),
+							intraoperative_part_degree_cure: String(state.Form
+								.intraoperative_part_degree_cure),
+							intraoperative_cancer_residual_part: state.Form
+								.intraoperative_cancer_residual_part,
+							intraoperative_unit_viscera_remove: String(state.Form
+								.intraoperative_unit_viscera_remove),
 							intraoperative_remove_organ: state.Form.intraoperative_remove_organ,
 							intraoperative_remove_reason: state.Form.intraoperative_remove_reason,
-							intraoperative_distal_incisor_margin_from_anterior: state.Form.intraoperative_distal_incisor_margin_from_anterior,
-							intraoperative_proximal_to_the_anterior_margin_of_the_body: state.Form.intraoperative_proximal_to_the_anterior_margin_of_the_body,
-							intraoperative_lymph_node_clear_out_num: state.Form.intraoperative_lymph_node_clear_out_num,
-							intraoperative_ln_within_10cm_of_the_tumor: state.Form.intraoperative_ln_within_10cm_of_the_tumor,
-							intraoperative_ln_within_10_15cm_of_the_tumor: state.Form.intraoperative_ln_within_10_15cm_of_the_tumor,
-							intraoperative_ln_within_above_15cm_of_the_tumor: state.Form.intraoperative_ln_within_above_15cm_of_the_tumor,
+							intraoperative_distal_incisor_margin_from_anterior: state.Form
+								.intraoperative_distal_incisor_margin_from_anterior,
+							intraoperative_proximal_to_the_anterior_margin_of_the_body: state.Form
+								.intraoperative_proximal_to_the_anterior_margin_of_the_body,
+							intraoperative_lymph_node_clear_out_num: state.Form
+								.intraoperative_lymph_node_clear_out_num,
+							intraoperative_ln_within_10cm_of_the_tumor: state.Form
+								.intraoperative_ln_within_10cm_of_the_tumor,
+							intraoperative_ln_within_10_15cm_of_the_tumor: state.Form
+								.intraoperative_ln_within_10_15cm_of_the_tumor,
+							intraoperative_ln_within_above_15cm_of_the_tumor: state.Form
+								.intraoperative_ln_within_above_15cm_of_the_tumor,
 							intraoperative_central_group_ln: state.Form.intraoperative_central_group_ln,
 							intraoperative_lymph_node_left: state.Form.intraoperative_lymph_node_left,
 							intraoperative_lymph_node_right: state.Form.intraoperative_lymph_node_right,
-							intraoperative_completely_tme_residual_basin_wall_tissue: String(state.Form.intraoperative_completely_tme_residual_basin_wall_tissue),
-							intraoperative_completely_tme_residual_basin_wall_tissue_spec: String(state.Form.intraoperative_completely_tme_residual_basin_wall_tissue_spec),
-							intraoperative_completely_tme_residual_basin_wall_tissue_loca: String(state.Form.intraoperative_completely_tme_residual_basin_wall_tissue_loca),
-							intraoperative_pelvic_area_of_obvious_bleeding: String(state.Form.intraoperative_pelvic_area_of_obvious_bleeding),
-							intraoperative_pelvic_nerve_damage: String(state.Form.intraoperative_pelvic_nerve_damage),
-							intraoperative_hemostatic_method: String(state.Form.intraoperative_hemostatic_method),
-							intraoperative_operation_time_min: state.Form.intraoperative_operation_time_min,
-							intraoperative_length_of_the_incision: state.Form.intraoperative_length_of_the_incision,
+							intraoperative_completely_tme_residual_basin_wall_tissue: String(state.Form
+								.intraoperative_completely_tme_residual_basin_wall_tissue),
+							intraoperative_completely_tme_residual_basin_wall_tissue_spec: String(state
+								.Form.intraoperative_completely_tme_residual_basin_wall_tissue_spec),
+							intraoperative_completely_tme_residual_basin_wall_tissue_loca: String(state
+								.Form.intraoperative_completely_tme_residual_basin_wall_tissue_loca),
+							intraoperative_pelvic_area_of_obvious_bleeding: String(state.Form
+								.intraoperative_pelvic_area_of_obvious_bleeding),
+							intraoperative_pelvic_nerve_damage: String(state.Form
+								.intraoperative_pelvic_nerve_damage),
+							intraoperative_hemostatic_method: String(state.Form
+								.intraoperative_hemostatic_method),
+							intraoperative_operation_time_min: state.Form
+								.intraoperative_operation_time_min,
+							intraoperative_length_of_the_incision: state.Form
+								.intraoperative_length_of_the_incision,
 							intraoperative_bleeding: state.Form.intraoperative_bleeding,
-							intraoperative_blood_transfusion: String(state.Form.intraoperative_blood_transfusion),
-							intraoperative_blood_transfusion_reason: String(state.Form.intraoperative_blood_transfusion_reason),
-							intraoperative_composition_blood_transfusion: String(state.Form.intraoperative_composition_blood_transfusion),
-							intraoperative_blood_transfusion_volume: state.Form.intraoperative_blood_transfusion_volume,
-							intraoperative_intraperitoneal_chemotherapy: String(state.Form.intraoperative_intraperitoneal_chemotherapy),
-							intraoperative_intraperitoneal_chemotherapy_drug_name: state.Form.intraoperative_intraperitoneal_chemotherapy_drug_name,
-							intraoperative_intraperitoneal_chemotherapy_dose: state.Form.intraoperative_intraperitoneal_chemotherapy_dose,
+							intraoperative_blood_transfusion: String(state.Form
+								.intraoperative_blood_transfusion),
+							intraoperative_blood_transfusion_reason: String(state.Form
+								.intraoperative_blood_transfusion_reason),
+							intraoperative_composition_blood_transfusion: String(state.Form
+								.intraoperative_composition_blood_transfusion),
+							intraoperative_blood_transfusion_volume: state.Form
+								.intraoperative_blood_transfusion_volume,
+							intraoperative_intraperitoneal_chemotherapy: String(state.Form
+								.intraoperative_intraperitoneal_chemotherapy),
+							intraoperative_intraperitoneal_chemotherapy_drug_name: state.Form
+								.intraoperative_intraperitoneal_chemotherapy_drug_name,
+							intraoperative_intraperitoneal_chemotherapy_dose: state.Form
+								.intraoperative_intraperitoneal_chemotherapy_dose,
 							intraoperative_complication: String(state.Form.intraoperative_complication),
-							intraoperative_complication_describe: state.Form.intraoperative_complication_describe,
+							intraoperative_complication_describe: state.Form
+								.intraoperative_complication_describe,
 							// 肝脏手术情况
 							liver_surgery_time_choose: String(state.Form.liver_surgery_time_choose),
 							liver_surgery_tran: String(state.Form.liver_surgery_tran),
-							liver_surgery_diagnosis_from_first: state.Form.liver_surgery_diagnosis_from_first,
-							liver_surgery_diagnosis_from_first_surgery: state.Form.liver_surgery_diagnosis_from_first_surgery,
+							liver_surgery_diagnosis_from_first: state.Form
+								.liver_surgery_diagnosis_from_first,
+							liver_surgery_diagnosis_from_first_surgery: state.Form
+								.liver_surgery_diagnosis_from_first_surgery,
 							liver_surgery_diagnosis_from_neo: state.Form.liver_surgery_diagnosis_from_neo,
 							liver_surgery_treat: String(state.Form.liver_surgery_treat),
 							liver_surgery_gw: String(state.Form.liver_surgery_gw),
 							liver_surgery_possible: String(state.Form.liver_surgery_possible),
 							liver_surgery_pet: String(state.Form.liver_surgery_pet),
 							liver_surgery_child: String(state.Form.liver_surgery_child),
-							liver_surgery_indole_cyanide_green_test: state.Form.liver_surgery_indole_cyanide_green_test,
+							liver_surgery_indole_cyanide_green_test: state.Form
+								.liver_surgery_indole_cyanide_green_test,
 							liver_surgery_background: String(state.Form.liver_surgery_background),
 							liver_surgery_metastaticl: state.Form.liver_surgery_metastaticl,
 							liver_surgery_metastaticl_max: state.Form.liver_surgery_metastaticl_max,
-							liver_surgery_metastaticl_max_and_1_cm: state.Form.liver_surgery_metastaticl_max_and_1_cm,
+							liver_surgery_metastaticl_max_and_1_cm: state.Form
+								.liver_surgery_metastaticl_max_and_1_cm,
 							liver_surgery_lesion: String(state.Form.liver_surgery_lesion),
 							liver_surgery_resection: String(state.Form.liver_surgery_resection),
 							liver_surgery_operate_type: String(state.Form.liver_surgery_operate_type),
 							liver_surgery_num_of_lesion: state.Form.liver_surgery_num_of_lesion,
 							liver_surgery_removal_lesion: state.Form.liver_surgery_removal_lesion,
 							liver_surgery_ablation_lesion: state.Form.liver_surgery_ablation_lesion,
-							liver_surgery_removal_lesion_max_diameter: state.Form.liver_surgery_removal_lesion_max_diameter,
+							liver_surgery_removal_lesion_max_diameter: state.Form
+								.liver_surgery_removal_lesion_max_diameter,
 							liver_surgery_missing_lesion: state.Form.liver_surgery_missing_lesion,
-							liver_surgery_missing_lesion_location: String(state.Form.liver_surgery_missing_lesion_location),
+							liver_surgery_missing_lesion_location: String(state.Form
+								.liver_surgery_missing_lesion_location),
 							liver_surgery_name: state.Form.liver_surgery_name,
 							// 术后情况
 							postoperative_anus_exhaust: state.Form.postoperative_anus_exhaust,
@@ -2712,62 +3136,93 @@
 							postoperative_sicu: String(state.Form.postoperative_sicu),
 							postoperative_sicu_observation: state.Form.postoperative_sicu_observation,
 							postoperative_eating_liquid: state.Form.postoperative_eating_liquid,
-							postoperative_ventilator_support: String(state.Form.postoperative_ventilator_support),
-							postoperative_ventilator_support_time_hour: state.Form.postoperative_ventilator_support_time_hour,
+							postoperative_ventilator_support: String(state.Form
+								.postoperative_ventilator_support),
+							postoperative_ventilator_support_time_hour: state.Form
+								.postoperative_ventilator_support_time_hour,
 							postoperative_oxygen_time_hour: state.Form.postoperative_oxygen_time_hour,
 							postoperative_total_length_stay: state.Form.postoperative_total_length_stay,
-							postoperative_complication_describe: state.Form.postoperative_complication_describe,
+							postoperative_complication_describe: state.Form
+								.postoperative_complication_describe,
 							postoperative_complication: String(state.Form.postoperative_complication),
-							postoperative_complication_specific: state.Form.postoperative_complication_specific,
-							postoperative_discharge_thrombosis_score: String(state.Form.postoperative_discharge_thrombosis_score),
-							postoperative_perioperative_death: String(state.Form.postoperative_perioperative_death),
+							postoperative_complication_specific: state.Form
+								.postoperative_complication_specific,
+							postoperative_discharge_thrombosis_score: String(state.Form
+								.postoperative_discharge_thrombosis_score),
+							postoperative_perioperative_death: String(state.Form
+								.postoperative_perioperative_death),
 							postoperative_death_reason: state.Form.postoperative_death_reason,
-							postoperative_out_hospital_complication: state.Form.postoperative_out_hospital_complication,
+							postoperative_out_hospital_complication: state.Form
+								.postoperative_out_hospital_complication,
 							postoperative_surgery_again: String(state.Form.postoperative_surgery_again),
-							postoperative_surgery_again_reason: state.Form.postoperative_surgery_again_reason,
+							postoperative_surgery_again_reason: state.Form
+								.postoperative_surgery_again_reason,
 							// 病理报告
 							pathological_report_type: String(state.Form.pathological_report_type),
 							pathological_report_type_1: String(state.Form.pathological_report_type_1),
 							pathological_report_tumor_size: state.Form.pathological_report_tumor_size,
 							pathological_report_max_diameter: state.Form.pathological_report_max_diameter,
-							pathological_report_tumor_deep: String(state.Form.pathological_report_tumor_deep),
+							pathological_report_tumor_deep: String(state.Form
+								.pathological_report_tumor_deep),
 							pathological_report_rank: String(state.Form.pathological_report_rank),
 							pathological_report_pt3_distance: state.Form.pathological_report_pt3_distance,
-							pathological_report_circumferential_cut_edge_distance: state.Form.pathological_report_circumferential_cut_edge_distance,
-							pathological_report_new_pathology: String(state.Form.pathological_report_new_pathology),
+							pathological_report_circumferential_cut_edge_distance: state.Form
+								.pathological_report_circumferential_cut_edge_distance,
+							pathological_report_new_pathology: String(state.Form
+								.pathological_report_new_pathology),
 							pathological_report_check_ln: state.Form.pathological_report_check_ln,
-							pathological_report_check_less_10_ln: state.Form.pathological_report_check_less_10_ln,
-							pathological_report_check_less_10_15_ln: state.Form.pathological_report_check_less_10_15_ln,
-							pathological_report_check_more_15_ln: state.Form.pathological_report_check_more_15_ln,
-							pathological_report_central_group_test_check_ln: state.Form.pathological_report_central_group_test_check_ln,
-							pathological_report_check_positive_ln: state.Form.pathological_report_check_positive_ln,
-							pathological_report_check_positive_less_10_ln: state.Form.pathological_report_check_positive_less_10_ln,
-							pathological_report_check_positive_less_10_15_ln: state.Form.pathological_report_check_positive_less_10_15_ln,
-							pathological_report_check_positive_more_15_ln: state.Form.pathological_report_check_positive_more_15_ln,
-							pathological_report_central_group_test_check_positive_ln: state.Form.pathological_report_central_group_test_check_positive_ln,
+							pathological_report_check_less_10_ln: state.Form
+								.pathological_report_check_less_10_ln,
+							pathological_report_check_less_10_15_ln: state.Form
+								.pathological_report_check_less_10_15_ln,
+							pathological_report_check_more_15_ln: state.Form
+								.pathological_report_check_more_15_ln,
+							pathological_report_central_group_test_check_ln: state.Form
+								.pathological_report_central_group_test_check_ln,
+							pathological_report_check_positive_ln: state.Form
+								.pathological_report_check_positive_ln,
+							pathological_report_check_positive_less_10_ln: state.Form
+								.pathological_report_check_positive_less_10_ln,
+							pathological_report_check_positive_less_10_15_ln: state.Form
+								.pathological_report_check_positive_less_10_15_ln,
+							pathological_report_check_positive_more_15_ln: state.Form
+								.pathological_report_check_positive_more_15_ln,
+							pathological_report_central_group_test_check_positive_ln: state.Form
+								.pathological_report_central_group_test_check_positive_ln,
 							pathological_report_aging_n: String(state.Form.pathological_report_aging_n),
-							pathological_report_metastatic: String(state.Form.pathological_report_metastatic),
+							pathological_report_metastatic: String(state.Form
+								.pathological_report_metastatic),
 							pathological_report_location: state.Form.pathological_report_location,
 							pathological_report_near: String(state.Form.pathological_report_near),
 							pathological_report_far: String(state.Form.pathological_report_far),
-							pathological_report_invasion_lymphatics: String(state.Form.pathological_report_invasion_lymphatics),
-							pathological_report_invasion_vein: String(state.Form.pathological_report_invasion_vein),
-							pathological_report_invasion_neural: String(state.Form.pathological_report_invasion_neural),
-							pathological_report_paracancer_mucosal_lesion: String(state.Form.pathological_report_paracancer_mucosal_lesion),
-							pathological_report_paracancer_mesangial_integrity: String(state.Form.pathological_report_paracancer_mesangial_integrity),
+							pathological_report_invasion_lymphatics: String(state.Form
+								.pathological_report_invasion_lymphatics),
+							pathological_report_invasion_vein: String(state.Form
+								.pathological_report_invasion_vein),
+							pathological_report_invasion_neural: String(state.Form
+								.pathological_report_invasion_neural),
+							pathological_report_paracancer_mucosal_lesion: String(state.Form
+								.pathological_report_paracancer_mucosal_lesion),
+							pathological_report_paracancer_mesangial_integrity: String(state.Form
+								.pathological_report_paracancer_mesangial_integrity),
 							pathological_report_miles: String(state.Form.pathological_report_miles),
 							pathological_report_ptnm: String(state.Form.pathological_report_ptnm),
 							pathological_report_crm: String(state.Form.pathological_report_crm),
-							pathological_report_tumor_invade_muscular_layer: state.Form.pathological_report_tumor_invade_muscular_layer,
-							pathological_report_tumor_cut_edge_near: state.Form.pathological_report_tumor_cut_edge_near,
-							pathological_report_pt3_tumor_involves_mesangium_deep: String(state.Form.pathological_report_pt3_tumor_involves_mesangium_deep),
-							pathological_report_liver_pathological_score: state.Form.pathological_report_liver_pathological_score,
+							pathological_report_tumor_invade_muscular_layer: state.Form
+								.pathological_report_tumor_invade_muscular_layer,
+							pathological_report_tumor_cut_edge_near: state.Form
+								.pathological_report_tumor_cut_edge_near,
+							pathological_report_pt3_tumor_involves_mesangium_deep: String(state.Form
+								.pathological_report_pt3_tumor_involves_mesangium_deep),
+							pathological_report_liver_pathological_score: state.Form
+								.pathological_report_liver_pathological_score,
 							pathological_report_dili_pss: state.Form.pathological_report_dili_pss,
 							pathological_report_describe: state.Form.pathological_report_describe,
 							// 病理录入者
 							inputting_medical_records: state.Form.inputting_medical_records,
 							is_the_record_entry_complete: state.Form.is_the_record_entry_complete,
-							medical_records_information_checker: state.Form.medical_records_information_checker,
+							medical_records_information_checker: state.Form
+								.medical_records_information_checker,
 							// 随访
 							is_follow: state.Form.is_follow,
 							follow_time: state.Form.follow_time,

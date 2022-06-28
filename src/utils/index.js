@@ -32,6 +32,7 @@ export const uploadImgsServer = config[import.meta.env.MODE].baseUrl + '/api/bac
 
 
 export const pathMap = {
+	dashboard: '仪表盘',
 	login: '登录',
 	introduce: '系统介绍',
 	update_log: '更新记录',

@@ -10,9 +10,14 @@ const router = createRouter({
 	},
     {
       path: '/',
-      redirect: '/introduce'
+      redirect: '/dashboard'
     },
 	// dashboard
+	{
+		path: '/dashboard',
+		name: 'dashboard',
+		component: () => import('../views/Dashboard.vue')
+	},
     {
       path: '/introduce',
       name: 'introduce',

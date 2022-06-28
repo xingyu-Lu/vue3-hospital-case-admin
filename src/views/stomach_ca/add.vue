@@ -47,8 +47,7 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="腹腔镜探查时间" prop="laparoscopic_exploration_time">
-				<el-date-picker v-model="Form.laparoscopic_exploration_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入腹腔镜探查时间">
+				<el-date-picker v-model="Form.laparoscopic_exploration_time" type="datetime" placeholder="请输入腹腔镜探查时间">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="腹腔镜探查结果" prop="laparoscopic_exploration_result">
@@ -61,7 +60,8 @@
 				<el-input v-model="Form.pci_index" placeholder="请输入pci 指数" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="腹腔镜探查脱落细胞结果" prop="laparoscopic_exploration_cast_off_result">
-				<el-input v-model="Form.laparoscopic_exploration_cast_off_result" placeholder="请输入腹腔镜探查脱落细胞结果" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.laparoscopic_exploration_cast_off_result" placeholder="请输入腹腔镜探查脱落细胞结果" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="腹腔镜探查是否取活检" prop="laparoscopic_exploration_biopsy">
 				<el-radio-group v-model="Form.laparoscopic_exploration_biopsy">
@@ -70,7 +70,8 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="腹腔镜探查活检结果" prop="laparoscopic_exploration_biopsy_result">
-				<el-input v-model="Form.laparoscopic_exploration_biopsy_result" placeholder="请输入腹腔镜探查活检结果" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.laparoscopic_exploration_biopsy_result" placeholder="请输入腹腔镜探查活检结果" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="腹腔镜探查后转归" prop="laparoscopic_exploration_prognosis">
 				<el-radio-group v-model="Form.laparoscopic_exploration_prognosis">
@@ -79,28 +80,28 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="术前化疗方案" prop="preoperative_chemotherapy_scheme">
-				<el-input v-model="Form.preoperative_chemotherapy_scheme" placeholder="请输入术前化疗方案" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.preoperative_chemotherapy_scheme" placeholder="请输入术前化疗方案" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术前化疗周期" prop="preoperative_chemotherapy_period">
-				<el-input v-model="Form.preoperative_chemotherapy_period" placeholder="请输入术前化疗周期" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.preoperative_chemotherapy_period" placeholder="请输入术前化疗周期" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="第一周期化疗时间" prop="first_period_chemotherapy_time">
-				<el-date-picker v-model="Form.first_period_chemotherapy_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入第一周期化疗时间">
+				<el-date-picker v-model="Form.first_period_chemotherapy_time" type="datetime" placeholder="请输入第一周期化疗时间">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="第二周期化疗时间" prop="second_period_chemotherapy_time">
-				<el-date-picker v-model="Form.second_period_chemotherapy_time" type="datetime" :default-value="new Date()"
+				<el-date-picker v-model="Form.second_period_chemotherapy_time" type="datetime"
 					placeholder="请输入第二周期化疗时间">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="第三周期化疗时间" prop="third_period_chemotherapy_time">
-				<el-date-picker v-model="Form.third_period_chemotherapy_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入第三周期化疗时间">
+				<el-date-picker v-model="Form.third_period_chemotherapy_time" type="datetime" placeholder="请输入第三周期化疗时间">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="第四周期化疗时间" prop="fourth_period_chemotherapy_time">
-				<el-date-picker v-model="Form.fourth_period_chemotherapy_time" type="datetime" :default-value="new Date()"
+				<el-date-picker v-model="Form.fourth_period_chemotherapy_time" type="datetime"
 					placeholder="请输入第四周期化疗时间">
 				</el-date-picker>
 			</el-form-item>
@@ -111,7 +112,8 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="化疗期间不良反应" prop="chemotherapy_adverse_reactions">
-				<el-input v-model="Form.chemotherapy_adverse_reactions" placeholder="请输入化疗期间不良反应" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.chemotherapy_adverse_reactions" placeholder="请输入化疗期间不良反应" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="接受化疗后临床评价" prop="accept_chemotherapy_clinic_evaluate">
 				<el-radio-group v-model="Form.accept_chemotherapy_clinic_evaluate">
@@ -122,28 +124,27 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="术后病理评效" prop="operative_evaluate_effect">
-				<el-input v-model="Form.operative_evaluate_effect" placeholder="请输入术后病理评效" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.operative_evaluate_effect" placeholder="请输入术后病理评效" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="入院日期" prop="admission_time">
-				<el-date-picker v-model="Form.admission_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入入院日期">
+				<el-date-picker v-model="Form.admission_time" type="datetime" placeholder="请输入入院日期">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="手术日期" prop="operative_time">
-				<el-date-picker v-model="Form.operative_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入手术日期">
+				<el-date-picker v-model="Form.operative_time" type="datetime" placeholder="请输入手术日期">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="出院日期" prop="discharge_time">
-				<el-date-picker v-model="Form.discharge_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入出院日期">
+				<el-date-picker v-model="Form.discharge_time" type="datetime" placeholder="请输入出院日期">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="总住院时间（天）" prop="total_hospital_days">
 				<el-input v-model="Form.total_hospital_days" placeholder="请输入总住院时间（天）" :rows="2" type="text"></el-input>
 			</el-form-item>
 			<el-form-item label="术后住院时间（天）" prop="postoperation_hospital_days">
-				<el-input v-model="Form.postoperation_hospital_days" placeholder="请输入术后住院时间（天）" :rows="2" type="text"></el-input>
+				<el-input v-model="Form.postoperation_hospital_days" placeholder="请输入术后住院时间（天）" :rows="2" type="text">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="ecog 评分" prop="ecog_score">
 				<el-input v-model="Form.ecog_score" placeholder="请输入ecog 评分" :rows="2" type="text"></el-input>
@@ -222,7 +223,8 @@
 				</el-checkbox-group>
 			</el-form-item>
 			<el-form-item label="腹腔手术史" prop="laparoscopic_operative_record">
-				<el-input v-model="Form.laparoscopic_operative_record" placeholder="请输入腹腔手术史" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.laparoscopic_operative_record" placeholder="请输入腹腔手术史" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="家族史" prop="family_record">
 				<el-input v-model="Form.family_record" placeholder="请输入家族史" :rows="2" type="textarea"></el-input>
@@ -273,7 +275,8 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="术前肺功能fev1/fvc(%)" prop="preoperative_lung_function">
-				<el-input v-model="Form.preoperative_lung_function" placeholder="饮酒请输入术前肺功能fev1/fvc(%)" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.preoperative_lung_function" placeholder="饮酒请输入术前肺功能fev1/fvc(%)" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术前CT" prop="preoperative_ct">
 				<el-radio-group v-model="Form.preoperative_ct">
@@ -295,19 +298,22 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="术前CT检查M分期" prop="preoperative_ct_check_m_aging">
-				<el-input v-model="Form.preoperative_ct_check_m_aging" placeholder="术前CT检查M分期" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.preoperative_ct_check_m_aging" placeholder="术前CT检查M分期" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术前分期ctnm" prop="preoperative_aging">
 				<el-input v-model="Form.preoperative_aging" placeholder="术前分期ctnm" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术前合并症/术前检查异常" prop="preoperative_complications_check_exception">
-				<el-input v-model="Form.preoperative_complications_check_exception" placeholder="术前合并症/术前检查异常" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.preoperative_complications_check_exception" placeholder="术前合并症/术前检查异常" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术前合并症" prop="preoperative_complications">
 				<el-checkbox-group v-model="Form.preoperative_complications">
 					<el-checkbox label=0 name="preoperative_complications">无</el-checkbox>
 					<el-checkbox label=1 name="preoperative_complications">呼吸系统（COPD，哮喘，肺心病）</el-checkbox>
-					<el-checkbox label=2 name="preoperative_complications">循环系统（高血压，心功能不全（NYHA Ⅲ或Ⅳ)，陈旧性心肌梗塞）</el-checkbox>
+					<el-checkbox label=2 name="preoperative_complications">循环系统（高血压，心功能不全（NYHA Ⅲ或Ⅳ)，陈旧性心肌梗塞）
+					</el-checkbox>
 					<el-checkbox label=3 name="preoperative_complications">消化系统（肝炎，肝硬化，门脉高压，消化道溃疡，炎性肠病）</el-checkbox>
 					<el-checkbox label=4 name="preoperative_complications">内分泌（甲亢，糖尿病）</el-checkbox>
 					<el-checkbox label=5 name="preoperative_complications">泌尿系统（慢性肾炎，肾功能不全）</el-checkbox>
@@ -319,16 +325,20 @@
 				</el-checkbox-group>
 			</el-form-item>
 			<el-form-item label="术前胸部CT" prop="preoperative_chest_ct">
-				<el-input v-model="Form.preoperative_chest_ct" placeholder="术前胸部CT" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.preoperative_chest_ct" placeholder="术前胸部CT" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="超声胃镜tnm" prop="ultrasound_gastroscope_tnm">
-				<el-input v-model="Form.ultrasound_gastroscope_tnm" placeholder="超声胃镜tnm" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.ultrasound_gastroscope_tnm" placeholder="超声胃镜tnm" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="超声造影tnm" prop="ultrasound_imaging_tnm">
-				<el-input v-model="Form.ultrasound_imaging_tnm" placeholder="超声造影tnm" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.ultrasound_imaging_tnm" placeholder="超声造影tnm" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="腹腔内脂肪容积" prop="laparoscopic_fat_volumne">
-				<el-input v-model="Form.laparoscopic_fat_volumne" placeholder="腹腔内脂肪容积" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.laparoscopic_fat_volumne" placeholder="腹腔内脂肪容积" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="腹壁脂肪容积" prop="napes_fat_volumne">
 				<el-input v-model="Form.napes_fat_volumne" placeholder="腹壁脂肪容积" :rows="2" type="textarea"></el-input>
@@ -390,16 +400,19 @@
 				<el-input v-model="Form.preoperative_cea" placeholder="术前cea" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术前ca19-9" prop="preoperative_ca19_9">
-				<el-input v-model="Form.preoperative_ca19_9" placeholder="术前ca19-9" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.preoperative_ca19_9" placeholder="术前ca19-9" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="术前ca125" prop="preoperative_ca125">
 				<el-input v-model="Form.preoperative_ca125" placeholder="术前ca125" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术前ca15-3" prop="preoperative_ca15_3">
-				<el-input v-model="Form.preoperative_ca15_3" placeholder="术前ca15-3" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.preoperative_ca15_3" placeholder="术前ca15-3" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="术前ca72-4" prop="preoperative_ca72_4">
-				<el-input v-model="Form.preoperative_ca72_4" placeholder="术前ca72-4" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.preoperative_ca72_4" placeholder="术前ca72-4" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="胃泌素-17" prop="gas_17">
 				<el-input v-model="Form.gas_17" placeholder="胃泌素-17" :rows="2" type="textarea"></el-input>
@@ -411,7 +424,8 @@
 				<el-input v-model="Form.pepsinogen_2" placeholder="胃蛋白酶原2" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="胃蛋白酶原1/胃蛋白酶原2比值" prop="pepsinogen_1_divide_pepsinogen_2">
-				<el-input v-model="Form.pepsinogen_1_divide_pepsinogen_2" placeholder="胃蛋白酶原1/胃蛋白酶原2比值" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.pepsinogen_1_divide_pepsinogen_2" placeholder="胃蛋白酶原1/胃蛋白酶原2比值" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术前ll-6" prop="preoperative_ll_6">
 				<el-input v-model="Form.preoperative_ll_6" placeholder="术前ll-6" :rows="2" type="textarea"></el-input>
@@ -429,7 +443,8 @@
 				<el-input v-model="Form.ebv_ea_lgg" placeholder="ebv-ea-lgg" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="pg-1/pg-2比值" prop="pg_1_divide_pg_2">
-				<el-input v-model="Form.pg_1_divide_pg_2" placeholder="pg-1/pg-2比值" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.pg_1_divide_pg_2" placeholder="pg-1/pg-2比值" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="大便隐血" prop="stool_ob">
 				<el-radio-group v-model="Form.stool_ob">
@@ -444,37 +459,46 @@
 				<el-input v-model="Form.postoperative_cea" placeholder="术后cea" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术后ca19-9" prop="postoperative_ca19_9">
-				<el-input v-model="Form.postoperative_ca19_9" placeholder="术后ca19-9" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.postoperative_ca19_9" placeholder="术后ca19-9" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="术后ca72-4" prop="postoperative_ca72_4">
-				<el-input v-model="Form.postoperative_ca72_4" placeholder="术后ca72-4" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.postoperative_ca72_4" placeholder="术后ca72-4" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="术后125" prop="postoperative_ca125">
 				<el-input v-model="Form.postoperative_ca125" placeholder="术后125" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术后ca15-3" prop="postoperative_ca15_3">
-				<el-input v-model="Form.postoperative_ca15_3" placeholder="术后ca15-3" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.postoperative_ca15_3" placeholder="术后ca15-3" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="术后rbc" prop="postoperative_rbc">
 				<el-input v-model="Form.postoperative_rbc" placeholder="术后rbc" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术后血红蛋白" prop="postoperative_hemoglobin">
-				<el-input v-model="Form.postoperative_hemoglobin" placeholder="术后血红蛋白" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.postoperative_hemoglobin" placeholder="术后血红蛋白" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="术后谷丙转氨酶alt u/l" prop="postoperative_gpt">
-				<el-input v-model="Form.postoperative_gpt" placeholder="术后谷丙转氨酶alt u/l" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.postoperative_gpt" placeholder="术后谷丙转氨酶alt u/l" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="术后谷草转氨酶ast u/l" prop="postoperative_got">
-				<el-input v-model="Form.postoperative_got" placeholder="术后谷草转氨酶ast u/l" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.postoperative_got" placeholder="术后谷草转氨酶ast u/l" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="术后总胆红素tbil mmol/l" prop="postoperative_tbil">
-				<el-input v-model="Form.postoperative_tbil" placeholder="术后总胆红素tbil mmol/l" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.postoperative_tbil" placeholder="术后总胆红素tbil mmol/l" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="术后总蛋白tp g/l" prop="postoperative_tp">
-				<el-input v-model="Form.postoperative_tp" placeholder="术后总蛋白tp g/l" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.postoperative_tp" placeholder="术后总蛋白tp g/l" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="术后白蛋白 alb g/l" prop="postoperative_alb">
-				<el-input v-model="Form.postoperative_alb" placeholder="术后白蛋白 alb g/l" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.postoperative_alb" placeholder="术后白蛋白 alb g/l" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="术后glu" prop="postoperative_glu">
 				<el-input v-model="Form.postoperative_glu" placeholder="术后glu" :rows="2" type="textarea"></el-input>
@@ -489,7 +513,8 @@
 				<el-input v-model="Form.d_d2" placeholder="d-d2" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="穿刺液淀粉酶" prop="amylase_in_puncture_fluid">
-				<el-input v-model="Form.amylase_in_puncture_fluid" placeholder="穿刺液淀粉酶" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.amylase_in_puncture_fluid" placeholder="穿刺液淀粉酶" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="外科干预方式" prop="surgical_intervention">
 				<el-radio-group v-model="Form.surgical_intervention">
@@ -521,7 +546,8 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="腹腔镜探查后中转开腹原因" prop="laparoscopic_exploration_laparoscopy">
-				<el-input v-model="Form.laparoscopic_exploration_laparoscopy" placeholder="腹腔镜探查后中转开腹原因" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.laparoscopic_exploration_laparoscopy" placeholder="腹腔镜探查后中转开腹原因" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="切除方式" prop="removal_way">
 				<el-radio-group v-model="Form.removal_way">
@@ -558,10 +584,12 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="网膜囊切除时间（分）" prop="omental_sac_resection_minutes">
-				<el-input v-model="Form.omental_sac_resection_minutes" placeholder="网膜囊切除时间（分）" :rows="2" type="text"></el-input>
+				<el-input v-model="Form.omental_sac_resection_minutes" placeholder="网膜囊切除时间（分）" :rows="2" type="text">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="脾门淋巴结清扫时间（分）" prop="splenic_hilar_lymph_node_clear_minutes">
-				<el-input v-model="Form.splenic_hilar_lymph_node_clear_minutes" placeholder="脾门淋巴结清扫时间（分）" :rows="2" type="text"></el-input>
+				<el-input v-model="Form.splenic_hilar_lymph_node_clear_minutes" placeholder="脾门淋巴结清扫时间（分）" :rows="2"
+					type="text"></el-input>
 			</el-form-item>
 			<el-form-item label="联合脏器切除" prop="simultaneous_organoectomy_resection">
 				<el-checkbox-group v-model="Form.simultaneous_organoectomy_resection">
@@ -587,16 +615,19 @@
 				</el-checkbox-group>
 			</el-form-item>
 			<el-form-item label="术中并发症-出血处理" prop="intraoperative_organ_injury_occurred_handle">
-				<el-input v-model="Form.intraoperative_organ_injury_occurred_handle" placeholder="术中并发症-出血处理" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.intraoperative_organ_injury_occurred_handle" placeholder="术中并发症-出血处理" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术中并发症-出血部位" prop="intraoperative_complications_bleeding_site">
-				<el-input v-model="Form.intraoperative_complications_bleeding_site" placeholder="术中并发症-出血部位" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.intraoperative_complications_bleeding_site" placeholder="术中并发症-出血部位" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="手术时间（分）" prop="operation_minutes">
 				<el-input v-model="Form.operation_minutes" placeholder="手术时间（分）" :rows="2" type="text"></el-input>
 			</el-form-item>
 			<el-form-item label="术中估计出血量ml" prop="intraoperative_blood_loss_was_estimated">
-				<el-input v-model="Form.intraoperative_blood_loss_was_estimated" placeholder="术中估计出血量ml" :rows="2" type="text"></el-input>
+				<el-input v-model="Form.intraoperative_blood_loss_was_estimated" placeholder="术中估计出血量ml" :rows="2"
+					type="text"></el-input>
 			</el-form-item>
 			<el-form-item label="围术期输血" prop="perioperative_blood_transfusion">
 				<el-radio-group v-model="Form.perioperative_blood_transfusion">
@@ -607,10 +638,12 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="围术期输血单位" prop="perioperative_transfusion_unit">
-				<el-input v-model="Form.perioperative_transfusion_unit" placeholder="围术期输血单位" :rows="2" type="text"></el-input>
+				<el-input v-model="Form.perioperative_transfusion_unit" placeholder="围术期输血单位" :rows="2" type="text">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="术中化疗" prop="chemotherapy_during_operation">
-				<el-input v-model="Form.chemotherapy_during_operation" placeholder="术中化疗" :rows="2" type="text"></el-input>
+				<el-input v-model="Form.chemotherapy_during_operation" placeholder="术中化疗" :rows="2" type="text">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="术中纳米碳示踪" prop="intraoperative_carbon_nanotracers">
 				<el-radio-group v-model="Form.intraoperative_carbon_nanotracers">
@@ -619,10 +652,12 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="术中动脉灌注化疗" prop="intraoperative_arterial_infusion_chemotherapy">
-				<el-input v-model="Form.intraoperative_arterial_infusion_chemotherapy" placeholder="术中动脉灌注化疗" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.intraoperative_arterial_infusion_chemotherapy" placeholder="术中动脉灌注化疗" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术中特殊冰冻结果(如网膜结节系低分化腺癌)" prop="intraoperative_results_of_special_freezing">
-				<el-input v-model="Form.intraoperative_results_of_special_freezing" placeholder="术中特殊冰冻结果(如网膜结节系低分化腺癌)" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.intraoperative_results_of_special_freezing" placeholder="术中特殊冰冻结果(如网膜结节系低分化腺癌)"
+					:rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="腹水" prop="ascites">
 				<el-radio-group v-model="Form.ascites">
@@ -665,7 +700,8 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="腹膜后、肠系膜根部、16组淋巴结肿大" prop="lymph_nodes_were_enlarged_in_16">
-				<el-input v-model="Form.lymph_nodes_were_enlarged_in_16" placeholder="腹膜后、肠系膜根部、16组淋巴结肿大" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.lymph_nodes_were_enlarged_in_16" placeholder="腹膜后、肠系膜根部、16组淋巴结肿大" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="肿瘤病灶个数" prop="number_of_tumor_lesions">
 				<el-radio-group v-model="Form.number_of_tumor_lesions">
@@ -704,7 +740,8 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="肿瘤最大径（如果为双病灶肿瘤描述主体病灶）(cm)" prop="greatest_tumor_diameter">
-				<el-input v-model="Form.greatest_tumor_diameter" placeholder="肿瘤最大径（如果为双病灶肿瘤描述主体病灶）(cm)" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.greatest_tumor_diameter" placeholder="肿瘤最大径（如果为双病灶肿瘤描述主体病灶）(cm)" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术中肿瘤浸润深度" prop="intraoperative_depth_of_tumor_invasion">
 				<el-radio-group v-model="Form.intraoperative_depth_of_tumor_invasion">
@@ -745,10 +782,12 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="近切缘距肿瘤距离cm" prop="distance_between_the_proximal_margin_and_the_tumor">
-				<el-input v-model="Form.distance_between_the_proximal_margin_and_the_tumor" placeholder="近切缘距肿瘤距离cm" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.distance_between_the_proximal_margin_and_the_tumor" placeholder="近切缘距肿瘤距离cm"
+					:rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="远切缘距肿瘤距离cm" prop="distance_of_distal_margin_to_tumor">
-				<el-input v-model="Form.distance_of_distal_margin_to_tumor" placeholder="远切缘距肿瘤距离cm" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.distance_of_distal_margin_to_tumor" placeholder="远切缘距肿瘤距离cm" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="双病灶肿瘤 病灶-1：性质" prop="dual_foci_neoplasms_foci_1_nature">
 				<el-radio-group v-model="Form.dual_foci_neoplasms_foci_1_nature">
@@ -801,7 +840,8 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="三病灶以上多病灶肿瘤具体描述" prop="three_or_more_lesions_and_multiple_lesions">
-				<el-input v-model="Form.three_or_more_lesions_and_multiple_lesions" placeholder="三病灶以上多病灶肿瘤具体描述" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.three_or_more_lesions_and_multiple_lesions" placeholder="三病灶以上多病灶肿瘤具体描述"
+					:rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="单病灶肿瘤病理类型" prop="single_focal_tumor_pathology">
 				<el-radio-group v-model="Form.single_focal_tumor_pathology">
@@ -849,7 +889,8 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="淋巴瘤：TNM分期" prop="lymphoma_tnm_aging">
-				<el-input v-model="Form.lymphoma_tnm_aging" placeholder="淋巴瘤：TNM分期" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.lymphoma_tnm_aging" placeholder="淋巴瘤：TNM分期" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="冰冻切缘病检" prop="detection_of_frozen_cutting_edge_disease">
 				<el-radio-group v-model="Form.detection_of_frozen_cutting_edge_disease">
@@ -968,13 +1009,15 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="淋巴结清扫总数" prop="lymphadenectomy_total">
-				<el-input v-model="Form.lymphadenectomy_total" placeholder="淋巴结清扫总数" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.lymphadenectomy_total" placeholder="淋巴结清扫总数" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="淋巴结+" prop="lymph_node">
 				<el-input v-model="Form.lymph_node" placeholder="淋巴结+" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="区域淋巴结有无癌结节" prop="regional_lymph_nodes_cancer_nodules">
-				<el-input v-model="Form.regional_lymph_nodes_cancer_nodules" placeholder="区域淋巴结有无癌结节" :rows="2" type="text"></el-input>
+				<el-input v-model="Form.regional_lymph_nodes_cancer_nodules" placeholder="区域淋巴结有无癌结节" :rows="2"
+					type="text"></el-input>
 			</el-form-item>
 			<el-form-item label="no1_plus" prop="no1_plus">
 				<el-input v-model="Form.no1_plus" placeholder="no1_plus" :rows="2" type="text"></el-input>
@@ -1217,10 +1260,12 @@
 				<el-input v-model="Form.no112" placeholder="no112" :rows="2" type="text"></el-input>
 			</el-form-item>
 			<el-form-item label="small_mesenteric_ln_plus" prop="small_mesenteric_ln_plus">
-				<el-input v-model="Form.small_mesenteric_ln_plus" placeholder="small_mesenteric_ln_plus" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.small_mesenteric_ln_plus" placeholder="small_mesenteric_ln_plus" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="小肠系膜ln_plus" prop="small_mesenteric_ln_plus">
-				<el-input v-model="Form.small_mesenteric_ln_plus" placeholder="小肠系膜ln_plus" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.small_mesenteric_ln_plus" placeholder="小肠系膜ln_plus" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="小肠系膜ln" prop="small_mesenteric_ln">
 				<el-input v-model="Form.small_mesenteric_ln" placeholder="小肠系膜ln" :rows="2" type="textarea"></el-input>
@@ -1282,16 +1327,20 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="分期说明（术前MDCT，术中特殊发现，术后病理特殊信息）" prop="stage_show">
-				<el-input v-model="Form.stage_show" placeholder="分期说明（术前MDCT，术中特殊发现，术后病理特殊信息）" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.stage_show" placeholder="分期说明（术前MDCT，术中特殊发现，术后病理特殊信息）" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="病理号（另自行保存病理报告副本pdf文档，以病理号命名）" prop="pathology_num">
-				<el-input v-model="Form.pathology_num" placeholder="病理号（另自行保存病理报告副本pdf文档，以病理号命名）" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.pathology_num" placeholder="病理号（另自行保存病理报告副本pdf文档，以病理号命名）" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="围术期营养支持(包括具体方案，持续时间，不良反应)" prop="perioperative_nutritional_support">
-				<el-input v-model="Form.perioperative_nutritional_support" placeholder="围术期营养支持(包括具体方案，持续时间，不良反应)" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.perioperative_nutritional_support" placeholder="围术期营养支持(包括具体方案，持续时间，不良反应)"
+					:rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="围术期抗生素" prop="perioperative_antibiotics">
-				<el-input v-model="Form.perioperative_antibiotics" placeholder="围术期抗生素" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.perioperative_antibiotics" placeholder="围术期抗生素" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="术后预防抗生素" prop="postoperative_prophylactic_antibiotic">
 				<el-radio-group v-model="Form.postoperative_prophylactic_antibiotic">
@@ -1300,13 +1349,16 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="围术期抑酸剂" prop="perioperative_acid_suppressor">
-				<el-input v-model="Form.perioperative_acid_suppressor" placeholder="围术期抑酸剂" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.perioperative_acid_suppressor" placeholder="围术期抑酸剂" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="围术期黏膜保护剂" prop="perioperative_mucosal_protectant">
-				<el-input v-model="Form.perioperative_mucosal_protectant" placeholder="围术期黏膜保护剂" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.perioperative_mucosal_protectant" placeholder="围术期黏膜保护剂" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="围术期止血药" prop="perioperative_hemostatic_agent">
-				<el-input v-model="Form.perioperative_hemostatic_agent" placeholder="围术期止血药" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.perioperative_hemostatic_agent" placeholder="围术期止血药" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="围术期生长抑素" prop="perioperative_somatostatin">
 				<el-radio-group v-model="Form.perioperative_somatostatin">
@@ -1315,13 +1367,16 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="围术期镇痛药" prop="perioperative_analgesics">
-				<el-input v-model="Form.perioperative_analgesics" placeholder="围术期镇痛药" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.perioperative_analgesics" placeholder="围术期镇痛药" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="围术期重症监护" prop="perioperative_intensive_care">
-				<el-input v-model="Form.perioperative_intensive_care" placeholder="围术期重症监护" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.perioperative_intensive_care" placeholder="围术期重症监护" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="围术期其他特殊处理" prop="other_special_treatments_during_perioperative_period">
-				<el-input v-model="Form.other_special_treatments_during_perioperative_period" placeholder="围术期其他特殊处理" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.other_special_treatments_during_perioperative_period" placeholder="围术期其他特殊处理"
+					:rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="是否安置胃管" prop="whether_to_install_a_gastric_tube">
 				<el-radio-group v-model="Form.whether_to_install_a_gastric_tube">
@@ -1330,54 +1385,54 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="安置时间" prop="set_time">
-				<el-date-picker v-model="Form.set_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入安置时间">
+				<el-date-picker v-model="Form.set_time" type="datetime" placeholder="请输入安置时间">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="胃管拔除日(POD)" prop="extraction_date_of_gastric_tube_time">
-				<el-date-picker v-model="Form.extraction_date_of_gastric_tube_time" type="datetime" :default-value="new Date()"
+				<el-date-picker v-model="Form.extraction_date_of_gastric_tube_time" type="datetime"
 					placeholder="请输入胃管拔除日(POD)">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="每日平均胃液量(ml)" prop="average_daily_gastric_fluid_volume">
-				<el-input v-model="Form.average_daily_gastric_fluid_volume" placeholder="每日平均胃液量(ml)" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.average_daily_gastric_fluid_volume" placeholder="每日平均胃液量(ml)" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="再次安置胃管原因：具体描述" prop="cause_of_gastric_tube_replacement">
-				<el-input v-model="Form.cause_of_gastric_tube_replacement" placeholder="再次安置胃管原因：具体描述" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.cause_of_gastric_tube_replacement" placeholder="再次安置胃管原因：具体描述" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="尿管拔除时间(POH)" prop="catheter_removal_time">
-				<el-date-picker v-model="Form.catheter_removal_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入尿管拔除时间(POH)">
+				<el-date-picker v-model="Form.catheter_removal_time" type="datetime" placeholder="请输入尿管拔除时间(POH)">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="腹腔引流管拔除日(POD)" prop="abdominal_drainage_tube_removal_date_time">
-				<el-date-picker v-model="Form.abdominal_drainage_tube_removal_date_time" type="datetime" :default-value="new Date()"
+				<el-date-picker v-model="Form.abdominal_drainage_tube_removal_date_time" type="datetime"
 					placeholder="请输入腹腔引流管拔除日(POD)">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="每日平均腹腔引流液量(ml)" prop="average_daily_volume_of_abdominal_drainage_fluid">
-				<el-input v-model="Form.average_daily_volume_of_abdominal_drainage_fluid" placeholder="每日平均腹腔引流液量(ml)" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.average_daily_volume_of_abdominal_drainage_fluid" placeholder="每日平均腹腔引流液量(ml)"
+					:rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="肛门排气日" prop="anal_exhaust_day_time">
-				<el-date-picker v-model="Form.anal_exhaust_day_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入肛门排气日">
+				<el-date-picker v-model="Form.anal_exhaust_day_time" type="datetime" placeholder="请输入肛门排气日">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="开始下床活动日(POH)" prop="start_an_out_of_bed_day_time">
-				<el-date-picker v-model="Form.start_an_out_of_bed_day_time" type="datetime" :default-value="new Date()"
+				<el-date-picker v-model="Form.start_an_out_of_bed_day_time" type="datetime"
 					placeholder="请输入开始下床活动日(POH)">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="开始进食流质日(POH)" prop="start_a_fluid_day_time">
-				<el-date-picker v-model="Form.start_a_fluid_day_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入开始进食流质日(POH)">
+				<el-date-picker v-model="Form.start_a_fluid_day_time" type="datetime" placeholder="请输入开始进食流质日(POH)">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="最高体温(℃)" prop="highest_temperature">
 				<el-input v-model="Form.highest_temperature" placeholder="最高体温(℃)" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术后体温>38℃天数" prop="postoperative_temperature_greater_than_38_days">
-				<el-input v-model="Form.postoperative_temperature_greater_than_38_days" placeholder="术后体温>38℃天数" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.postoperative_temperature_greater_than_38_days" placeholder="术后体温>38℃天数"
+					:rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="围术期手术并发症" prop="perioperative_complications">
 				<el-checkbox-group v-model="Form.perioperative_complications">
@@ -1401,13 +1456,16 @@
 				</el-checkbox-group>
 			</el-form-item>
 			<el-form-item label="围术期手术并发症处理方式" prop="management_of_perioperative_complications">
-				<el-input v-model="Form.management_of_perioperative_complications" placeholder="围术期手术并发症处理方式" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.management_of_perioperative_complications" placeholder="围术期手术并发症处理方式" :rows="2"
+					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="非手术并发症" prop="nonoperative_complication">
-				<el-input v-model="Form.nonoperative_complication" placeholder="非手术并发症" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.nonoperative_complication" placeholder="非手术并发症" :rows="2" type="textarea">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="围术期非手术并发症处理方式" prop="perioperative_management_of_nonoperative_complications">
-				<el-input v-model="Form.perioperative_management_of_nonoperative_complications" placeholder="围术期非手术并发症处理方式" :rows="2" type="textarea"></el-input>
+				<el-input v-model="Form.perioperative_management_of_nonoperative_complications"
+					placeholder="围术期非手术并发症处理方式" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="转归" prop="outcome">
 				<el-radio-group v-model="Form.outcome">
@@ -1418,15 +1476,18 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="病历信息录入者" prop="inputting_medical_records">
-				<el-input v-model="Form.inputting_medical_records" placeholder="病历信息录入者" :rows="2" type="text"></el-input>
+				<el-input v-model="Form.inputting_medical_records" placeholder="病历信息录入者" :rows="2" type="text">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="病历录入是否完整" prop="is_the_record_entry_complete">
-				<el-input v-model="Form.is_the_record_entry_complete" placeholder="病历录入是否完整" :rows="2" type="text"></el-input>
+				<el-input v-model="Form.is_the_record_entry_complete" placeholder="病历录入是否完整" :rows="2" type="text">
+				</el-input>
 			</el-form-item>
 			<el-form-item label="病历信息核查者" prop="medical_records_information_checker">
-				<el-input v-model="Form.medical_records_information_checker" placeholder="病历信息核查者" :rows="2" type="text"></el-input>
+				<el-input v-model="Form.medical_records_information_checker" placeholder="病历信息核查者" :rows="2"
+					type="text"></el-input>
 			</el-form-item>
-			
+
 			<el-form-item label="图片" prop="img">
 				<el-upload ref="uploadRef" :action="uploadImgServer" :data="{ basket: 'img' }" :limit="3"
 					list-type="picture-card" thumbnail-mode=true :headers="{ Authorization: token }"
@@ -1452,12 +1513,16 @@
 				</el-upload>
 			</el-form-item>
 			<el-form-item label="视频" prop='video'>
-				<el-upload ref="videoRef" :headers="{ Authorization: token }" :action="uploadImgServer" :on-remove="handleVideoRemove" :on-success="handleVideoSuccess" :auto-upload="true" :data="{ basket: 'video' }" :limit="1" multiple :file-list="Form.videoFileList">
+				<el-upload ref="videoRef" :headers="{ Authorization: token }" :action="uploadImgServer"
+					:on-remove="handleVideoRemove" :on-success="handleVideoSuccess" :auto-upload="true"
+					:data="{ basket: 'video' }" :limit="1" multiple :file-list="Form.videoFileList">
 					<el-button type="primary">上传</el-button>
 				</el-upload>
 			</el-form-item>
 			<el-form-item label="附件" prop='attachment'>
-				<el-upload ref="attachmentRef" :headers="{ Authorization: token }" :action="uploadImgServer" :on-remove="handleAttachmentRemove" :on-success="handleAttachmentSuccess" :auto-upload="true" :data="{ basket: 'attachment' }" :limit="3" multiple :file-list="Form.attachmentFileList">
+				<el-upload ref="attachmentRef" :headers="{ Authorization: token }" :action="uploadImgServer"
+					:on-remove="handleAttachmentRemove" :on-success="handleAttachmentSuccess" :auto-upload="true"
+					:data="{ basket: 'attachment' }" :limit="3" multiple :file-list="Form.attachmentFileList">
 					<el-button type="primary">上传</el-button>
 				</el-upload>
 			</el-form-item>
@@ -1468,8 +1533,7 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="随访时间" prop="follow_time">
-				<el-date-picker v-model="Form.follow_time" type="date" :default-value="new Date()"
-					placeholder="随访时间">
+				<el-date-picker v-model="Form.follow_time" type="date" placeholder="随访时间">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="随访内容" prop="follow_content">
@@ -1848,7 +1912,7 @@
 					is_follow: '0',
 					follow_time: '',
 					follow_content: '',
-					
+
 					disabled: true,
 					fileList: [],
 					attachmentFileList: [],
@@ -1884,7 +1948,12 @@
 						required: true,
 						message: '联系电话必须',
 						trigger: ['change'],
-					}]
+					}],
+					admission_time: [{
+						required: true,
+						message: '入院时间必须',
+						trigger: ['change'],
+					}],
 				},
 			})
 
@@ -1909,27 +1978,46 @@
 							remark: res.data.remark,
 							family_contact: res.data.family_contact,
 							preoperative_chemotherapy: String(res.data.preoperative_chemotherapy),
-							preoperative_chemotherapy_laparoscopic_exploration: String(res.data.preoperative_chemotherapy_laparoscopic_exploration),
-							laparoscopic_exploration_time: res.data.laparoscopic_exploration_time == '1970-01-01 08:00:00' ? '' : res.data.laparoscopic_exploration_time,
-							laparoscopic_exploration_result: String(res.data.laparoscopic_exploration_result),
+							preoperative_chemotherapy_laparoscopic_exploration: String(res.data
+								.preoperative_chemotherapy_laparoscopic_exploration),
+							laparoscopic_exploration_time: res.data.laparoscopic_exploration_time ==
+								'1970-01-01 08:00:00' ? '' : res.data.laparoscopic_exploration_time,
+							laparoscopic_exploration_result: String(res.data
+								.laparoscopic_exploration_result),
 							pci_index: res.data.pci_index,
-							laparoscopic_exploration_cast_off_result: res.data.laparoscopic_exploration_cast_off_result,
-							laparoscopic_exploration_biopsy: String(res.data.laparoscopic_exploration_biopsy),
-							laparoscopic_exploration_biopsy_result: res.data.laparoscopic_exploration_biopsy_result,
-							laparoscopic_exploration_prognosis: String(res.data.laparoscopic_exploration_prognosis),
-							preoperative_chemotherapy_scheme: res.data.preoperative_chemotherapy_scheme,
-							preoperative_chemotherapy_period: res.data.preoperative_chemotherapy_period,
-							first_period_chemotherapy_time: res.data.first_period_chemotherapy_time == '1970-01-01 08:00:00' ? '' : res.data.first_period_chemotherapy_time,
-							second_period_chemotherapy_time: res.data.second_period_chemotherapy_time == '1970-01-01 08:00:00' ? '' : res.data.second_period_chemotherapy_time,
-							third_period_chemotherapy_time: res.data.third_period_chemotherapy_time == '1970-01-01 08:00:00' ? '' : res.data.third_period_chemotherapy_time,
-							fourth_period_chemotherapy_time: res.data.fourth_period_chemotherapy_time == '1970-01-01 08:00:00' ? '' : res.data.fourth_period_chemotherapy_time,
+							laparoscopic_exploration_cast_off_result: res.data
+								.laparoscopic_exploration_cast_off_result,
+							laparoscopic_exploration_biopsy: String(res.data
+								.laparoscopic_exploration_biopsy),
+							laparoscopic_exploration_biopsy_result: res.data
+								.laparoscopic_exploration_biopsy_result,
+							laparoscopic_exploration_prognosis: String(res.data
+								.laparoscopic_exploration_prognosis),
+							preoperative_chemotherapy_scheme: res.data
+								.preoperative_chemotherapy_scheme,
+							preoperative_chemotherapy_period: res.data
+								.preoperative_chemotherapy_period,
+							first_period_chemotherapy_time: res.data.first_period_chemotherapy_time ==
+								'1970-01-01 08:00:00' ? '' : res.data.first_period_chemotherapy_time,
+							second_period_chemotherapy_time: res.data
+								.second_period_chemotherapy_time == '1970-01-01 08:00:00' ? '' : res
+								.data.second_period_chemotherapy_time,
+							third_period_chemotherapy_time: res.data.third_period_chemotherapy_time ==
+								'1970-01-01 08:00:00' ? '' : res.data.third_period_chemotherapy_time,
+							fourth_period_chemotherapy_time: res.data
+								.fourth_period_chemotherapy_time == '1970-01-01 08:00:00' ? '' : res
+								.data.fourth_period_chemotherapy_time,
 							chemotherapy_operative: String(res.data.chemotherapy_operative),
 							chemotherapy_adverse_reactions: res.data.chemotherapy_adverse_reactions,
-							accept_chemotherapy_clinic_evaluate: String(res.data.accept_chemotherapy_clinic_evaluate),
+							accept_chemotherapy_clinic_evaluate: String(res.data
+								.accept_chemotherapy_clinic_evaluate),
 							operative_evaluate_effect: res.data.operative_evaluate_effect,
-							admission_time: res.data.admission_time == '1970-01-01 08:00:00' ? '' : res.data.admission_time,
-							operative_time: res.data.operative_time == '1970-01-01 08:00:00' ? '' : res.data.operative_time,
-							discharge_time: res.data.discharge_time == '1970-01-01 08:00:00' ? '' : res.data.discharge_time,
+							admission_time: res.data.admission_time == '1970-01-01 08:00:00' ? '' : res
+								.data.admission_time,
+							operative_time: res.data.operative_time == '1970-01-01 08:00:00' ? '' : res
+								.data.operative_time,
+							discharge_time: res.data.discharge_time == '1970-01-01 08:00:00' ? '' : res
+								.data.discharge_time,
 							total_hospital_days: res.data.total_hospital_days,
 							postoperation_hospital_days: res.data.postoperation_hospital_days,
 							ecog_score: res.data.ecog_score,
@@ -1960,7 +2048,8 @@
 							n_aging: String(res.data.n_aging),
 							preoperative_ct_check_m_aging: res.data.preoperative_ct_check_m_aging,
 							preoperative_aging: res.data.preoperative_aging,
-							preoperative_complications_check_exception: res.data.preoperative_complications_check_exception,
+							preoperative_complications_check_exception: res.data
+								.preoperative_complications_check_exception,
 							preoperative_complications: res.data.preoperative_complications,
 							preoperative_chest_ct: String(res.data.preoperative_chest_ct),
 							ultrasound_gastroscope_tnm: res.data.ultrasound_gastroscope_tnm,
@@ -1990,7 +2079,8 @@
 							gas_17: res.data.gas_17,
 							pepsinogen_1: res.data.pepsinogen_1,
 							pepsinogen_2: res.data.pepsinogen_2,
-							pepsinogen_1_divide_pepsinogen_2: res.data.pepsinogen_1_divide_pepsinogen_2,
+							pepsinogen_1_divide_pepsinogen_2: res.data
+								.pepsinogen_1_divide_pepsinogen_2,
 							preoperative_ll_6: res.data.preoperative_ll_6,
 							vitb12: res.data.vitb12,
 							folate: res.data.folate,
@@ -2020,26 +2110,39 @@
 							surgeon: res.data.surgeon,
 							road_way: String(res.data.road_way),
 							road: String(res.data.road),
-							laparoscopic_exploration_laparoscopy: res.data.laparoscopic_exploration_laparoscopy,
+							laparoscopic_exploration_laparoscopy: res.data
+								.laparoscopic_exploration_laparoscopy,
 							removal_way: String(res.data.removal_way),
 							lymphadenectomy: String(res.data.lymphadenectomy),
 							rebuild: String(res.data.rebuild),
 							omental_sac_resection: String(res.data.omental_sac_resection),
 							omental_sac_resection_minutes: res.data.omental_sac_resection_minutes,
-							splenic_hilar_lymph_node_clear_minutes: res.data.splenic_hilar_lymph_node_clear_minutes,
-							simultaneous_organoectomy_resection: res.data.simultaneous_organoectomy_resection,
-							intraoperative_organ_injury_occurred: res.data.intraoperative_organ_injury_occurred,
-							intraoperative_organ_injury_occurred_handle: res.data.intraoperative_organ_injury_occurred_handle,
-							intraoperative_complications_bleeding_site: res.data.intraoperative_complications_bleeding_site,
+							splenic_hilar_lymph_node_clear_minutes: res.data
+								.splenic_hilar_lymph_node_clear_minutes,
+							simultaneous_organoectomy_resection: res.data
+								.simultaneous_organoectomy_resection,
+							intraoperative_organ_injury_occurred: res.data
+								.intraoperative_organ_injury_occurred,
+							intraoperative_organ_injury_occurred_handle: res.data
+								.intraoperative_organ_injury_occurred_handle,
+							intraoperative_complications_bleeding_site: res.data
+								.intraoperative_complications_bleeding_site,
 							operation_minutes: res.data.operation_minutes,
-							intraoperative_blood_loss_was_estimated: res.data.intraoperative_blood_loss_was_estimated,
-							perioperative_blood_transfusion: String(res.data.perioperative_blood_transfusion),
-							adverse_reactions_of_perioperative_blood_transfusion: String(res.data.adverse_reactions_of_perioperative_blood_transfusion),
+							intraoperative_blood_loss_was_estimated: res.data
+								.intraoperative_blood_loss_was_estimated,
+							perioperative_blood_transfusion: String(res.data
+								.perioperative_blood_transfusion),
+							adverse_reactions_of_perioperative_blood_transfusion: String(res.data
+								.adverse_reactions_of_perioperative_blood_transfusion),
 							perioperative_transfusion_unit: res.data.perioperative_transfusion_unit,
-							chemotherapy_during_operation: String(res.data.chemotherapy_during_operation),
-							intraoperative_carbon_nanotracers: String(res.data.intraoperative_carbon_nanotracers),
-							intraoperative_arterial_infusion_chemotherapy: res.data.intraoperative_arterial_infusion_chemotherapy,
-							intraoperative_results_of_special_freezing: res.data.intraoperative_results_of_special_freezing,
+							chemotherapy_during_operation: String(res.data
+								.chemotherapy_during_operation),
+							intraoperative_carbon_nanotracers: String(res.data
+								.intraoperative_carbon_nanotracers),
+							intraoperative_arterial_infusion_chemotherapy: res.data
+								.intraoperative_arterial_infusion_chemotherapy,
+							intraoperative_results_of_special_freezing: res.data
+								.intraoperative_results_of_special_freezing,
 							ascites: String(res.data.ascites),
 							cancer_cell: String(res.data.cancer_cell),
 							peritoneal_metastasis: String(res.data.peritoneal_metastasis),
@@ -2048,34 +2151,48 @@
 							more_hepatic_metastases: String(res.data.more_hepatic_metastases),
 							lymph_nodes_were_enlarged_in_16: res.data.lymph_nodes_were_enlarged_in_16,
 							number_of_tumor_lesions: String(res.data.number_of_tumor_lesions),
-							longitudinal_position_of_a_single_lesion: String(res.data.longitudinal_position_of_a_single_lesion),
+							longitudinal_position_of_a_single_lesion: String(res.data
+								.longitudinal_position_of_a_single_lesion),
 							aeg: String(res.data.aeg),
 							peridiameter_of_the_tumor: String(res.data.peridiameter_of_the_tumor),
 							greatest_tumor_diameter: res.data.greatest_tumor_diameter,
-							intraoperative_depth_of_tumor_invasion: String(res.data.intraoperative_depth_of_tumor_invasion),
+							intraoperative_depth_of_tumor_invasion: String(res.data
+								.intraoperative_depth_of_tumor_invasion),
 							cancer: String(res.data.cancer),
 							early_cancer_t1: String(res.data.early_cancer_t1),
 							radical_degrees: String(res.data.radical_degrees),
-							distance_between_the_proximal_margin_and_the_tumor: res.data.distance_between_the_proximal_margin_and_the_tumor,
-							distance_of_distal_margin_to_tumor: res.data.distance_of_distal_margin_to_tumor,
-							dual_foci_neoplasms_foci_1_nature: String(res.data.dual_foci_neoplasms_foci_1_nature),
-							dual_foci_neoplasms_foci_2_nature: String(res.data.dual_foci_neoplasms_foci_2_nature),
+							distance_between_the_proximal_margin_and_the_tumor: res.data
+								.distance_between_the_proximal_margin_and_the_tumor,
+							distance_of_distal_margin_to_tumor: res.data
+								.distance_of_distal_margin_to_tumor,
+							dual_foci_neoplasms_foci_1_nature: String(res.data
+								.dual_foci_neoplasms_foci_1_nature),
+							dual_foci_neoplasms_foci_2_nature: String(res.data
+								.dual_foci_neoplasms_foci_2_nature),
 							double_focal_tumor_site: String(res.data.double_focal_tumor_site),
 							bifoci_tumor_site_foci_1: String(res.data.bifoci_tumor_site_foci_1),
 							bifoci_tumor_site_foci_2: String(res.data.bifoci_tumor_site_foci_2),
-							three_or_more_lesions_and_multiple_lesions: res.data.three_or_more_lesions_and_multiple_lesions,
-							single_focal_tumor_pathology: String(res.data.single_focal_tumor_pathology),
+							three_or_more_lesions_and_multiple_lesions: res.data
+								.three_or_more_lesions_and_multiple_lesions,
+							single_focal_tumor_pathology: String(res.data
+								.single_focal_tumor_pathology),
 							cell_type: String(res.data.cell_type),
-							adenocarcinoma_of_differentiation: String(res.data.adenocarcinoma_of_differentiation),
+							adenocarcinoma_of_differentiation: String(res.data
+								.adenocarcinoma_of_differentiation),
 							lauren_type: String(res.data.lauren_type),
 							level_of_tumor: String(res.data.level_of_tumor),
 							lymphoma_tnm_aging: res.data.lymphoma_tnm_aging,
-							detection_of_frozen_cutting_edge_disease: String(res.data.detection_of_frozen_cutting_edge_disease),
-							resect_the_inspection_margin_again: String(res.data.resect_the_inspection_margin_again),
-							greater_omentum_margin_was_examined: String(res.data.greater_omentum_margin_was_examined),
-							examination_of_lesser_omentum_margin: String(res.data.examination_of_lesser_omentum_margin),
+							detection_of_frozen_cutting_edge_disease: String(res.data
+								.detection_of_frozen_cutting_edge_disease),
+							resect_the_inspection_margin_again: String(res.data
+								.resect_the_inspection_margin_again),
+							greater_omentum_margin_was_examined: String(res.data
+								.greater_omentum_margin_was_examined),
+							examination_of_lesser_omentum_margin: String(res.data
+								.examination_of_lesser_omentum_margin),
 							ft_aging: String(res.data.ft_aging),
-							adjacent_structures_are_infiltrated_directly: res.data.adjacent_structures_are_infiltrated_directly,
+							adjacent_structures_are_infiltrated_directly: res.data
+								.adjacent_structures_are_infiltrated_directly,
 							fn_aging: String(res.data.fn_aging),
 							fm_aging: String(res.data.fm_aging),
 							m1_aging: String(res.data.m1_aging),
@@ -2084,7 +2201,8 @@
 							her2: String(res.data.her2),
 							lymphadenectomy_total: res.data.lymphadenectomy_total,
 							lymph_node: res.data.lymph_node,
-							regional_lymph_nodes_cancer_nodules: res.data.regional_lymph_nodes_cancer_nodules,
+							regional_lymph_nodes_cancer_nodules: res.data
+								.regional_lymph_nodes_cancer_nodules,
 							no1_plus: res.data.no1_plus,
 							no1: res.data.no1,
 							no2_plus: res.data.no2_plus,
@@ -2171,46 +2289,71 @@
 							vascular_involvement: String(res.data.vascular_involvement),
 							lymphatic_involvement: String(res.data.lymphatic_involvement),
 							neurologic_involvement: String(res.data.neurologic_involvement),
-							fat_examination_reveals_cancerous_nodules: String(res.data.fat_examination_reveals_cancerous_nodules),
+							fat_examination_reveals_cancerous_nodules: String(res.data
+								.fat_examination_reveals_cancerous_nodules),
 							vascular_tumor_emboli: String(res.data.vascular_tumor_emboli),
-							hepatoduodenal_ligament_anterior_peritoneum: String(res.data.hepatoduodenal_ligament_anterior_peritoneum),
+							hepatoduodenal_ligament_anterior_peritoneum: String(res.data
+								.hepatoduodenal_ligament_anterior_peritoneum),
 							pancreas_capsule: String(res.data.pancreas_capsule),
-							anterior_lobe_of_transverse_mesentery: String(res.data.anterior_lobe_of_transverse_mesentery),
+							anterior_lobe_of_transverse_mesentery: String(res.data
+								.anterior_lobe_of_transverse_mesentery),
 							stage_show: res.data.stage_show,
 							pathology_num: res.data.pathology_num,
-							perioperative_nutritional_support: res.data.perioperative_nutritional_support,
+							perioperative_nutritional_support: res.data
+								.perioperative_nutritional_support,
 							perioperative_antibiotics: res.data.perioperative_antibiotics,
-							postoperative_prophylactic_antibiotic: String(res.data.postoperative_prophylactic_antibiotic),
+							postoperative_prophylactic_antibiotic: String(res.data
+								.postoperative_prophylactic_antibiotic),
 							perioperative_acid_suppressor: res.data.perioperative_acid_suppressor,
-							perioperative_mucosal_protectant: res.data.perioperative_mucosal_protectant,
+							perioperative_mucosal_protectant: res.data
+								.perioperative_mucosal_protectant,
 							perioperative_hemostatic_agent: res.data.perioperative_hemostatic_agent,
 							perioperative_somatostatin: String(res.data.perioperative_somatostatin),
 							perioperative_analgesics: res.data.perioperative_analgesics,
 							perioperative_intensive_care: res.data.perioperative_intensive_care,
-							other_special_treatments_during_perioperative_period: res.data.other_special_treatments_during_perioperative_period,
-							whether_to_install_a_gastric_tube: String(res.data.whether_to_install_a_gastric_tube),
-							set_time: res.data.set_time == '1970-01-01 08:00:00' ? '' : res.data.set_time,
-							extraction_date_of_gastric_tube_time: res.data.extraction_date_of_gastric_tube_time == '1970-01-01 08:00:00' ? '' : extraction_date_of_gastric_tube_time,
-							average_daily_gastric_fluid_volume: res.data.average_daily_gastric_fluid_volume,
-							cause_of_gastric_tube_replacement: res.data.cause_of_gastric_tube_replacement,
-							catheter_removal_time: res.data.catheter_removal_time == '1970-01-01 08:00:00' ? '' : res.data.catheter_removal_time,
-							abdominal_drainage_tube_removal_date_time: res.data.abdominal_drainage_tube_removal_date_time == '1970-01-01 08:00:00' ? '' : res.data.abdominal_drainage_tube_removal_date_time,
-							average_daily_volume_of_abdominal_drainage_fluid: res.data.average_daily_volume_of_abdominal_drainage_fluid,
-							anal_exhaust_day_time: res.data.anal_exhaust_day_time == '1970-01-01 08:00:00' ? '' : res.data.anal_exhaust_day_time,
-							start_an_out_of_bed_day_time: res.data.start_an_out_of_bed_day_time == '1970-01-01 08:00:00' ? '' : res.data.start_an_out_of_bed_day_time,
-							start_a_fluid_day_time: res.data.start_a_fluid_day_time == '1970-01-01 08:00:00' ? '' : res.data.start_a_fluid_day_time,
+							other_special_treatments_during_perioperative_period: res.data
+								.other_special_treatments_during_perioperative_period,
+							whether_to_install_a_gastric_tube: String(res.data
+								.whether_to_install_a_gastric_tube),
+							set_time: res.data.set_time == '1970-01-01 08:00:00' ? '' : res.data
+								.set_time,
+							extraction_date_of_gastric_tube_time: res.data
+								.extraction_date_of_gastric_tube_time == '1970-01-01 08:00:00' ? '' :
+								extraction_date_of_gastric_tube_time,
+							average_daily_gastric_fluid_volume: res.data
+								.average_daily_gastric_fluid_volume,
+							cause_of_gastric_tube_replacement: res.data
+								.cause_of_gastric_tube_replacement,
+							catheter_removal_time: res.data.catheter_removal_time ==
+								'1970-01-01 08:00:00' ? '' : res.data.catheter_removal_time,
+							abdominal_drainage_tube_removal_date_time: res.data
+								.abdominal_drainage_tube_removal_date_time == '1970-01-01 08:00:00' ?
+								'' : res.data.abdominal_drainage_tube_removal_date_time,
+							average_daily_volume_of_abdominal_drainage_fluid: res.data
+								.average_daily_volume_of_abdominal_drainage_fluid,
+							anal_exhaust_day_time: res.data.anal_exhaust_day_time ==
+								'1970-01-01 08:00:00' ? '' : res.data.anal_exhaust_day_time,
+							start_an_out_of_bed_day_time: res.data.start_an_out_of_bed_day_time ==
+								'1970-01-01 08:00:00' ? '' : res.data.start_an_out_of_bed_day_time,
+							start_a_fluid_day_time: res.data.start_a_fluid_day_time ==
+								'1970-01-01 08:00:00' ? '' : res.data.start_a_fluid_day_time,
 							highest_temperature: res.data.highest_temperature,
-							postoperative_temperature_greater_than_38_days: res.data.postoperative_temperature_greater_than_38_days,
+							postoperative_temperature_greater_than_38_days: res.data
+								.postoperative_temperature_greater_than_38_days,
 							perioperative_complications: res.data.perioperative_complications,
-							management_of_perioperative_complications: res.data.management_of_perioperative_complications,
+							management_of_perioperative_complications: res.data
+								.management_of_perioperative_complications,
 							nonoperative_complication: res.data.nonoperative_complication,
-							perioperative_management_of_nonoperative_complications: res.data.perioperative_management_of_nonoperative_complications,
+							perioperative_management_of_nonoperative_complications: res.data
+								.perioperative_management_of_nonoperative_complications,
 							outcome: res.data.outcome,
 							inputting_medical_records: res.data.inputting_medical_records,
 							is_the_record_entry_complete: res.data.is_the_record_entry_complete,
-							medical_records_information_checker: res.data.medical_records_information_checker,
+							medical_records_information_checker: res.data
+								.medical_records_information_checker,
 							is_follow: String(res.data.is_follow),
-							follow_time: res.data.follow_time == '1970-01-01 08:00:00' ? '' : res.data.follow_time,
+							follow_time: res.data.follow_time == '1970-01-01 08:00:00' ? '' : res.data
+								.follow_time,
 							follow_content: res.data.follow_content,
 						}
 					})
@@ -2241,14 +2384,20 @@
 							remark: state.Form.remark,
 							family_contact: state.Form.family_contact,
 							preoperative_chemotherapy: String(state.Form.preoperative_chemotherapy),
-							preoperative_chemotherapy_laparoscopic_exploration: String(state.Form.preoperative_chemotherapy_laparoscopic_exploration),
+							preoperative_chemotherapy_laparoscopic_exploration: String(state.Form
+								.preoperative_chemotherapy_laparoscopic_exploration),
 							laparoscopic_exploration_time: state.Form.laparoscopic_exploration_time,
-							laparoscopic_exploration_result: String(state.Form.laparoscopic_exploration_result),
+							laparoscopic_exploration_result: String(state.Form
+								.laparoscopic_exploration_result),
 							pci_index: state.Form.pci_index,
-							laparoscopic_exploration_cast_off_result: state.Form.laparoscopic_exploration_cast_off_result,
-							laparoscopic_exploration_biopsy: String(state.Form.laparoscopic_exploration_biopsy),
-							laparoscopic_exploration_biopsy_result: state.Form.laparoscopic_exploration_biopsy_result,
-							laparoscopic_exploration_prognosis: String(state.Form.laparoscopic_exploration_prognosis),
+							laparoscopic_exploration_cast_off_result: state.Form
+								.laparoscopic_exploration_cast_off_result,
+							laparoscopic_exploration_biopsy: String(state.Form
+								.laparoscopic_exploration_biopsy),
+							laparoscopic_exploration_biopsy_result: state.Form
+								.laparoscopic_exploration_biopsy_result,
+							laparoscopic_exploration_prognosis: String(state.Form
+								.laparoscopic_exploration_prognosis),
 							preoperative_chemotherapy_scheme: state.Form.preoperative_chemotherapy_scheme,
 							preoperative_chemotherapy_period: state.Form.preoperative_chemotherapy_period,
 							first_period_chemotherapy_time: state.Form.first_period_chemotherapy_time,
@@ -2257,7 +2406,8 @@
 							fourth_period_chemotherapy_time: state.Form.fourth_period_chemotherapy_time,
 							chemotherapy_operative: String(state.Form.chemotherapy_operative),
 							chemotherapy_adverse_reactions: state.Form.chemotherapy_adverse_reactions,
-							accept_chemotherapy_clinic_evaluate: String(state.Form.accept_chemotherapy_clinic_evaluate),
+							accept_chemotherapy_clinic_evaluate: String(state.Form
+								.accept_chemotherapy_clinic_evaluate),
 							operative_evaluate_effect: state.Form.operative_evaluate_effect,
 							admission_time: state.Form.admission_time,
 							operative_time: state.Form.operative_time,
@@ -2292,7 +2442,8 @@
 							n_aging: String(state.Form.n_aging),
 							preoperative_ct_check_m_aging: state.Form.preoperative_ct_check_m_aging,
 							preoperative_aging: state.Form.preoperative_aging,
-							preoperative_complications_check_exception: state.Form.preoperative_complications_check_exception,
+							preoperative_complications_check_exception: state.Form
+								.preoperative_complications_check_exception,
 							preoperative_complications: state.Form.preoperative_complications,
 							preoperative_chest_ct: String(state.Form.preoperative_chest_ct),
 							ultrasound_gastroscope_tnm: state.Form.ultrasound_gastroscope_tnm,
@@ -2352,26 +2503,39 @@
 							surgeon: state.Form.surgeon,
 							road_way: String(state.Form.road_way),
 							road: String(state.Form.road),
-							laparoscopic_exploration_laparoscopy: state.Form.laparoscopic_exploration_laparoscopy,
+							laparoscopic_exploration_laparoscopy: state.Form
+								.laparoscopic_exploration_laparoscopy,
 							removal_way: String(state.Form.removal_way),
 							lymphadenectomy: String(state.Form.lymphadenectomy),
 							rebuild: String(state.Form.rebuild),
 							omental_sac_resection: String(state.Form.omental_sac_resection),
 							omental_sac_resection_minutes: state.Form.omental_sac_resection_minutes,
-							splenic_hilar_lymph_node_clear_minutes: state.Form.splenic_hilar_lymph_node_clear_minutes,
-							simultaneous_organoectomy_resection: state.Form.simultaneous_organoectomy_resection,
-							intraoperative_organ_injury_occurred: state.Form.intraoperative_organ_injury_occurred,
-							intraoperative_organ_injury_occurred_handle: state.Form.intraoperative_organ_injury_occurred_handle,
-							intraoperative_complications_bleeding_site: state.Form.intraoperative_complications_bleeding_site,
+							splenic_hilar_lymph_node_clear_minutes: state.Form
+								.splenic_hilar_lymph_node_clear_minutes,
+							simultaneous_organoectomy_resection: state.Form
+								.simultaneous_organoectomy_resection,
+							intraoperative_organ_injury_occurred: state.Form
+								.intraoperative_organ_injury_occurred,
+							intraoperative_organ_injury_occurred_handle: state.Form
+								.intraoperative_organ_injury_occurred_handle,
+							intraoperative_complications_bleeding_site: state.Form
+								.intraoperative_complications_bleeding_site,
 							operation_minutes: state.Form.operation_minutes,
-							intraoperative_blood_loss_was_estimated: state.Form.intraoperative_blood_loss_was_estimated,
-							perioperative_blood_transfusion: String(state.Form.perioperative_blood_transfusion),
-							adverse_reactions_of_perioperative_blood_transfusion: String(state.Form.adverse_reactions_of_perioperative_blood_transfusion),
+							intraoperative_blood_loss_was_estimated: state.Form
+								.intraoperative_blood_loss_was_estimated,
+							perioperative_blood_transfusion: String(state.Form
+								.perioperative_blood_transfusion),
+							adverse_reactions_of_perioperative_blood_transfusion: String(state.Form
+								.adverse_reactions_of_perioperative_blood_transfusion),
 							perioperative_transfusion_unit: state.Form.perioperative_transfusion_unit,
-							chemotherapy_during_operation: String(state.Form.chemotherapy_during_operation),
-							intraoperative_carbon_nanotracers: String(state.Form.intraoperative_carbon_nanotracers),
-							intraoperative_arterial_infusion_chemotherapy: state.Form.intraoperative_arterial_infusion_chemotherapy,
-							intraoperative_results_of_special_freezing: state.Form.intraoperative_results_of_special_freezing,
+							chemotherapy_during_operation: String(state.Form
+								.chemotherapy_during_operation),
+							intraoperative_carbon_nanotracers: String(state.Form
+								.intraoperative_carbon_nanotracers),
+							intraoperative_arterial_infusion_chemotherapy: state.Form
+								.intraoperative_arterial_infusion_chemotherapy,
+							intraoperative_results_of_special_freezing: state.Form
+								.intraoperative_results_of_special_freezing,
 							ascites: String(state.Form.ascites),
 							cancer_cell: String(state.Form.cancer_cell),
 							peritoneal_metastasis: String(state.Form.peritoneal_metastasis),
@@ -2380,34 +2544,47 @@
 							more_hepatic_metastases: String(state.Form.more_hepatic_metastases),
 							lymph_nodes_were_enlarged_in_16: state.Form.lymph_nodes_were_enlarged_in_16,
 							number_of_tumor_lesions: String(state.Form.number_of_tumor_lesions),
-							longitudinal_position_of_a_single_lesion: String(state.Form.longitudinal_position_of_a_single_lesion),
+							longitudinal_position_of_a_single_lesion: String(state.Form
+								.longitudinal_position_of_a_single_lesion),
 							aeg: String(state.Form.aeg),
 							peridiameter_of_the_tumor: String(state.Form.peridiameter_of_the_tumor),
 							greatest_tumor_diameter: state.Form.greatest_tumor_diameter,
-							intraoperative_depth_of_tumor_invasion: String(state.Form.intraoperative_depth_of_tumor_invasion),
+							intraoperative_depth_of_tumor_invasion: String(state.Form
+								.intraoperative_depth_of_tumor_invasion),
 							cancer: String(state.Form.cancer),
 							early_cancer_t1: String(state.Form.early_cancer_t1),
 							radical_degrees: String(state.Form.radical_degrees),
-							distance_between_the_proximal_margin_and_the_tumor: state.Form.distance_between_the_proximal_margin_and_the_tumor,
-							distance_of_distal_margin_to_tumor: state.Form.distance_of_distal_margin_to_tumor,
-							dual_foci_neoplasms_foci_1_nature: String(state.Form.dual_foci_neoplasms_foci_1_nature),
-							dual_foci_neoplasms_foci_2_nature: String(state.Form.dual_foci_neoplasms_foci_2_nature),
+							distance_between_the_proximal_margin_and_the_tumor: state.Form
+								.distance_between_the_proximal_margin_and_the_tumor,
+							distance_of_distal_margin_to_tumor: state.Form
+								.distance_of_distal_margin_to_tumor,
+							dual_foci_neoplasms_foci_1_nature: String(state.Form
+								.dual_foci_neoplasms_foci_1_nature),
+							dual_foci_neoplasms_foci_2_nature: String(state.Form
+								.dual_foci_neoplasms_foci_2_nature),
 							double_focal_tumor_site: String(state.Form.double_focal_tumor_site),
 							bifoci_tumor_site_foci_1: String(state.Form.bifoci_tumor_site_foci_1),
 							bifoci_tumor_site_foci_2: String(state.Form.bifoci_tumor_site_foci_2),
-							three_or_more_lesions_and_multiple_lesions: state.Form.three_or_more_lesions_and_multiple_lesions,
+							three_or_more_lesions_and_multiple_lesions: state.Form
+								.three_or_more_lesions_and_multiple_lesions,
 							single_focal_tumor_pathology: String(state.Form.single_focal_tumor_pathology),
 							cell_type: String(state.Form.cell_type),
-							adenocarcinoma_of_differentiation: String(state.Form.adenocarcinoma_of_differentiation),
+							adenocarcinoma_of_differentiation: String(state.Form
+								.adenocarcinoma_of_differentiation),
 							lauren_type: String(state.Form.lauren_type),
 							level_of_tumor: String(state.Form.level_of_tumor),
 							lymphoma_tnm_aging: state.Form.lymphoma_tnm_aging,
-							detection_of_frozen_cutting_edge_disease: String(state.Form.detection_of_frozen_cutting_edge_disease),
-							resect_the_inspection_margin_again: String(state.Form.resect_the_inspection_margin_again),
-							greater_omentum_margin_was_examined: String(state.Form.greater_omentum_margin_was_examined),
-							examination_of_lesser_omentum_margin: String(state.Form.examination_of_lesser_omentum_margin),
+							detection_of_frozen_cutting_edge_disease: String(state.Form
+								.detection_of_frozen_cutting_edge_disease),
+							resect_the_inspection_margin_again: String(state.Form
+								.resect_the_inspection_margin_again),
+							greater_omentum_margin_was_examined: String(state.Form
+								.greater_omentum_margin_was_examined),
+							examination_of_lesser_omentum_margin: String(state.Form
+								.examination_of_lesser_omentum_margin),
 							ft_aging: String(state.Form.ft_aging),
-							adjacent_structures_are_infiltrated_directly: state.Form.adjacent_structures_are_infiltrated_directly,
+							adjacent_structures_are_infiltrated_directly: state.Form
+								.adjacent_structures_are_infiltrated_directly,
 							fn_aging: String(state.Form.fn_aging),
 							fm_aging: String(state.Form.fm_aging),
 							m1_aging: String(state.Form.m1_aging),
@@ -2416,7 +2593,8 @@
 							her2: String(state.Form.her2),
 							lymphadenectomy_total: state.Form.lymphadenectomy_total,
 							lymph_node: state.Form.lymph_node,
-							regional_lymph_nodes_cancer_nodules: state.Form.regional_lymph_nodes_cancer_nodules,
+							regional_lymph_nodes_cancer_nodules: state.Form
+								.regional_lymph_nodes_cancer_nodules,
 							no1_plus: state.Form.no1_plus,
 							no1: state.Form.no1,
 							no2_plus: state.Form.no2_plus,
@@ -2503,44 +2681,60 @@
 							vascular_involvement: String(state.Form.vascular_involvement),
 							lymphatic_involvement: String(state.Form.lymphatic_involvement),
 							neurologic_involvement: String(state.Form.neurologic_involvement),
-							fat_examination_reveals_cancerous_nodules: String(state.Form.fat_examination_reveals_cancerous_nodules),
+							fat_examination_reveals_cancerous_nodules: String(state.Form
+								.fat_examination_reveals_cancerous_nodules),
 							vascular_tumor_emboli: String(state.Form.vascular_tumor_emboli),
-							hepatoduodenal_ligament_anterior_peritoneum: String(state.Form.hepatoduodenal_ligament_anterior_peritoneum),
+							hepatoduodenal_ligament_anterior_peritoneum: String(state.Form
+								.hepatoduodenal_ligament_anterior_peritoneum),
 							pancreas_capsule: String(state.Form.pancreas_capsule),
-							anterior_lobe_of_transverse_mesentery: String(state.Form.anterior_lobe_of_transverse_mesentery),
+							anterior_lobe_of_transverse_mesentery: String(state.Form
+								.anterior_lobe_of_transverse_mesentery),
 							stage_show: state.Form.stage_show,
 							pathology_num: state.Form.pathology_num,
-							perioperative_nutritional_support: state.Form.perioperative_nutritional_support,
+							perioperative_nutritional_support: state.Form
+								.perioperative_nutritional_support,
 							perioperative_antibiotics: state.Form.perioperative_antibiotics,
-							postoperative_prophylactic_antibiotic: String(state.Form.postoperative_prophylactic_antibiotic),
+							postoperative_prophylactic_antibiotic: String(state.Form
+								.postoperative_prophylactic_antibiotic),
 							perioperative_acid_suppressor: state.Form.perioperative_acid_suppressor,
 							perioperative_mucosal_protectant: state.Form.perioperative_mucosal_protectant,
 							perioperative_hemostatic_agent: state.Form.perioperative_hemostatic_agent,
 							perioperative_somatostatin: String(state.Form.perioperative_somatostatin),
 							perioperative_analgesics: state.Form.perioperative_analgesics,
 							perioperative_intensive_care: state.Form.perioperative_intensive_care,
-							other_special_treatments_during_perioperative_period: state.Form.other_special_treatments_during_perioperative_period,
-							whether_to_install_a_gastric_tube: String(state.Form.whether_to_install_a_gastric_tube),
+							other_special_treatments_during_perioperative_period: state.Form
+								.other_special_treatments_during_perioperative_period,
+							whether_to_install_a_gastric_tube: String(state.Form
+								.whether_to_install_a_gastric_tube),
 							set_time: state.Form.set_time,
-							extraction_date_of_gastric_tube_time: state.Form.extraction_date_of_gastric_tube_time,
-							average_daily_gastric_fluid_volume: state.Form.average_daily_gastric_fluid_volume,
-							cause_of_gastric_tube_replacement: state.Form.cause_of_gastric_tube_replacement,
+							extraction_date_of_gastric_tube_time: state.Form
+								.extraction_date_of_gastric_tube_time,
+							average_daily_gastric_fluid_volume: state.Form
+								.average_daily_gastric_fluid_volume,
+							cause_of_gastric_tube_replacement: state.Form
+								.cause_of_gastric_tube_replacement,
 							catheter_removal_time: state.Form.catheter_removal_time,
-							abdominal_drainage_tube_removal_date_time: state.Form.abdominal_drainage_tube_removal_date_time,
-							average_daily_volume_of_abdominal_drainage_fluid: state.Form.average_daily_volume_of_abdominal_drainage_fluid,
+							abdominal_drainage_tube_removal_date_time: state.Form
+								.abdominal_drainage_tube_removal_date_time,
+							average_daily_volume_of_abdominal_drainage_fluid: state.Form
+								.average_daily_volume_of_abdominal_drainage_fluid,
 							anal_exhaust_day_time: state.Form.anal_exhaust_day_time,
 							start_an_out_of_bed_day_time: state.Form.start_an_out_of_bed_day_time,
 							start_a_fluid_day_time: state.Form.start_a_fluid_day_time,
 							start_a_fluid_day_time: state.Form.start_a_fluid_day_time,
-							postoperative_temperature_greater_than_38_days: state.Form.postoperative_temperature_greater_than_38_days,
+							postoperative_temperature_greater_than_38_days: state.Form
+								.postoperative_temperature_greater_than_38_days,
 							perioperative_complications: state.Form.perioperative_complications,
-							management_of_perioperative_complications: state.Form.management_of_perioperative_complications,
+							management_of_perioperative_complications: state.Form
+								.management_of_perioperative_complications,
 							nonoperative_complication: state.Form.nonoperative_complication,
-							perioperative_management_of_nonoperative_complications: state.Form.perioperative_management_of_nonoperative_complications,
+							perioperative_management_of_nonoperative_complications: state.Form
+								.perioperative_management_of_nonoperative_complications,
 							outcome: state.Form.outcome,
 							inputting_medical_records: state.Form.inputting_medical_records,
 							is_the_record_entry_complete: state.Form.is_the_record_entry_complete,
-							medical_records_information_checker: state.Form.medical_records_information_checker,
+							medical_records_information_checker: state.Form
+								.medical_records_information_checker,
 							is_follow: state.Form.is_follow,
 							follow_time: state.Form.follow_time,
 							follow_content: state.Form.follow_content,
@@ -2594,7 +2788,7 @@
 				state.Form.img = ''
 				state.Form.fileList = []
 			}
-			
+
 			const handleAttachmentSuccess = (val) => {
 				ElMessage.success('上传成功')
 				// state.Form.attachmentFileList.push({name: val.data.src, url: val.data.src})
@@ -2610,13 +2804,13 @@
 				state.Form.attachment = ''
 				state.Form.attachmentFileList = []
 			}
-			
+
 			const handleVideoSuccess = (val) => {
 				ElMessage.success('上传成功')
 				// state.Form.videoFileList.push({name: val.data.src, url: val.data.src})
 				state.Form.video = val.data.id
 			}
-			
+
 			const handleVideoRemove = (val) => {
 				videoRef.value.clearFiles()
 				state.Form.video = ''

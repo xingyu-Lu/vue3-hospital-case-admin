@@ -2,7 +2,7 @@
 	<el-card style="min-height: 100%;">
 		<el-form :model="Form" :rules="rules" ref="Ref" label-width="100px">
 			<el-form-item label="死亡日期" prop="dead_time">
-				<el-date-picker v-model="Form.dead_time" type="datetime" :default-value="new Date()"
+				<el-date-picker v-model="Form.dead_time" type="datetime"
 					placeholder="死亡日期">
 				</el-date-picker>
 			</el-form-item>
@@ -10,7 +10,7 @@
 				<el-input v-model="Form.survival_month" placeholder="请输入生存月份" :rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="术后随访日期" prop="followed_up_after_operation_date_time">
-				<el-date-picker v-model="Form.followed_up_after_operation_date_time" type="datetime" :default-value="new Date()"
+				<el-date-picker v-model="Form.followed_up_after_operation_date_time" type="datetime"
 					placeholder="术后随访日期">
 				</el-date-picker>
 			</el-form-item>
@@ -28,7 +28,7 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="胆囊结石发现时间" prop="gallstone_discovery_time">
-				<el-date-picker v-model="Form.gallstone_discovery_time" type="datetime" :default-value="new Date()"
+				<el-date-picker v-model="Form.gallstone_discovery_time" type="datetime"
 					placeholder="胆囊结石发现时间">
 				</el-date-picker>
 			</el-form-item>
@@ -39,12 +39,12 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="局部复发时间" prop="local_recurrence_time">
-				<el-date-picker v-model="Form.local_recurrence_time" type="datetime" :default-value="new Date()"
+				<el-date-picker v-model="Form.local_recurrence_time" type="datetime"
 					placeholder="局部复发时间">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="远处转移时间" prop="distant_transfer_time">
-				<el-date-picker v-model="Form.distant_transfer_time" type="datetime" :default-value="new Date()"
+				<el-date-picker v-model="Form.distant_transfer_time" type="datetime"
 					placeholder="远处转移时间">
 				</el-date-picker>
 			</el-form-item>

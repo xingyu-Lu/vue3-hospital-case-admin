@@ -75,7 +75,7 @@
 			<el-table-column prop="created_at" label="创建时间" />
 			<el-table-column label="操作" width="100">
 				<template #default="scope">
-					<!-- <a style="cursor: pointer; margin-right: 10px" @click="handleFollowUp(scope.row.id)">随访</a> -->
+					<a style="cursor: pointer; margin-right: 10px" @click="handleFollowUp(scope.row.id)">随访</a>
 					<a style="cursor: pointer; margin-right: 10px" @click="handleEdit(scope.row.id)">修改</a>
 				</template>
 			</el-table-column>

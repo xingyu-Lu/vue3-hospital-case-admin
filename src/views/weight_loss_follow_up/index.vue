@@ -10,73 +10,20 @@
 
 		<el-table v-loading="loading" :data="tableData" stripe style="width: 100%">
 			<el-table-column prop="id" label="id" />
-			<el-table-column prop="colorectal_cancer_id" label="间质瘤 id" />
-			<el-table-column prop="dead_time" label="死亡日期时间">
-				<template #default="scope">
-					<span v-if="scope.row.dead_time == '1970-01-01 08:00:00'"></span>
-					<span v-else>{{ scope.row.dead_time }}</span>
-				</template>
-			</el-table-column>
-			<el-table-column prop="survival_month" label="生存月份" />
+			<el-table-column prop="weight_loss_id" label="减重 id" />
 			<el-table-column prop="followed_up_after_operation_date_time" label="术后随访日期时间">
 				<template #default="scope">
 					<span v-if="scope.row.followed_up_after_operation_date_time == '1970-01-01 08:00:00'"></span>
 					<span v-else>{{ scope.row.followed_up_after_operation_date_time }}</span>
 				</template>
 			</el-table-column>
-			<el-table-column prop="results_were_followed_up_after_operation" label="术后随访结果" />
-			<el-table-column prop="long_term_complications_and_management_methods" label="远期并发症及处理方式" />
-			<el-table-column prop="whether_new_hair_gallbladder_stone" label="是否新发胆囊结石">
-				<template #default="scope">
-					<span v-if="scope.row.whether_new_hair_gallbladder_stone == 0">否</span>
-					<span v-else-if="scope.row.whether_new_hair_gallbladder_stone == 1">是</span>
-					<span v-else="scope.row.whether_new_hair_gallbladder_stone == 2">既往合并胆囊结石</span>
-				</template>
-			</el-table-column>
-			<el-table-column prop="gallstone_discovery_time" label="胆囊结石发现时间">
-				<template #default="scope">
-					<span v-if="scope.row.gallstone_discovery_time == '1970-01-01 08:00:00'"></span>
-					<span v-else>{{ scope.row.gallstone_discovery_time }}</span>
-				</template>
-			</el-table-column>
-			<el-table-column prop="treatment_of_gallstones" label="胆囊结石处理方式">
-				<template #default="scope">
-					<span v-if="scope.row.treatment_of_gallstones == 0">无</span>
-					<span v-else-if="scope.row.treatment_of_gallstones == 1">保守</span>
-					<span v-else="scope.row.treatment_of_gallstones == 2">手术</span>
-				</template>
-			</el-table-column>
-			<el-table-column prop="local_recurrence_time" label="局部复发时间">
-				<template #default="scope">
-					<span v-if="scope.row.local_recurrence_time == '1970-01-01 08:00:00'"></span>
-					<span v-else>{{ scope.row.local_recurrence_time }}</span>
-				</template>
-			</el-table-column>
-			<el-table-column prop="distant_transfer_time" label="远处转移时间">
-				<template #default="scope">
-					<span v-if="scope.row.distant_transfer_time == '1970-01-01 08:00:00'"></span>
-					<span v-else>{{ scope.row.distant_transfer_time }}</span>
-				</template>
-			</el-table-column>
-			<el-table-column prop="distant_metastatic_site" label="远处转移部位（非肿瘤死亡原因）" />
-			<el-table-column prop="whether_chemotherapy" label="是否化疗">
-				<template #default="scope">
-					<span v-if="scope.row.whether_chemotherapy == 0">无</span>
-					<span v-else-if="scope.row.whether_chemotherapy == 1">有</span>
-					<span v-else="scope.row.whether_chemotherapy == 2">新辅助</span>
-				</template>
-			</el-table-column>
-			<el-table-column prop="chemotherapy_way" label="化疗途径">
-				<template #default="scope">
-					<span v-if="scope.row.chemotherapy_way == 0">无</span>
-					<span v-else-if="scope.row.chemotherapy_way == 1">口服</span>
-					<span v-else="scope.row.chemotherapy_way == 2">静脉</span>
-				</template>
-			</el-table-column>
-			<el-table-column prop="chemotherapy_regimens" label="化疗方案" />
-			<el-table-column prop="chemotherapy_regimen_rate" label="化疗疗程/次" />
-			<el-table-column prop="chemotherapy_month" label="化疗时间" />
-			<el-table-column prop="special_information_record" label="特殊信息记录" />
+			<el-table-column prop="height" label="身高cm" />
+			<el-table-column prop="weight" label="体重km" />
+			<el-table-column prop="waistline" label="腰围" />
+			<el-table-column prop="bmi" label="bmi" />
+			<el-table-column prop="rbc" label="rbc" />
+			<el-table-column prop="hemoglobin" label="血红蛋白(g/l)" />
+			<el-table-column prop="alanine_aminotransferase" label="谷丙转氨酶alt(u/l)" />
 			<el-table-column prop="follow_up_principal" label="随访负责人" />
 			<el-table-column prop="follow_up_note" label="随访备注" />
 			<el-table-column prop="follow_up_information_record" label="随访信息记录" />
@@ -115,7 +62,7 @@
 			const route = useRoute()
 			const router = useRouter()
 			const {
-				colorectal_cancer_id,
+				weight_loss_id,
 			} = route.query
 			const state = reactive({
 				colorectalCancer: '',
@@ -131,7 +78,7 @@
 				getColorectalCancerFollowUpList()
 			})
 			const getColorectalCancer = () => {
-				axios.get(`/api/back/ColorectalCancers/${colorectal_cancer_id}`).then(res => {
+				axios.get(`/api/back/WeightLosss/${weight_loss_id}`).then(res => {
 					state.colorectalCancer = res.data
 				})
 			}
@@ -139,11 +86,11 @@
 			// 获取admin列表
 			const getColorectalCancerFollowUpList = () => {
 				state.loading = true
-				axios.get('/api/back/ColorectalCancerFollowUps', {
+				axios.get('/api/back/WeightLossFollowUps', {
 					params: {
 						page: state.currentPage,
 						page_size: state.pageSize,
-						colorectal_cancer_id: colorectal_cancer_id
+						weight_loss_id: weight_loss_id
 					}
 				}).then(res => {
 					state.tableData = res.data
@@ -161,18 +108,18 @@
 
 			const handleAdd = () => {
 				router.push({
-					path: '/colorectal-cancer-follow-up-add',
+					path: '/weight-loss-follow-up-add',
 					query: {
-						colorectal_cancer_id: colorectal_cancer_id
+						weight_loss_id: weight_loss_id
 					}
 				})
 			}
 
 			const handleEdit = (id) => {
 				router.push({
-					path: '/colorectal-cancer-follow-up-add',
+					path: '/weight-loss-follow-up-add',
 					query: {
-						colorectal_cancer_id: colorectal_cancer_id,
+						weight_loss_id: weight_loss_id,
 						id
 					}
 				})

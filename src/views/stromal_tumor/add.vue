@@ -47,8 +47,7 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="腹腔镜探查时间" prop="laparoscopic_exploration_time">
-				<el-date-picker v-model="Form.laparoscopic_exploration_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入腹腔镜探查时间">
+				<el-date-picker v-model="Form.laparoscopic_exploration_time" type="datetime" placeholder="请输入腹腔镜探查时间">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="腹腔镜探查结果" prop="laparoscopic_exploration_result">
@@ -88,18 +87,15 @@
 				</el-input>
 			</el-form-item>
 			<el-form-item label="入院日期" prop="admission_time">
-				<el-date-picker v-model="Form.admission_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入入院日期">
+				<el-date-picker v-model="Form.admission_time" type="datetime" placeholder="请输入入院日期">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="手术日期" prop="operative_time">
-				<el-date-picker v-model="Form.operative_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入手术日期">
+				<el-date-picker v-model="Form.operative_time" type="datetime" placeholder="请输入手术日期">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="出院日期" prop="discharge_time">
-				<el-date-picker v-model="Form.discharge_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入出院日期">
+				<el-date-picker v-model="Form.discharge_time" type="datetime" placeholder="请输入出院日期">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="总住院时间（天）" prop="total_hospital_days">
@@ -694,13 +690,12 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="安置时间" prop="set_time">
-				<el-date-picker v-model="Form.set_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入安置时间">
+				<el-date-picker v-model="Form.set_time" type="datetime" placeholder="请输入安置时间">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="胃管拔除日(POD)" prop="extraction_date_of_gastric_tube_time">
 				<el-date-picker v-model="Form.extraction_date_of_gastric_tube_time" type="datetime"
-					:default-value="new Date()" placeholder="请输入胃管拔除日(POD)">
+					placeholder="请输入胃管拔除日(POD)">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="每日平均胃液量(ml)" prop="average_daily_gastric_fluid_volume">
@@ -712,13 +707,12 @@
 					type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="尿管拔除时间(POH)" prop="catheter_removal_time">
-				<el-date-picker v-model="Form.catheter_removal_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入尿管拔除时间(POH)">
+				<el-date-picker v-model="Form.catheter_removal_time" type="datetime" placeholder="请输入尿管拔除时间(POH)">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="腹腔引流管拔除日(POD)" prop="abdominal_drainage_tube_removal_date_time">
 				<el-date-picker v-model="Form.abdominal_drainage_tube_removal_date_time" type="datetime"
-					:default-value="new Date()" placeholder="请输入腹腔引流管拔除日(POD)">
+					placeholder="请输入腹腔引流管拔除日(POD)">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="每日平均腹腔引流液量(ml)" prop="average_daily_volume_of_abdominal_drainage_fluid">
@@ -726,18 +720,16 @@
 					:rows="2" type="textarea"></el-input>
 			</el-form-item>
 			<el-form-item label="肛门排气日" prop="anal_exhaust_day_time">
-				<el-date-picker v-model="Form.anal_exhaust_day_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入肛门排气日">
+				<el-date-picker v-model="Form.anal_exhaust_day_time" type="datetime" placeholder="请输入肛门排气日">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="开始下床活动日(POH)" prop="start_an_out_of_bed_day_time">
-				<el-date-picker v-model="Form.start_an_out_of_bed_day_time" type="datetime" :default-value="new Date()"
+				<el-date-picker v-model="Form.start_an_out_of_bed_day_time" type="datetime"
 					placeholder="请输入开始下床活动日(POH)">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="开始进食流质日(POH)" prop="start_a_fluid_day_time">
-				<el-date-picker v-model="Form.start_a_fluid_day_time" type="datetime" :default-value="new Date()"
-					placeholder="请输入开始进食流质日(POH)">
+				<el-date-picker v-model="Form.start_a_fluid_day_time" type="datetime" placeholder="请输入开始进食流质日(POH)">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="最高体温(℃)" prop="highest_temperature">
@@ -846,7 +838,7 @@
 				</el-radio-group>
 			</el-form-item>
 			<el-form-item label="随访时间" prop="follow_time">
-				<el-date-picker v-model="Form.follow_time" type="date" :default-value="new Date()" placeholder="随访时间">
+				<el-date-picker v-model="Form.follow_time" type="date" placeholder="随访时间">
 				</el-date-picker>
 			</el-form-item>
 			<el-form-item label="随访内容" prop="follow_content">
@@ -1113,7 +1105,12 @@
 						required: true,
 						message: '联系电话必须',
 						trigger: ['change'],
-					}]
+					}],
+					admission_time: [{
+						required: true,
+						message: '入院时间必须',
+						trigger: ['change'],
+					}],
 				},
 			})
 
